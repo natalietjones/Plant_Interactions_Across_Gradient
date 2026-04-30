@@ -12,27 +12,26 @@ Most-supported-outcome counts:
 # A tibble: 2 × 2
   most_supported_outcome     n
   <chr>                  <int>
-1 TRCY_wins                  7
-2 TROR_wins                 49
+1 TRCY_wins                 12
+2 TROR_wins                 44
 
 Summary of max support:
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
- 0.5201  0.6018  0.6820  0.6836  0.7626  0.8559 
+ 0.4981  0.5544  0.6455  0.6493  0.7213  0.8307 
 
 Top environments by max support:
 # A tibble: 56 × 12
-   Site  Cov   fac_sc most_supported_outcome max_support p_coexist p_TRCY_wins p_TROR_wins p_priority mean_g_TROR
-   <fct> <fct>  <int> <chr>                        <dbl>     <dbl>       <dbl>       <dbl>      <dbl>       <dbl>
- 1 BEN   SUN        0 TROR_wins                    0.856    0.0334       0.136       0.856          0       0.163
- 2 BEN   SUN        1 TROR_wins                    0.855    0.0368       0.136       0.855          0       0.163
- 3 BEN   SUN        2 TROR_wins                    0.848    0.0394       0.144       0.848          0       0.163
- 4 BEN   SUN        3 TROR_wins                    0.839    0.0438       0.152       0.839          0       0.163
- 5 BEN   SH         4 TROR_wins                    0.834    0.0426       0.160       0.834          0       0.163
- 6 BEN   SH         3 TROR_wins                    0.828    0.0384       0.164       0.828          0       0.163
- 7 BEN   SUN        4 TROR_wins                    0.828    0.0478       0.165       0.828          0       0.163
- 8 BEN   SH         5 TROR_wins                    0.82     0.0505       0.175       0.82           0       0.163
- 9 BEN   SUN        5 TROR_wins                    0.809    0.0503       0.185       0.809          0       0.163
-10 BEN   SH         2 TROR_wins                    0.791    0.0357       0.201       0.791          0       0.163
+   Site  Cov   fac_sc most_supported_outcome max_support p_coexist p_TRCY_wins p_TROR_wins p_priority mean_g_TROR mean_g_TRCY n_obs
+   <fct> <fct>  <int> <chr>                        <dbl>     <dbl>       <dbl>       <dbl>      <dbl>       <dbl>       <dbl> <int>
+ 1 BEN   SUN        0 TROR_wins                    0.831    0.0302       0.164       0.831          0       0.163      0.0650    37
+ 2 BEN   SUN        1 TROR_wins                    0.827    0.0329       0.169       0.827          0       0.163      0.0650    26
+ 3 PJ    SUN        1 TRCY_wins                    0.824    0.099        0.824       0.153          0       0.278      0.263     10
+ 4 BEN   SUN        2 TROR_wins                    0.820    0.0371       0.175       0.820          0       0.163      0.0650    28
+ 5 PJ    SUN        0 TRCY_wins                    0.814    0.123        0.814       0.158          0       0.278      0.263    180
+ 6 BEN   SUN        3 TROR_wins                    0.804    0.0448       0.190       0.804          0       0.163      0.0650    10
+ 7 BEN   SH         4 TROR_wins                    0.798    0.0424       0.202       0.798          0       0.163      0.0650     2
+ 8 BEN   SH         3 TROR_wins                    0.794    0.0388       0.196       0.794          0       0.163      0.0650     5
+ 9 BEN   SUN        4 TROR_wins                    0.786    0.049        0.206       0.786          0       0.163      0.0650     8
+10 BEN   SH         5 TROR_wins                    0.772    0.0503       0.225       0.772          0       0.163      0.0650     2
 # ℹ 46 more rows
-# ℹ 2 more variables: mean_g_TRCY <dbl>, n_obs <int>
 # ℹ Use `print(n = ...)` to see more rows
