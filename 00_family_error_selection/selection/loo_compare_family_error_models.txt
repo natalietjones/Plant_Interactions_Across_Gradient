@@ -1,0 +1,9 @@
+                       elpd_diff se_diff 
+BH_gaussian_logfit          0.0       0.0
+Ricker_gaussian_logfit     -0.3       0.5
+BH_negbin_count         -2946.0      47.0
+Ricker_negbin_count     -2947.0      47.1
+Ricker_gaussian_raw     -4224.4      91.4
+BH_gaussian_raw         -4225.0      91.8
+BH_poisson_count       -12424.8     797.4
+Ricker_poisson_count   -12452.6     798.2

@@ -1,0 +1,7 @@
+Selected error model: gaussian_logfit
+
+Interpretation notes:
+1. Use the LOO comparison table for formal model selection.
+2. Use pp_check plots and summaries as complementary diagnostics.
+3. If models are very close, prefer the biologically appropriate and stable model.
+4. Count-based models here were fit to rounded fitness_count; note this in methods if discussed.

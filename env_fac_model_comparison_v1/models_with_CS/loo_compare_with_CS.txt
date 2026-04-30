@@ -1,0 +1,8 @@
+         elpd_diff se_diff
+site_cov    0.0       0.0 
+covfac     -0.9       1.3 
+sitefac    -6.0       2.5 
+bothfac    -6.8       2.8 
+cov       -56.5      11.4 
+site      -60.2      11.8 
+base     -100.9      15.5 

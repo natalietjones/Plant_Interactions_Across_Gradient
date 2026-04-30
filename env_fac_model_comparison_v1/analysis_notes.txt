@@ -1,0 +1,30 @@
+Use these outputs to decide on the final ecological model:
+
+1. Germination adequacy:
+   - germ_site_species.csv
+   - germ_site_species_cov.csv
+
+2. Best candidate model within each dataset:
+   - loo_compare_with_CS.txt
+   - loo_compare_no_CS.txt
+   - model_weights_with_CS.csv
+   - model_weights_no_CS.csv
+
+3. Interpretation of the best model:
+   - best_model_terms_with_CS.csv or best_model_terms_no_CS.csv
+   - best_model_prediction_with_CS.png or best_model_prediction_no_CS.png
+
+4. CS sensitivity:
+   - compare best model type with and without CS
+   - inspect SiteCS terms
+   - inspect whether conclusions about facilitation are stable
+5. Facilitation-context test:
+   - loo_compare_fac_context_with_CS.txt (and/or no_CS)
+   - model_weights_fac_context_with_CS.csv
+   - linear_fac_terms_with_CS.csv
+   - quad_fac_terms_with_CS.csv
+   - site_quad_fac_terms_with_CS.csv
+   - cov_quad_fac_terms_with_CS.csv
+   - both_quad_fac_terms_with_CS.csv
+   - best_fac_context_prediction_with_CS.png
+   - compare nofac vs linear vs quad vs site-varying quad vs cover-varying quad vs both

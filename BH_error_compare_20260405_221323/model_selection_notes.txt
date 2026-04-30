@@ -1,0 +1,5 @@
+Interpretation notes:
+1. Compare ELPD differences relative to SE.
+2. Also inspect pp_check plots and summaries.
+3. If models are similar by LOO, prefer the biologically more appropriate and stable model.
+4. If count models are fit to rounded fitness, note this explicitly in methods/sensitivity text.

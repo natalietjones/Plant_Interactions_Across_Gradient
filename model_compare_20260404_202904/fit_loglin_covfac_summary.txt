@@ -1,0 +1,40 @@
+ Family: negbinomial 
+  Links: mu = log 
+Formula: fitness ~ 0 + focsp + focsp:Site + focsp:Cov + focsp:fac_sc + focsp:Cov:fac_sc + focsp:intra_sc + focsp:inter_sc + (1 | BLK) 
+   Data: fit_args$data (Number of observations: 1298) 
+  Draws: 4 chains, each with iter = 4000; warmup = 2000; thin = 1;
+         total post-warmup draws = 8000
+
+Multilevel Hyperparameters:
+~BLK (Number of levels: 3) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     1.12      0.83     0.17     3.17 1.00     1391     3319
+
+Regression Coefficients:
+                        Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+focspTRCY                   1.40      0.79    -0.34     2.48 1.00     1468     3245
+focspTROR                   1.58      0.79    -0.17     2.66 1.00     1480     3410
+focspTRCY:SiteGH           -0.29      0.13    -0.55    -0.04 1.00     5788     5290
+focspTROR:SiteGH           -0.28      0.13    -0.55    -0.02 1.00     5850     5652
+focspTRCY:SiteNAM           0.08      0.12    -0.17     0.32 1.00     5807     5291
+focspTROR:SiteNAM          -0.34      0.13    -0.59    -0.08 1.00     5914     6304
+focspTRCY:SitePJ            0.36      0.12     0.11     0.60 1.00     5719     6104
+focspTROR:SitePJ           -0.10      0.13    -0.36     0.16 1.00     5524     5993
+focspTRCY:CovSUN            0.84      0.10     0.65     1.02 1.00     6904     6021
+focspTROR:CovSUN            0.59      0.10     0.39     0.78 1.00     7898     5474
+focspTRCY:fac_sc            0.20      0.07     0.07     0.34 1.00     5579     4941
+focspTROR:fac_sc            0.05      0.10    -0.13     0.25 1.00     5549     4813
+focspTRCY:intra_sc         -0.02      0.00    -0.02    -0.01 1.00     8561     5776
+focspTROR:intra_sc         -0.02      0.01    -0.03    -0.01 1.00     8303     5918
+focspTRCY:inter_sc         -0.03      0.01    -0.04    -0.02 1.00     8653     6412
+focspTROR:inter_sc         -0.01      0.00    -0.02    -0.01 1.00    10014     6038
+focspTRCY:CovSUN:fac_sc    -0.10      0.08    -0.26     0.05 1.00     5206     5357
+focspTROR:CovSUN:fac_sc     0.03      0.10    -0.18     0.22 1.00     5369     4965
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+shape     0.90      0.04     0.83     0.98 1.00     8777     5780
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).

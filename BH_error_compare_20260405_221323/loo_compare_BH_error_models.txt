@@ -1,0 +1,5 @@
+                   elpd_diff se_diff 
+fit_bh_loggaussian      0.0       0.0
+fit_bh_negbin       -2946.0      47.0
+fit_bh_gaussian     -4225.0      91.8
+fit_bh_poisson     -12424.8     797.4

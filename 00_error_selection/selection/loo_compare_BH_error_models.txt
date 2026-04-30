@@ -1,0 +1,5 @@
+                elpd_diff se_diff 
+gaussian_logfit      0.0       0.0
+negbin_count     -2946.0      47.0
+gaussian_raw     -4225.0      91.8
+poisson_count   -12424.8     797.4

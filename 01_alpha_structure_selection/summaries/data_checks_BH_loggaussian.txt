@@ -1,0 +1,30 @@
+
+Family branch used:
+[1] "BH"
+
+Error model used:
+[1] "gaussian_logfit"
+
+Summary of log(fitness + 1):
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   1.609   2.079   2.133   2.833   5.565 
+
+Levels:
+[1] "TRCY" "TROR"
+[1] "BEN" "CS"  "GH"  "NAM" "PJ" 
+[1] "SH"  "SUN"
+
+Germination priors loaded:
+# A tibble: 10 × 3
+   Site  focsp g_mean_final
+   <chr> <chr>        <dbl>
+ 1 BEN   TRCY        0.0645
+ 2 CS    TRCY        0.254 
+ 3 GH    TRCY        0.254 
+ 4 NAM   TRCY        0.254 
+ 5 PJ    TRCY        0.263 
+ 6 BEN   TROR        0.163 
+ 7 CS    TROR        0.271 
+ 8 GH    TROR        0.271 
+ 9 NAM   TROR        0.271 
+10 PJ    TROR        0.278 

@@ -1,0 +1,45 @@
+
+Using germination:
+[1] FALSE
+
+Selected environments (min/max facilitator density per Site x Cov):
+# A tibble: 20 × 5
+   Site  Cov   fac_sc fac_label           condition    
+   <fct> <fct>  <int> <chr>               <fct>        
+ 1 BEN   SH         0 Without facilitator Shade, no fac
+ 2 BEN   SH         5 With facilitator    Shade, fac   
+ 3 BEN   SUN        0 Without facilitator Sun, no fac  
+ 4 BEN   SUN       10 With facilitator    Sun, fac     
+ 5 CS    SH         0 Without facilitator Shade, no fac
+ 6 CS    SH         1 With facilitator    Shade, fac   
+ 7 CS    SUN        0 Without facilitator Sun, no fac  
+ 8 CS    SUN        2 With facilitator    Sun, fac     
+ 9 GH    SH         0 Without facilitator Shade, no fac
+10 GH    SH         3 With facilitator    Shade, fac   
+11 GH    SUN        0 Without facilitator Sun, no fac  
+12 GH    SUN        9 With facilitator    Sun, fac     
+13 NAM   SH         0 Without facilitator Shade, no fac
+14 NAM   SH         3 With facilitator    Shade, fac   
+15 NAM   SUN        0 Without facilitator Sun, no fac  
+16 NAM   SUN       17 With facilitator    Sun, fac     
+17 PJ    SH         0 Without facilitator Shade, no fac
+18 PJ    SH        10 With facilitator    Shade, fac   
+19 PJ    SUN        0 Without facilitator Sun, no fac  
+20 PJ    SUN        1 With facilitator    Sun, fac     
+
+Summary of posterior support for positive invasion growth:
+# A tibble: 40 × 6
+   species        Site  Cov   fac_label           fac_sc p_positive
+   <chr>          <fct> <fct> <chr>                <int>      <dbl>
+ 1 T. cyanopetala BEN   SH    Without facilitator      0      0.312
+ 2 T. cyanopetala BEN   SH    With facilitator         5      0.554
+ 3 T. cyanopetala BEN   SUN   Without facilitator      0      0.484
+ 4 T. cyanopetala BEN   SUN   With facilitator        10      0.720
+ 5 T. cyanopetala GH    SH    Without facilitator      0      0.260
+ 6 T. cyanopetala GH    SH    With facilitator         3      0.523
+ 7 T. cyanopetala GH    SUN   Without facilitator      0      0.449
+ 8 T. cyanopetala GH    SUN   With facilitator         9      0.734
+ 9 T. cyanopetala NAM   SH    Without facilitator      0      0.441
+10 T. cyanopetala NAM   SH    With facilitator         3      0.708
+# ℹ 30 more rows
+# ℹ Use `print(n = ...)` to see more rows

@@ -1,0 +1,43 @@
+
+Using germination:
+[1] FALSE
+
+Selected environments (fac_sc = 0 vs mean of top 25% facilitator density per Site x Cov):
+   Site Cov     fac_sc           fac_label fac_source fac_q75 n_top25
+1   BEN  SH 0.00000000 Without facilitator fixed_zero      NA      NA
+2   BEN  SH 0.36129032    With facilitator mean_top25       0       1
+3   BEN SUN 0.00000000 Without facilitator fixed_zero      NA      NA
+4   BEN SUN 5.19047619    With facilitator mean_top25       3       1
+5    GH  SH 0.00000000 Without facilitator fixed_zero      NA      NA
+6    GH  SH 0.13114754    With facilitator mean_top25       0       1
+7    GH SUN 0.00000000 Without facilitator fixed_zero      NA      NA
+8    GH SUN 2.20408163    With facilitator mean_top25       1       1
+9   NAM  SH 0.00000000 Without facilitator fixed_zero      NA      NA
+10  NAM  SH 0.34883721    With facilitator mean_top25       0       1
+11  NAM SUN 0.00000000 Without facilitator fixed_zero      NA      NA
+12  NAM SUN 2.65454545    With facilitator mean_top25       1       1
+13   PJ  SH 0.00000000 Without facilitator fixed_zero      NA      NA
+14   PJ  SH 0.22772277    With facilitator mean_top25       0       1
+15   PJ SUN 0.00000000 Without facilitator fixed_zero      NA      NA
+16   PJ SUN 0.05263158    With facilitator mean_top25       0       1
+17   CS  SH 0.00000000 Without facilitator fixed_zero      NA      NA
+18   CS  SH 0.05263158    With facilitator mean_top25       0       1
+19   CS SUN 0.00000000 Without facilitator fixed_zero      NA      NA
+20   CS SUN 0.11428571    With facilitator mean_top25       0       1
+
+Summary of posterior support for positive invasion growth:
+# A tibble: 40 × 6
+   Site  Cov   species        fac_label           fac_sc p_positive
+   <fct> <fct> <fct>          <fct>                <dbl>      <dbl>
+ 1 BEN   SH    T. cyanopetala Without facilitator  0          0.312
+ 2 BEN   SH    T. cyanopetala With facilitator     0.361      0.334
+ 3 BEN   SH    T. ornata      Without facilitator  0          0.715
+ 4 BEN   SH    T. ornata      With facilitator     0.361      0.698
+ 5 GH    SH    T. cyanopetala Without facilitator  0          0.260
+ 6 GH    SH    T. cyanopetala With facilitator     0.131      0.273
+ 7 GH    SH    T. ornata      Without facilitator  0          0.76 
+ 8 GH    SH    T. ornata      With facilitator     0.131      0.750
+ 9 NAM   SH    T. cyanopetala Without facilitator  0          0.441
+10 NAM   SH    T. cyanopetala With facilitator     0.349      0.483
+# ℹ 30 more rows
+# ℹ Use `print(n = ...)` to see more rows

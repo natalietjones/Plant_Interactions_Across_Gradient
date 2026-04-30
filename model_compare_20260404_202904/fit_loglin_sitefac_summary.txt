@@ -1,0 +1,44 @@
+ Family: negbinomial 
+  Links: mu = log 
+Formula: fitness ~ 0 + focsp + focsp:Site + focsp:Cov + focsp:fac_sc + focsp:Site:fac_sc + focsp:intra_sc + focsp:inter_sc + (1 | BLK) 
+   Data: fit_args$data (Number of observations: 1298) 
+  Draws: 4 chains, each with iter = 4000; warmup = 2000; thin = 1;
+         total post-warmup draws = 8000
+
+Multilevel Hyperparameters:
+~BLK (Number of levels: 3) 
+              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(Intercept)     1.15      0.88     0.17     3.28 1.01     1326     3496
+
+Regression Coefficients:
+                         Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+focspTRCY                    1.44      0.80    -0.28     2.53 1.01     1213     3122
+focspTROR                    1.51      0.80    -0.22     2.61 1.01     1251     3261
+focspTRCY:SiteGH            -0.36      0.14    -0.64    -0.07 1.00     4512     5240
+focspTROR:SiteGH            -0.24      0.15    -0.53     0.05 1.00     3914     5025
+focspTRCY:SiteNAM            0.04      0.14    -0.25     0.32 1.00     4159     5170
+focspTROR:SiteNAM           -0.26      0.15    -0.56     0.03 1.00     4095     5252
+focspTRCY:SitePJ             0.34      0.13     0.08     0.59 1.00     4134     5398
+focspTROR:SitePJ            -0.04      0.14    -0.32     0.23 1.00     3791     5172
+focspTRCY:CovSUN             0.79      0.09     0.61     0.97 1.00     6782     5768
+focspTROR:CovSUN             0.58      0.10     0.39     0.77 1.00     8356     5603
+focspTRCY:fac_sc             0.10      0.05     0.00     0.20 1.00     3931     5526
+focspTROR:fac_sc             0.11      0.05     0.01     0.22 1.00     3689     4561
+focspTRCY:intra_sc          -0.02      0.00    -0.02    -0.01 1.00     9313     5499
+focspTROR:intra_sc          -0.02      0.01    -0.03    -0.01 1.00     7816     5564
+focspTRCY:inter_sc          -0.03      0.01    -0.04    -0.02 1.00     8212     5998
+focspTROR:inter_sc          -0.01      0.00    -0.02    -0.01 1.00    10499     6578
+focspTRCY:SiteGH:fac_sc      0.13      0.12    -0.09     0.38 1.00     5932     4757
+focspTROR:SiteGH:fac_sc     -0.02      0.09    -0.19     0.16 1.00     4739     5605
+focspTRCY:SiteNAM:fac_sc     0.06      0.08    -0.09     0.21 1.00     4911     5941
+focspTROR:SiteNAM:fac_sc    -0.10      0.08    -0.27     0.07 1.00     4653     5762
+focspTRCY:SitePJ:fac_sc      0.05      0.10    -0.14     0.28 1.00     5185     5239
+focspTROR:SitePJ:fac_sc     -0.11      0.17    -0.40     0.27 1.00     5735     4445
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+shape     0.90      0.04     0.83     0.98 1.00     8211     5596
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).

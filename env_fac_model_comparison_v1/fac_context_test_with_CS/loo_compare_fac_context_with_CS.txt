@@ -1,0 +1,7 @@
+          elpd_diff se_diff
+quad        0.0       0.0  
+linear     -2.2       2.5  
+cov_quad   -2.3       1.7  
+nofac      -8.2       6.2  
+site_quad -10.9       3.3  
+both_quad -13.2       3.9  

@@ -1,0 +1,2401 @@
+﻿Site,Cov,BLK,Row,Col,dens_trt,focsp
+BEN,SUN,1,1,1,Invasion when rare (IWR),TRCY
+BEN,SUN,1,1,2,lambda,TRCY
+BEN,SUN,1,1,3,High density monoculture,TRCY
+BEN,SUN,1,1,4,High density monoculture,TRCY
+BEN,SUN,1,1,5,IWR + Facilitator,TRCY
+BEN,SUN,1,1,6,Invasion when rare (IWR),TROR
+BEN,SUN,1,1,7,lambda,TROR
+BEN,SUN,1,1,8,IWR + Facilitator,TRCY
+BEN,SUN,1,1,9,Invasion when rare (IWR),TRCY
+BEN,SUN,1,1,10,High density monoculture,TROR
+BEN,SUN,1,2,1,High density monoculture,TRCY
+BEN,SUN,1,2,2,Invasion when rare (IWR),TRCY
+BEN,SUN,1,2,3,IWR + Facilitator,TROR
+BEN,SUN,1,2,4,IWR + Facilitator,TRCY
+BEN,SUN,1,2,5,Invasion when rare (IWR),TROR
+BEN,SUN,1,2,6,High density monoculture,TROR
+BEN,SUN,1,2,7,IWR + Facilitator,TRCY
+BEN,SUN,1,2,8,lambda,TRCY
+BEN,SUN,1,2,9,lambda,TRCY
+BEN,SUN,1,2,10,Invasion when rare (IWR),TROR
+BEN,SUN,1,3,1,lambda,TROR
+BEN,SUN,1,3,2,High density monoculture,TROR
+BEN,SUN,1,3,3,lambda,TROR
+BEN,SUN,1,3,4,lambda,TROR
+BEN,SUN,1,3,5,IWR + Facilitator,TROR
+BEN,SUN,1,3,6,High density monoculture,TRCY
+BEN,SUN,1,3,7,High density monoculture,TRCY
+BEN,SUN,1,3,8,High density monoculture,TRCY
+BEN,SUN,1,3,9,IWR + Facilitator,TROR
+BEN,SUN,1,3,10,High density monoculture,TRCY
+BEN,SUN,1,4,1,Invasion when rare (IWR),TROR
+BEN,SUN,1,4,2,lambda,TROR
+BEN,SUN,1,4,3,High density monoculture,TROR
+BEN,SUN,1,4,4,High density monoculture,TROR
+BEN,SUN,1,4,5,High density monoculture,TRCY
+BEN,SUN,1,4,6,IWR + Facilitator,TRCY
+BEN,SUN,1,4,7,Invasion when rare (IWR),TRCY
+BEN,SUN,1,4,8,Invasion when rare (IWR),TRCY
+BEN,SUN,1,4,9,lambda,TROR
+BEN,SUN,1,4,10,lambda,TRCY
+BEN,SUN,1,5,1,High density monoculture,TROR
+BEN,SUN,1,5,2,IWR + Facilitator,TRCY
+BEN,SUN,1,5,3,Invasion when rare (IWR),TROR
+BEN,SUN,1,5,4,lambda,TRCY
+BEN,SUN,1,5,5,lambda,TRCY
+BEN,SUN,1,5,6,Invasion when rare (IWR),TRCY
+BEN,SUN,1,5,7,High density monoculture,TROR
+BEN,SUN,1,5,8,IWR + Facilitator,TROR
+BEN,SUN,1,5,9,High density monoculture,TRCY
+BEN,SUN,1,5,10,IWR + Facilitator,TRCY
+BEN,SUN,1,6,1,IWR + Facilitator,TRCY
+BEN,SUN,1,6,2,IWR + Facilitator,TROR
+BEN,SUN,1,6,3,lambda,TRCY
+BEN,SUN,1,6,4,IWR + Facilitator,TROR
+BEN,SUN,1,6,5,lambda,TROR
+BEN,SUN,1,6,6,IWR + Facilitator,TROR
+BEN,SUN,1,6,7,IWR + Facilitator,TROR
+BEN,SUN,1,6,8,Invasion when rare (IWR),TROR
+BEN,SUN,1,6,9,Invasion when rare (IWR),TROR
+BEN,SUN,1,6,10,Invasion when rare (IWR),TRCY
+BEN,SUN,1,7,1,IWR + Facilitator,TROR
+BEN,SUN,1,7,2,High density monoculture,TRCY
+BEN,SUN,1,7,3,Invasion when rare (IWR),TRCY
+BEN,SUN,1,7,4,Invasion when rare (IWR),TRCY
+BEN,SUN,1,7,5,Invasion when rare (IWR),TRCY
+BEN,SUN,1,7,6,lambda,TRCY
+BEN,SUN,1,7,7,Invasion when rare (IWR),TROR
+BEN,SUN,1,7,8,High density monoculture,TROR
+BEN,SUN,1,7,9,IWR + Facilitator,TRCY
+BEN,SUN,1,7,10,IWR + Facilitator,TROR
+BEN,SUN,1,8,1,lambda,TRCY
+BEN,SUN,1,8,2,Invasion when rare (IWR),TROR
+BEN,SUN,1,8,3,IWR + Facilitator,TRCY
+BEN,SUN,1,8,4,Invasion when rare (IWR),TROR
+BEN,SUN,1,8,5,High density monoculture,TROR
+BEN,SUN,1,8,6,lambda,TROR
+BEN,SUN,1,8,7,lambda,TRCY
+BEN,SUN,1,8,8,lambda,TROR
+BEN,SUN,1,8,9,High density monoculture,TROR
+BEN,SUN,1,8,10,lambda,TROR
+BEN,SH,1,1,1,lambda,TROR
+BEN,SH,1,1,2,High density monoculture,TROR
+BEN,SH,1,1,3,lambda,TRCY
+BEN,SH,1,1,4,Invasion when rare (IWR),TROR
+BEN,SH,1,1,5,IWR + Facilitator,TRCY
+BEN,SH,1,1,6,Invasion when rare (IWR),TRCY
+BEN,SH,1,1,7,Invasion when rare (IWR),TRCY
+BEN,SH,1,1,8,Invasion when rare (IWR),TROR
+BEN,SH,1,1,9,High density monoculture,TRCY
+BEN,SH,1,1,10,Invasion when rare (IWR),TRCY
+BEN,SH,1,2,1,Invasion when rare (IWR),TRCY
+BEN,SH,1,2,2,Invasion when rare (IWR),TRCY
+BEN,SH,1,2,3,High density monoculture,TRCY
+BEN,SH,1,2,4,IWR + Facilitator,TRCY
+BEN,SH,1,2,5,Invasion when rare (IWR),TRCY
+BEN,SH,1,2,6,High density monoculture,TROR
+BEN,SH,1,2,7,lambda,TROR
+BEN,SH,1,2,8,IWR + Facilitator,TRCY
+BEN,SH,1,2,9,High density monoculture,TROR
+BEN,SH,1,2,10,lambda,TROR
+BEN,SH,1,3,1,IWR + Facilitator,TRCY
+BEN,SH,1,3,2,High density monoculture,TRCY
+BEN,SH,1,3,3,High density monoculture,TROR
+BEN,SH,1,3,4,IWR + Facilitator,TROR
+BEN,SH,1,3,5,High density monoculture,TROR
+BEN,SH,1,3,6,lambda,TRCY
+BEN,SH,1,3,7,Invasion when rare (IWR),TROR
+BEN,SH,1,3,8,Invasion when rare (IWR),TRCY
+BEN,SH,1,3,9,IWR + Facilitator,TROR
+BEN,SH,1,3,10,Invasion when rare (IWR),TROR
+BEN,SH,1,4,1,High density monoculture,TROR
+BEN,SH,1,4,2,IWR + Facilitator,TRCY
+BEN,SH,1,4,3,Invasion when rare (IWR),TRCY
+BEN,SH,1,4,4,High density monoculture,TRCY
+BEN,SH,1,4,5,lambda,TRCY
+BEN,SH,1,4,6,High density monoculture,TRCY
+BEN,SH,1,4,7,High density monoculture,TROR
+BEN,SH,1,4,8,High density monoculture,TROR
+BEN,SH,1,4,9,Invasion when rare (IWR),TRCY
+BEN,SH,1,4,10,IWR + Facilitator,TRCY
+BEN,SH,1,5,1,lambda,TRCY
+BEN,SH,1,5,2,lambda,TRCY
+BEN,SH,1,5,3,IWR + Facilitator,TROR
+BEN,SH,1,5,4,lambda,TROR
+BEN,SH,1,5,5,High density monoculture,TRCY
+BEN,SH,1,5,6,lambda,TROR
+BEN,SH,1,5,7,IWR + Facilitator,TROR
+BEN,SH,1,5,8,IWR + Facilitator,TROR
+BEN,SH,1,5,9,Invasion when rare (IWR),TROR
+BEN,SH,1,5,10,High density monoculture,TROR
+BEN,SH,1,6,1,Invasion when rare (IWR),TROR
+BEN,SH,1,6,2,IWR + Facilitator,TROR
+BEN,SH,1,6,3,lambda,TROR
+BEN,SH,1,6,4,lambda,TRCY
+BEN,SH,1,6,5,Invasion when rare (IWR),TROR
+BEN,SH,1,6,6,IWR + Facilitator,TRCY
+BEN,SH,1,6,7,lambda,TRCY
+BEN,SH,1,6,8,lambda,TROR
+BEN,SH,1,6,9,IWR + Facilitator,TRCY
+BEN,SH,1,6,10,High density monoculture,TRCY
+BEN,SH,1,7,1,IWR + Facilitator,TROR
+BEN,SH,1,7,2,Invasion when rare (IWR),TROR
+BEN,SH,1,7,3,Invasion when rare (IWR),TROR
+BEN,SH,1,7,4,High density monoculture,TROR
+BEN,SH,1,7,5,IWR + Facilitator,TROR
+BEN,SH,1,7,6,IWR + Facilitator,TROR
+BEN,SH,1,7,7,IWR + Facilitator,TRCY
+BEN,SH,1,7,8,lambda,TRCY
+BEN,SH,1,7,9,lambda,TRCY
+BEN,SH,1,7,10,IWR + Facilitator,TROR
+BEN,SH,1,8,1,High density monoculture,TRCY
+BEN,SH,1,8,2,lambda,TROR
+BEN,SH,1,8,3,IWR + Facilitator,TRCY
+BEN,SH,1,8,4,Invasion when rare (IWR),TRCY
+BEN,SH,1,8,5,lambda,TROR
+BEN,SH,1,8,6,Invasion when rare (IWR),TROR
+BEN,SH,1,8,7,High density monoculture,TRCY
+BEN,SH,1,8,8,High density monoculture,TRCY
+BEN,SH,1,8,9,lambda,TROR
+BEN,SH,1,8,10,lambda,TRCY
+BEN,SH,3,1,1,Invasion when rare (IWR),TRCY
+BEN,SH,3,1,2,Invasion when rare (IWR),TROR
+BEN,SH,3,1,3,Invasion when rare (IWR),TRCY
+BEN,SH,3,1,4,Invasion when rare (IWR),TROR
+BEN,SH,3,1,5,IWR + Facilitator,TRCY
+BEN,SH,3,1,6,Invasion when rare (IWR),TROR
+BEN,SH,3,1,7,lambda,TRCY
+BEN,SH,3,1,8,High density monoculture,TRCY
+BEN,SH,3,1,9,Invasion when rare (IWR),TROR
+BEN,SH,3,1,10,High density monoculture,TRCY
+BEN,SH,3,2,1,High density monoculture,TRCY
+BEN,SH,3,2,2,IWR + Facilitator,TROR
+BEN,SH,3,2,3,High density monoculture,TRCY
+BEN,SH,3,2,4,Invasion when rare (IWR),TRCY
+BEN,SH,3,2,5,lambda,TROR
+BEN,SH,3,2,6,High density monoculture,TRCY
+BEN,SH,3,2,7,Invasion when rare (IWR),TRCY
+BEN,SH,3,2,8,IWR + Facilitator,TROR
+BEN,SH,3,2,9,High density monoculture,TRCY
+BEN,SH,3,2,10,Invasion when rare (IWR),TRCY
+BEN,SH,3,3,1,IWR + Facilitator,TRCY
+BEN,SH,3,3,2,lambda,TRCY
+BEN,SH,3,3,3,Invasion when rare (IWR),TROR
+BEN,SH,3,3,4,lambda,TROR
+BEN,SH,3,3,5,lambda,TRCY
+BEN,SH,3,3,6,High density monoculture,TROR
+BEN,SH,3,3,7,IWR + Facilitator,TROR
+BEN,SH,3,3,8,lambda,TROR
+BEN,SH,3,3,9,lambda,TRCY
+BEN,SH,3,3,10,High density monoculture,TROR
+BEN,SH,3,4,1,Invasion when rare (IWR),TROR
+BEN,SH,3,4,2,High density monoculture,TROR
+BEN,SH,3,4,3,lambda,TROR
+BEN,SH,3,4,4,High density monoculture,TRCY
+BEN,SH,3,4,5,IWR + Facilitator,TROR
+BEN,SH,3,4,6,IWR + Facilitator,TRCY
+BEN,SH,3,4,7,IWR + Facilitator,TRCY
+BEN,SH,3,4,8,IWR + Facilitator,TRCY
+BEN,SH,3,4,9,Invasion when rare (IWR),TRCY
+BEN,SH,3,4,10,IWR + Facilitator,TROR
+BEN,SH,3,5,1,lambda,TROR
+BEN,SH,3,5,2,Invasion when rare (IWR),TRCY
+BEN,SH,3,5,3,IWR + Facilitator,TROR
+BEN,SH,3,5,4,IWR + Facilitator,TRCY
+BEN,SH,3,5,5,High density monoculture,TRCY
+BEN,SH,3,5,6,lambda,TRCY
+BEN,SH,3,5,7,High density monoculture,TRCY
+BEN,SH,3,5,8,Invasion when rare (IWR),TRCY
+BEN,SH,3,5,9,High density monoculture,TROR
+BEN,SH,3,5,10,Invasion when rare (IWR),TROR
+BEN,SH,3,6,1,High density monoculture,TROR
+BEN,SH,3,6,2,High density monoculture,TRCY
+BEN,SH,3,6,3,lambda,TRCY
+BEN,SH,3,6,4,lambda,TRCY
+BEN,SH,3,6,5,Invasion when rare (IWR),TRCY
+BEN,SH,3,6,6,lambda,TROR
+BEN,SH,3,6,7,Invasion when rare (IWR),TROR
+BEN,SH,3,6,8,High density monoculture,TROR
+BEN,SH,3,6,9,lambda,TROR
+BEN,SH,3,6,10,IWR + Facilitator,TRCY
+BEN,SH,3,7,1,IWR + Facilitator,TROR
+BEN,SH,3,7,2,IWR + Facilitator,TRCY
+BEN,SH,3,7,3,High density monoculture,TROR
+BEN,SH,3,7,4,High density monoculture,TROR
+BEN,SH,3,7,5,High density monoculture,TROR
+BEN,SH,3,7,6,Invasion when rare (IWR),TRCY
+BEN,SH,3,7,7,High density monoculture,TROR
+BEN,SH,3,7,8,lambda,TRCY
+BEN,SH,3,7,9,IWR + Facilitator,TRCY
+BEN,SH,3,7,10,lambda,TROR
+BEN,SH,3,8,1,lambda,TRCY
+BEN,SH,3,8,2,lambda,TROR
+BEN,SH,3,8,3,IWR + Facilitator,TRCY
+BEN,SH,3,8,4,IWR + Facilitator,TROR
+BEN,SH,3,8,5,Invasion when rare (IWR),TROR
+BEN,SH,3,8,6,IWR + Facilitator,TROR
+BEN,SH,3,8,7,lambda,TROR
+BEN,SH,3,8,8,Invasion when rare (IWR),TROR
+BEN,SH,3,8,9,IWR + Facilitator,TROR
+BEN,SH,3,8,10,lambda,TRCY
+BEN,SH,2,1,1,High density monoculture,TRCY
+BEN,SH,2,1,2,lambda,TROR
+BEN,SH,2,1,3,lambda,TRCY
+BEN,SH,2,1,4,IWR + Facilitator,TROR
+BEN,SH,2,1,5,IWR + Facilitator,TROR
+BEN,SH,2,1,6,Invasion when rare (IWR),TRCY
+BEN,SH,2,1,7,lambda,TROR
+BEN,SH,2,1,8,Invasion when rare (IWR),TRCY
+BEN,SH,2,1,9,High density monoculture,TROR
+BEN,SH,2,1,10,High density monoculture,TRCY
+BEN,SH,2,2,1,IWR + Facilitator,TROR
+BEN,SH,2,2,2,Invasion when rare (IWR),TRCY
+BEN,SH,2,2,3,Invasion when rare (IWR),TRCY
+BEN,SH,2,2,4,lambda,TRCY
+BEN,SH,2,2,5,lambda,TRCY
+BEN,SH,2,2,6,lambda,TROR
+BEN,SH,2,2,7,Invasion when rare (IWR),TRCY
+BEN,SH,2,2,8,High density monoculture,TRCY
+BEN,SH,2,2,9,High density monoculture,TRCY
+BEN,SH,2,2,10,lambda,TRCY
+BEN,SH,2,3,1,Invasion when rare (IWR),TRCY
+BEN,SH,2,3,2,lambda,TRCY
+BEN,SH,2,3,3,Invasion when rare (IWR),TROR
+BEN,SH,2,3,4,lambda,TROR
+BEN,SH,2,3,5,Invasion when rare (IWR),TRCY
+BEN,SH,2,3,6,Invasion when rare (IWR),TROR
+BEN,SH,2,3,7,High density monoculture,TRCY
+BEN,SH,2,3,8,IWR + Facilitator,TROR
+BEN,SH,2,3,9,Invasion when rare (IWR),TRCY
+BEN,SH,2,3,10,Invasion when rare (IWR),TRCY
+BEN,SH,2,4,1,lambda,TROR
+BEN,SH,2,4,2,High density monoculture,TRCY
+BEN,SH,2,4,3,lambda,TROR
+BEN,SH,2,4,4,High density monoculture,TROR
+BEN,SH,2,4,5,IWR + Facilitator,TRCY
+BEN,SH,2,4,6,High density monoculture,TROR
+BEN,SH,2,4,7,IWR + Facilitator,TROR
+BEN,SH,2,4,8,Invasion when rare (IWR),TROR
+BEN,SH,2,4,9,lambda,TROR
+BEN,SH,2,4,10,Invasion when rare (IWR),TROR
+BEN,SH,2,5,1,Invasion when rare (IWR),TROR
+BEN,SH,2,5,2,Invasion when rare (IWR),TROR
+BEN,SH,2,5,3,High density monoculture,TRCY
+BEN,SH,2,5,4,Invasion when rare (IWR),TRCY
+BEN,SH,2,5,5,High density monoculture,TRCY
+BEN,SH,2,5,6,High density monoculture,TRCY
+BEN,SH,2,5,7,lambda,TRCY
+BEN,SH,2,5,8,lambda,TROR
+BEN,SH,2,5,9,lambda,TRCY
+BEN,SH,2,5,10,lambda,TROR
+BEN,SH,2,6,1,lambda,TRCY
+BEN,SH,2,6,2,IWR + Facilitator,TRCY
+BEN,SH,2,6,3,High density monoculture,TROR
+BEN,SH,2,6,4,IWR + Facilitator,TRCY
+BEN,SH,2,6,5,Invasion when rare (IWR),TROR
+BEN,SH,2,6,6,IWR + Facilitator,TROR
+BEN,SH,2,6,7,Invasion when rare (IWR),TROR
+BEN,SH,2,6,8,lambda,TRCY
+BEN,SH,2,6,9,IWR + Facilitator,TRCY
+BEN,SH,2,6,10,IWR + Facilitator,TROR
+BEN,SH,2,7,1,IWR + Facilitator,TRCY
+BEN,SH,2,7,2,IWR + Facilitator,TROR
+BEN,SH,2,7,3,IWR + Facilitator,TRCY
+BEN,SH,2,7,4,High density monoculture,TRCY
+BEN,SH,2,7,5,High density monoculture,TROR
+BEN,SH,2,7,6,IWR + Facilitator,TRCY
+BEN,SH,2,7,7,High density monoculture,TROR
+BEN,SH,2,7,8,High density monoculture,TROR
+BEN,SH,2,7,9,Invasion when rare (IWR),TROR
+BEN,SH,2,7,10,High density monoculture,TROR
+BEN,SH,2,8,1,High density monoculture,TROR
+BEN,SH,2,8,2,High density monoculture,TROR
+BEN,SH,2,8,3,IWR + Facilitator,TROR
+BEN,SH,2,8,4,Invasion when rare (IWR),TROR
+BEN,SH,2,8,5,lambda,TROR
+BEN,SH,2,8,6,lambda,TRCY
+BEN,SH,2,8,7,IWR + Facilitator,TRCY
+BEN,SH,2,8,8,IWR + Facilitator,TRCY
+BEN,SH,2,8,9,IWR + Facilitator,TROR
+BEN,SH,2,8,10,IWR + Facilitator,TRCY
+BEN,SUN,2,1,1,High density monoculture,TROR
+BEN,SUN,2,1,2,lambda,TROR
+BEN,SUN,2,1,3,Invasion when rare (IWR),TROR
+BEN,SUN,2,1,4,IWR + Facilitator,TRCY
+BEN,SUN,2,1,5,lambda,TROR
+BEN,SUN,2,1,6,Invasion when rare (IWR),TRCY
+BEN,SUN,2,1,7,IWR + Facilitator,TROR
+BEN,SUN,2,1,8,lambda,TRCY
+BEN,SUN,2,1,9,Invasion when rare (IWR),TROR
+BEN,SUN,2,1,10,lambda,TRCY
+BEN,SUN,2,2,1,IWR + Facilitator,TROR
+BEN,SUN,2,2,2,High density monoculture,TRCY
+BEN,SUN,2,2,3,High density monoculture,TRCY
+BEN,SUN,2,2,4,Invasion when rare (IWR),TROR
+BEN,SUN,2,2,5,IWR + Facilitator,TRCY
+BEN,SUN,2,2,6,IWR + Facilitator,TRCY
+BEN,SUN,2,2,7,lambda,TRCY
+BEN,SUN,2,2,8,High density monoculture,TRCY
+BEN,SUN,2,2,9,High density monoculture,TROR
+BEN,SUN,2,2,10,Invasion when rare (IWR),TROR
+BEN,SUN,2,3,1,lambda,TRCY
+BEN,SUN,2,3,2,IWR + Facilitator,TROR
+BEN,SUN,2,3,3,lambda,TROR
+BEN,SUN,2,3,4,IWR + Facilitator,TROR
+BEN,SUN,2,3,5,Invasion when rare (IWR),TRCY
+BEN,SUN,2,3,6,High density monoculture,TRCY
+BEN,SUN,2,3,7,Invasion when rare (IWR),TROR
+BEN,SUN,2,3,8,IWR + Facilitator,TRCY
+BEN,SUN,2,3,9,IWR + Facilitator,TROR
+BEN,SUN,2,3,10,Invasion when rare (IWR),TRCY
+BEN,SUN,2,4,1,IWR + Facilitator,TRCY
+BEN,SUN,2,4,2,lambda,TRCY
+BEN,SUN,2,4,3,lambda,TRCY
+BEN,SUN,2,4,4,High density monoculture,TRCY
+BEN,SUN,2,4,5,High density monoculture,TROR
+BEN,SUN,2,4,6,lambda,TRCY
+BEN,SUN,2,4,7,Invasion when rare (IWR),TRCY
+BEN,SUN,2,4,8,Invasion when rare (IWR),TRCY
+BEN,SUN,2,4,9,lambda,TROR
+BEN,SUN,2,4,10,IWR + Facilitator,TRCY
+BEN,SUN,2,5,1,Invasion when rare (IWR),TROR
+BEN,SUN,2,5,2,High density monoculture,TROR
+BEN,SUN,2,5,3,Invasion when rare (IWR),TRCY
+BEN,SUN,2,5,4,High density monoculture,TROR
+BEN,SUN,2,5,5,High density monoculture,TRCY
+BEN,SUN,2,5,6,High density monoculture,TROR
+BEN,SUN,2,5,7,High density monoculture,TROR
+BEN,SUN,2,5,8,Invasion when rare (IWR),TROR
+BEN,SUN,2,5,9,IWR + Facilitator,TRCY
+BEN,SUN,2,5,10,IWR + Facilitator,TROR
+BEN,SUN,2,6,1,lambda,TROR
+BEN,SUN,2,6,2,IWR + Facilitator,TRCY
+BEN,SUN,2,6,3,IWR + Facilitator,TRCY
+BEN,SUN,2,6,4,lambda,TRCY
+BEN,SUN,2,6,5,lambda,TRCY
+BEN,SUN,2,6,6,Invasion when rare (IWR),TROR
+BEN,SUN,2,6,7,High density monoculture,TRCY
+BEN,SUN,2,6,8,lambda,TROR
+BEN,SUN,2,6,9,lambda,TRCY
+BEN,SUN,2,6,10,lambda,TROR
+BEN,SUN,2,7,1,Invasion when rare (IWR),TRCY
+BEN,SUN,2,7,2,Invasion when rare (IWR),TROR
+BEN,SUN,2,7,3,IWR + Facilitator,TROR
+BEN,SUN,2,7,4,lambda,TROR
+BEN,SUN,2,7,5,Invasion when rare (IWR),TROR
+BEN,SUN,2,7,6,IWR + Facilitator,TROR
+BEN,SUN,2,7,7,lambda,TROR
+BEN,SUN,2,7,8,High density monoculture,TROR
+BEN,SUN,2,7,9,Invasion when rare (IWR),TRCY
+BEN,SUN,2,7,10,High density monoculture,TRCY
+BEN,SUN,2,8,1,High density monoculture,TRCY
+BEN,SUN,2,8,2,Invasion when rare (IWR),TRCY
+BEN,SUN,2,8,3,High density monoculture,TROR
+BEN,SUN,2,8,4,Invasion when rare (IWR),TRCY
+BEN,SUN,2,8,5,IWR + Facilitator,TROR
+BEN,SUN,2,8,6,lambda,TROR
+BEN,SUN,2,8,7,IWR + Facilitator,TRCY
+BEN,SUN,2,8,8,IWR + Facilitator,TROR
+BEN,SUN,2,8,9,High density monoculture,TRCY
+BEN,SUN,2,8,10,High density monoculture,TROR
+BEN,SUN,3,1,1,Invasion when rare (IWR),TRCY
+BEN,SUN,3,1,2,IWR + Facilitator,TROR
+BEN,SUN,3,1,3,Invasion when rare (IWR),TROR
+BEN,SUN,3,1,4,IWR + Facilitator,TRCY
+BEN,SUN,3,1,5,High density monoculture,TROR
+BEN,SUN,3,1,6,lambda,TRCY
+BEN,SUN,3,1,7,Invasion when rare (IWR),TRCY
+BEN,SUN,3,1,8,lambda,TRCY
+BEN,SUN,3,1,9,Invasion when rare (IWR),TRCY
+BEN,SUN,3,1,10,IWR + Facilitator,TROR
+BEN,SUN,3,2,1,IWR + Facilitator,TRCY
+BEN,SUN,3,2,2,High density monoculture,TROR
+BEN,SUN,3,2,3,High density monoculture,TRCY
+BEN,SUN,3,2,4,High density monoculture,TROR
+BEN,SUN,3,2,5,High density monoculture,TRCY
+BEN,SUN,3,2,6,High density monoculture,TRCY
+BEN,SUN,3,2,7,lambda,TROR
+BEN,SUN,3,2,8,Invasion when rare (IWR),TROR
+BEN,SUN,3,2,9,High density monoculture,TRCY
+BEN,SUN,3,2,10,lambda,TRCY
+BEN,SUN,3,3,1,lambda,TRCY
+BEN,SUN,3,3,2,IWR + Facilitator,TRCY
+BEN,SUN,3,3,3,lambda,TROR
+BEN,SUN,3,3,4,Invasion when rare (IWR),TROR
+BEN,SUN,3,3,5,Invasion when rare (IWR),TROR
+BEN,SUN,3,3,6,Invasion when rare (IWR),TROR
+BEN,SUN,3,3,7,High density monoculture,TROR
+BEN,SUN,3,3,8,Invasion when rare (IWR),TRCY
+BEN,SUN,3,3,9,lambda,TRCY
+BEN,SUN,3,3,10,High density monoculture,TRCY
+BEN,SUN,3,4,1,IWR + Facilitator,TROR
+BEN,SUN,3,4,2,lambda,TRCY
+BEN,SUN,3,4,3,Invasion when rare (IWR),TRCY
+BEN,SUN,3,4,4,lambda,TRCY
+BEN,SUN,3,4,5,IWR + Facilitator,TROR
+BEN,SUN,3,4,6,lambda,TROR
+BEN,SUN,3,4,7,IWR + Facilitator,TRCY
+BEN,SUN,3,4,8,IWR + Facilitator,TRCY
+BEN,SUN,3,4,9,IWR + Facilitator,TROR
+BEN,SUN,3,4,10,lambda,TROR
+BEN,SUN,3,5,1,lambda,TROR
+BEN,SUN,3,5,2,lambda,TROR
+BEN,SUN,3,5,3,IWR + Facilitator,TRCY
+BEN,SUN,3,5,4,IWR + Facilitator,TROR
+BEN,SUN,3,5,5,Invasion when rare (IWR),TRCY
+BEN,SUN,3,5,6,IWR + Facilitator,TRCY
+BEN,SUN,3,5,7,lambda,TRCY
+BEN,SUN,3,5,8,High density monoculture,TRCY
+BEN,SUN,3,5,9,IWR + Facilitator,TRCY
+BEN,SUN,3,5,10,IWR + Facilitator,TRCY
+BEN,SUN,3,6,1,Invasion when rare (IWR),TROR
+BEN,SUN,3,6,2,Invasion when rare (IWR),TRCY
+BEN,SUN,3,6,3,High density monoculture,TROR
+BEN,SUN,3,6,4,Invasion when rare (IWR),TRCY
+BEN,SUN,3,6,5,lambda,TROR
+BEN,SUN,3,6,6,High density monoculture,TROR
+BEN,SUN,3,6,7,IWR + Facilitator,TROR
+BEN,SUN,3,6,8,IWR + Facilitator,TROR
+BEN,SUN,3,6,9,High density monoculture,TROR
+BEN,SUN,3,6,10,High density monoculture,TROR
+BEN,SUN,3,7,1,High density monoculture,TROR
+BEN,SUN,3,7,2,High density monoculture,TRCY
+BEN,SUN,3,7,3,IWR + Facilitator,TROR
+BEN,SUN,3,7,4,lambda,TROR
+BEN,SUN,3,7,5,IWR + Facilitator,TRCY
+BEN,SUN,3,7,6,Invasion when rare (IWR),TRCY
+BEN,SUN,3,7,7,High density monoculture,TRCY
+BEN,SUN,3,7,8,lambda,TROR
+BEN,SUN,3,7,9,Invasion when rare (IWR),TROR
+BEN,SUN,3,7,10,Invasion when rare (IWR),TRCY
+BEN,SUN,3,8,1,High density monoculture,TRCY
+BEN,SUN,3,8,2,Invasion when rare (IWR),TROR
+BEN,SUN,3,8,3,lambda,TRCY
+BEN,SUN,3,8,4,High density monoculture,TRCY
+BEN,SUN,3,8,5,lambda,TRCY
+BEN,SUN,3,8,6,IWR + Facilitator,TROR
+BEN,SUN,3,8,7,Invasion when rare (IWR),TROR
+BEN,SUN,3,8,8,High density monoculture,TROR
+BEN,SUN,3,8,9,lambda,TROR
+BEN,SUN,3,8,10,Invasion when rare (IWR),TROR
+CS,SH,1,1,1,lambda,TROR
+CS,SH,1,1,2,High density monoculture,TROR
+CS,SH,1,1,3,IWR + Facilitator,TRCY
+CS,SH,1,1,4,IWR + Facilitator,TRCY
+CS,SH,1,1,5,High density monoculture,TROR
+CS,SH,1,1,6,lambda,TROR
+CS,SH,1,1,7,Invasion when rare (IWR),TRCY
+CS,SH,1,1,8,High density monoculture,TROR
+CS,SH,1,1,9,lambda,TROR
+CS,SH,1,1,10,lambda,TROR
+CS,SH,1,2,1,High density monoculture,TROR
+CS,SH,1,2,2,High density monoculture,TRCY
+CS,SH,1,2,3,lambda,TROR
+CS,SH,1,2,4,High density monoculture,TRCY
+CS,SH,1,2,5,High density monoculture,TRCY
+CS,SH,1,2,6,IWR + Facilitator,TRCY
+CS,SH,1,2,7,Invasion when rare (IWR),TROR
+CS,SH,1,2,8,High density monoculture,TRCY
+CS,SH,1,2,9,Invasion when rare (IWR),TRCY
+CS,SH,1,2,10,IWR + Facilitator,TROR
+CS,SH,1,3,1,IWR + Facilitator,TRCY
+CS,SH,1,3,2,IWR + Facilitator,TROR
+CS,SH,1,3,3,lambda,TRCY
+CS,SH,1,3,4,High density monoculture,TROR
+CS,SH,1,3,5,IWR + Facilitator,TRCY
+CS,SH,1,3,6,High density monoculture,TROR
+CS,SH,1,3,7,lambda,TROR
+CS,SH,1,3,8,Invasion when rare (IWR),TROR
+CS,SH,1,3,9,IWR + Facilitator,TROR
+CS,SH,1,3,10,IWR + Facilitator,TRCY
+CS,SH,1,4,1,Invasion when rare (IWR),TROR
+CS,SH,1,4,2,Invasion when rare (IWR),TROR
+CS,SH,1,4,3,Invasion when rare (IWR),TROR
+CS,SH,1,4,4,lambda,TROR
+CS,SH,1,4,5,Invasion when rare (IWR),TROR
+CS,SH,1,4,6,IWR + Facilitator,TROR
+CS,SH,1,4,7,IWR + Facilitator,TRCY
+CS,SH,1,4,8,IWR + Facilitator,TRCY
+CS,SH,1,4,9,High density monoculture,TRCY
+CS,SH,1,4,10,Invasion when rare (IWR),TROR
+CS,SH,1,5,1,High density monoculture,TRCY
+CS,SH,1,5,2,lambda,TRCY
+CS,SH,1,5,3,High density monoculture,TRCY
+CS,SH,1,5,4,lambda,TRCY
+CS,SH,1,5,5,Invasion when rare (IWR),TRCY
+CS,SH,1,5,6,High density monoculture,TRCY
+CS,SH,1,5,7,lambda,TRCY
+CS,SH,1,5,8,IWR + Facilitator,TROR
+CS,SH,1,5,9,lambda,TRCY
+CS,SH,1,5,10,High density monoculture,TROR
+CS,SH,1,6,1,lambda,TRCY
+CS,SH,1,6,2,lambda,TROR
+CS,SH,1,6,3,IWR + Facilitator,TROR
+CS,SH,1,6,4,Invasion when rare (IWR),TRCY
+CS,SH,1,6,5,IWR + Facilitator,TROR
+CS,SH,1,6,6,Invasion when rare (IWR),TROR
+CS,SH,1,6,7,High density monoculture,TROR
+CS,SH,1,6,8,lambda,TRCY
+CS,SH,1,6,9,Invasion when rare (IWR),TROR
+CS,SH,1,6,10,High density monoculture,TRCY
+CS,SH,1,7,1,Invasion when rare (IWR),TRCY
+CS,SH,1,7,2,Invasion when rare (IWR),TRCY
+CS,SH,1,7,3,High density monoculture,TROR
+CS,SH,1,7,4,Invasion when rare (IWR),TROR
+CS,SH,1,7,5,lambda,TRCY
+CS,SH,1,7,6,lambda,TRCY
+CS,SH,1,7,7,IWR + Facilitator,TROR
+CS,SH,1,7,8,lambda,TROR
+CS,SH,1,7,9,IWR + Facilitator,TRCY
+CS,SH,1,7,10,Invasion when rare (IWR),TRCY
+CS,SH,1,8,1,IWR + Facilitator,TROR
+CS,SH,1,8,2,IWR + Facilitator,TRCY
+CS,SH,1,8,3,Invasion when rare (IWR),TRCY
+CS,SH,1,8,4,IWR + Facilitator,TROR
+CS,SH,1,8,5,lambda,TROR
+CS,SH,1,8,6,Invasion when rare (IWR),TRCY
+CS,SH,1,8,7,High density monoculture,TRCY
+CS,SH,1,8,8,Invasion when rare (IWR),TRCY
+CS,SH,1,8,9,High density monoculture,TROR
+CS,SH,1,8,10,lambda,TRCY
+CS,SH,2,1,1,High density monoculture,TROR
+CS,SH,2,1,2,lambda,TROR
+CS,SH,2,1,3,High density monoculture,TRCY
+CS,SH,2,1,4,High density monoculture,TRCY
+CS,SH,2,1,5,High density monoculture,TRCY
+CS,SH,2,1,6,High density monoculture,TROR
+CS,SH,2,1,7,High density monoculture,TRCY
+CS,SH,2,1,8,Invasion when rare (IWR),TROR
+CS,SH,2,1,9,IWR + Facilitator,TROR
+CS,SH,2,1,10,IWR + Facilitator,TROR
+CS,SH,2,2,1,Invasion when rare (IWR),TROR
+CS,SH,2,2,2,Invasion when rare (IWR),TROR
+CS,SH,2,2,3,lambda,TROR
+CS,SH,2,2,4,IWR + Facilitator,TRCY
+CS,SH,2,2,5,Invasion when rare (IWR),TROR
+CS,SH,2,2,6,Invasion when rare (IWR),TROR
+CS,SH,2,2,7,lambda,TROR
+CS,SH,2,2,8,lambda,TROR
+CS,SH,2,2,9,Invasion when rare (IWR),TRCY
+CS,SH,2,2,10,Invasion when rare (IWR),TROR
+CS,SH,2,3,1,lambda,TROR
+CS,SH,2,3,2,Invasion when rare (IWR),TRCY
+CS,SH,2,3,3,IWR + Facilitator,TROR
+CS,SH,2,3,4,lambda,TRCY
+CS,SH,2,3,5,lambda,TRCY
+CS,SH,2,3,6,IWR + Facilitator,TROR
+CS,SH,2,3,7,IWR + Facilitator,TROR
+CS,SH,2,3,8,IWR + Facilitator,TRCY
+CS,SH,2,3,9,High density monoculture,TRCY
+CS,SH,2,3,10,Invasion when rare (IWR),TRCY
+CS,SH,2,4,1,lambda,TRCY
+CS,SH,2,4,2,lambda,TRCY
+CS,SH,2,4,3,lambda,TRCY
+CS,SH,2,4,4,Invasion when rare (IWR),TROR
+CS,SH,2,4,5,IWR + Facilitator,TRCY
+CS,SH,2,4,6,lambda,TROR
+CS,SH,2,4,7,IWR + Facilitator,TRCY
+CS,SH,2,4,8,High density monoculture,TRCY
+CS,SH,2,4,9,High density monoculture,TROR
+CS,SH,2,4,10,High density monoculture,TRCY
+CS,SH,2,5,1,IWR + Facilitator,TROR
+CS,SH,2,5,2,IWR + Facilitator,TROR
+CS,SH,2,5,3,Invasion when rare (IWR),TRCY
+CS,SH,2,5,4,High density monoculture,TROR
+CS,SH,2,5,5,High density monoculture,TROR
+CS,SH,2,5,6,High density monoculture,TRCY
+CS,SH,2,5,7,lambda,TRCY
+CS,SH,2,5,8,Invasion when rare (IWR),TRCY
+CS,SH,2,5,9,Invasion when rare (IWR),TROR
+CS,SH,2,5,10,High density monoculture,TROR
+CS,SH,2,6,1,High density monoculture,TRCY
+CS,SH,2,6,2,High density monoculture,TROR
+CS,SH,2,6,3,Invasion when rare (IWR),TROR
+CS,SH,2,6,4,Invasion when rare (IWR),TRCY
+CS,SH,2,6,5,lambda,TROR
+CS,SH,2,6,6,IWR + Facilitator,TRCY
+CS,SH,2,6,7,High density monoculture,TROR
+CS,SH,2,6,8,High density monoculture,TROR
+CS,SH,2,6,9,IWR + Facilitator,TRCY
+CS,SH,2,6,10,IWR + Facilitator,TRCY
+CS,SH,2,7,1,Invasion when rare (IWR),TRCY
+CS,SH,2,7,2,IWR + Facilitator,TRCY
+CS,SH,2,7,3,IWR + Facilitator,TRCY
+CS,SH,2,7,4,lambda,TROR
+CS,SH,2,7,5,IWR + Facilitator,TROR
+CS,SH,2,7,6,lambda,TRCY
+CS,SH,2,7,7,Invasion when rare (IWR),TROR
+CS,SH,2,7,8,lambda,TRCY
+CS,SH,2,7,9,lambda,TRCY
+CS,SH,2,7,10,lambda,TRCY
+CS,SH,2,8,1,IWR + Facilitator,TRCY
+CS,SH,2,8,2,High density monoculture,TRCY
+CS,SH,2,8,3,High density monoculture,TROR
+CS,SH,2,8,4,IWR + Facilitator,TROR
+CS,SH,2,8,5,Invasion when rare (IWR),TRCY
+CS,SH,2,8,6,Invasion when rare (IWR),TRCY
+CS,SH,2,8,7,Invasion when rare (IWR),TRCY
+CS,SH,2,8,8,IWR + Facilitator,TROR
+CS,SH,2,8,9,lambda,TROR
+CS,SH,2,8,10,lambda,TROR
+CS,SH,3,1,1,High density monoculture,TROR
+CS,SH,3,1,2,IWR + Facilitator,TRCY
+CS,SH,3,1,3,IWR + Facilitator,TRCY
+CS,SH,3,1,4,lambda,TROR
+CS,SH,3,1,5,Invasion when rare (IWR),TRCY
+CS,SH,3,1,6,lambda,TROR
+CS,SH,3,1,7,lambda,TRCY
+CS,SH,3,1,8,Invasion when rare (IWR),TROR
+CS,SH,3,1,9,High density monoculture,TROR
+CS,SH,3,1,10,lambda,TROR
+CS,SH,3,2,1,lambda,TROR
+CS,SH,3,2,2,lambda,TROR
+CS,SH,3,2,3,lambda,TRCY
+CS,SH,3,2,4,lambda,TRCY
+CS,SH,3,2,5,High density monoculture,TROR
+CS,SH,3,2,6,Invasion when rare (IWR),TROR
+CS,SH,3,2,7,Invasion when rare (IWR),TROR
+CS,SH,3,2,8,IWR + Facilitator,TROR
+CS,SH,3,2,9,IWR + Facilitator,TRCY
+CS,SH,3,2,10,IWR + Facilitator,TRCY
+CS,SH,3,3,1,IWR + Facilitator,TRCY
+CS,SH,3,3,2,Invasion when rare (IWR),TRCY
+CS,SH,3,3,3,Invasion when rare (IWR),TROR
+CS,SH,3,3,4,High density monoculture,TROR
+CS,SH,3,3,5,High density monoculture,TRCY
+CS,SH,3,3,6,lambda,TRCY
+CS,SH,3,3,7,lambda,TROR
+CS,SH,3,3,8,Invasion when rare (IWR),TRCY
+CS,SH,3,3,9,IWR + Facilitator,TROR
+CS,SH,3,3,10,Invasion when rare (IWR),TRCY
+CS,SH,3,4,1,IWR + Facilitator,TROR
+CS,SH,3,4,2,IWR + Facilitator,TROR
+CS,SH,3,4,3,High density monoculture,TRCY
+CS,SH,3,4,4,Invasion when rare (IWR),TROR
+CS,SH,3,4,5,IWR + Facilitator,TROR
+CS,SH,3,4,6,Invasion when rare (IWR),TRCY
+CS,SH,3,4,7,IWR + Facilitator,TROR
+CS,SH,3,4,8,High density monoculture,TRCY
+CS,SH,3,4,9,lambda,TRCY
+CS,SH,3,4,10,High density monoculture,TRCY
+CS,SH,3,5,1,High density monoculture,TRCY
+CS,SH,3,5,2,High density monoculture,TROR
+CS,SH,3,5,3,lambda,TROR
+CS,SH,3,5,4,Invasion when rare (IWR),TRCY
+CS,SH,3,5,5,IWR + Facilitator,TRCY
+CS,SH,3,5,6,High density monoculture,TRCY
+CS,SH,3,5,7,IWR + Facilitator,TRCY
+CS,SH,3,5,8,IWR + Facilitator,TRCY
+CS,SH,3,5,9,Invasion when rare (IWR),TROR
+CS,SH,3,5,10,lambda,TRCY
+CS,SH,3,6,1,lambda,TRCY
+CS,SH,3,6,2,Invasion when rare (IWR),TROR
+CS,SH,3,6,3,IWR + Facilitator,TROR
+CS,SH,3,6,4,IWR + Facilitator,TROR
+CS,SH,3,6,5,lambda,TRCY
+CS,SH,3,6,6,IWR + Facilitator,TROR
+CS,SH,3,6,7,High density monoculture,TROR
+CS,SH,3,6,8,lambda,TROR
+CS,SH,3,6,9,Invasion when rare (IWR),TRCY
+CS,SH,3,6,10,High density monoculture,TROR
+CS,SH,3,7,1,Invasion when rare (IWR),TROR
+CS,SH,3,7,2,High density monoculture,TRCY
+CS,SH,3,7,3,High density monoculture,TROR
+CS,SH,3,7,4,IWR + Facilitator,TRCY
+CS,SH,3,7,5,lambda,TROR
+CS,SH,3,7,6,High density monoculture,TROR
+CS,SH,3,7,7,Invasion when rare (IWR),TRCY
+CS,SH,3,7,8,lambda,TRCY
+CS,SH,3,7,9,High density monoculture,TRCY
+CS,SH,3,7,10,Invasion when rare (IWR),TROR
+CS,SH,3,8,1,Invasion when rare (IWR),TRCY
+CS,SH,3,8,2,lambda,TRCY
+CS,SH,3,8,3,Invasion when rare (IWR),TRCY
+CS,SH,3,8,4,High density monoculture,TRCY
+CS,SH,3,8,5,Invasion when rare (IWR),TROR
+CS,SH,3,8,6,IWR + Facilitator,TRCY
+CS,SH,3,8,7,High density monoculture,TRCY
+CS,SH,3,8,8,High density monoculture,TROR
+CS,SH,3,8,9,lambda,TROR
+CS,SH,3,8,10,IWR + Facilitator,TROR
+CS,SUN,1,1,1,High density monoculture,TROR
+CS,SUN,1,1,2,IWR + Facilitator,TROR
+CS,SUN,1,1,3,IWR + Facilitator,TRCY
+CS,SUN,1,1,4,IWR + Facilitator,TROR
+CS,SUN,1,1,5,Invasion when rare (IWR),TRCY
+CS,SUN,1,1,6,High density monoculture,TROR
+CS,SUN,1,1,7,lambda,TROR
+CS,SUN,1,1,8,Invasion when rare (IWR),TRCY
+CS,SUN,1,1,9,Invasion when rare (IWR),TRCY
+CS,SUN,1,1,10,lambda,TRCY
+CS,SUN,1,2,1,Invasion when rare (IWR),TROR
+CS,SUN,1,2,2,lambda,TROR
+CS,SUN,1,2,3,High density monoculture,TRCY
+CS,SUN,1,2,4,Invasion when rare (IWR),TRCY
+CS,SUN,1,2,5,IWR + Facilitator,TRCY
+CS,SUN,1,2,6,High density monoculture,TRCY
+CS,SUN,1,2,7,Invasion when rare (IWR),TROR
+CS,SUN,1,2,8,High density monoculture,TRCY
+CS,SUN,1,2,9,IWR + Facilitator,TROR
+CS,SUN,1,2,10,IWR + Facilitator,TRCY
+CS,SUN,1,3,1,IWR + Facilitator,TRCY
+CS,SUN,1,3,2,High density monoculture,TROR
+CS,SUN,1,3,3,Invasion when rare (IWR),TRCY
+CS,SUN,1,3,4,High density monoculture,TROR
+CS,SUN,1,3,5,High density monoculture,TRCY
+CS,SUN,1,3,6,IWR + Facilitator,TRCY
+CS,SUN,1,3,7,lambda,TRCY
+CS,SUN,1,3,8,IWR + Facilitator,TROR
+CS,SUN,1,3,9,Invasion when rare (IWR),TROR
+CS,SUN,1,3,10,Invasion when rare (IWR),TROR
+CS,SUN,1,4,1,High density monoculture,TRCY
+CS,SUN,1,4,2,Invasion when rare (IWR),TRCY
+CS,SUN,1,4,3,High density monoculture,TROR
+CS,SUN,1,4,4,lambda,TRCY
+CS,SUN,1,4,5,lambda,TROR
+CS,SUN,1,4,6,lambda,TRCY
+CS,SUN,1,4,7,IWR + Facilitator,TROR
+CS,SUN,1,4,8,lambda,TRCY
+CS,SUN,1,4,9,High density monoculture,TROR
+CS,SUN,1,4,10,IWR + Facilitator,TROR
+CS,SUN,1,5,1,Invasion when rare (IWR),TRCY
+CS,SUN,1,5,2,IWR + Facilitator,TRCY
+CS,SUN,1,5,3,Invasion when rare (IWR),TROR
+CS,SUN,1,5,4,lambda,TROR
+CS,SUN,1,5,5,High density monoculture,TROR
+CS,SUN,1,5,6,Invasion when rare (IWR),TROR
+CS,SUN,1,5,7,High density monoculture,TROR
+CS,SUN,1,5,8,IWR + Facilitator,TRCY
+CS,SUN,1,5,9,High density monoculture,TRCY
+CS,SUN,1,5,10,High density monoculture,TRCY
+CS,SUN,1,6,1,IWR + Facilitator,TROR
+CS,SUN,1,6,2,lambda,TRCY
+CS,SUN,1,6,3,lambda,TROR
+CS,SUN,1,6,4,High density monoculture,TRCY
+CS,SUN,1,6,5,lambda,TRCY
+CS,SUN,1,6,6,lambda,TROR
+CS,SUN,1,6,7,IWR + Facilitator,TRCY
+CS,SUN,1,6,8,lambda,TROR
+CS,SUN,1,6,9,IWR + Facilitator,TRCY
+CS,SUN,1,6,10,Invasion when rare (IWR),TRCY
+CS,SUN,1,7,1,lambda,TRCY
+CS,SUN,1,7,2,High density monoculture,TRCY
+CS,SUN,1,7,3,lambda,TRCY
+CS,SUN,1,7,4,Invasion when rare (IWR),TROR
+CS,SUN,1,7,5,IWR + Facilitator,TROR
+CS,SUN,1,7,6,Invasion when rare (IWR),TRCY
+CS,SUN,1,7,7,Invasion when rare (IWR),TRCY
+CS,SUN,1,7,8,High density monoculture,TROR
+CS,SUN,1,7,9,lambda,TROR
+CS,SUN,1,7,10,lambda,TROR
+CS,SUN,1,8,1,lambda,TROR
+CS,SUN,1,8,2,Invasion when rare (IWR),TROR
+CS,SUN,1,8,3,IWR + Facilitator,TROR
+CS,SUN,1,8,4,IWR + Facilitator,TRCY
+CS,SUN,1,8,5,Invasion when rare (IWR),TROR
+CS,SUN,1,8,6,IWR + Facilitator,TROR
+CS,SUN,1,8,7,High density monoculture,TRCY
+CS,SUN,1,8,8,Invasion when rare (IWR),TROR
+CS,SUN,1,8,9,lambda,TRCY
+CS,SUN,1,8,10,High density monoculture,TROR
+CS,SUN,2,1,1,IWR + Facilitator,TROR
+CS,SUN,2,1,2,Invasion when rare (IWR),TRCY
+CS,SUN,2,1,3,Invasion when rare (IWR),TRCY
+CS,SUN,2,1,4,High density monoculture,TROR
+CS,SUN,2,1,5,Invasion when rare (IWR),TROR
+CS,SUN,2,1,6,IWR + Facilitator,TRCY
+CS,SUN,2,1,7,IWR + Facilitator,TROR
+CS,SUN,2,1,8,Invasion when rare (IWR),TRCY
+CS,SUN,2,1,9,IWR + Facilitator,TRCY
+CS,SUN,2,1,10,IWR + Facilitator,TROR
+CS,SUN,2,2,1,High density monoculture,TROR
+CS,SUN,2,2,2,High density monoculture,TROR
+CS,SUN,2,2,3,lambda,TROR
+CS,SUN,2,2,4,lambda,TROR
+CS,SUN,2,2,5,IWR + Facilitator,TRCY
+CS,SUN,2,2,6,lambda,TROR
+CS,SUN,2,2,7,IWR + Facilitator,TRCY
+CS,SUN,2,2,8,IWR + Facilitator,TROR
+CS,SUN,2,2,9,Invasion when rare (IWR),TROR
+CS,SUN,2,2,10,lambda,TROR
+CS,SUN,2,3,1,lambda,TRCY
+CS,SUN,2,3,2,IWR + Facilitator,TRCY
+CS,SUN,2,3,3,High density monoculture,TROR
+CS,SUN,2,3,4,Invasion when rare (IWR),TRCY
+CS,SUN,2,3,5,lambda,TRCY
+CS,SUN,2,3,6,Invasion when rare (IWR),TRCY
+CS,SUN,2,3,7,High density monoculture,TROR
+CS,SUN,2,3,8,lambda,TRCY
+CS,SUN,2,3,9,lambda,TROR
+CS,SUN,2,3,10,Invasion when rare (IWR),TROR
+CS,SUN,2,4,1,IWR + Facilitator,TRCY
+CS,SUN,2,4,2,lambda,TROR
+CS,SUN,2,4,3,IWR + Facilitator,TRCY
+CS,SUN,2,4,4,lambda,TRCY
+CS,SUN,2,4,5,High density monoculture,TRCY
+CS,SUN,2,4,6,lambda,TRCY
+CS,SUN,2,4,7,lambda,TRCY
+CS,SUN,2,4,8,lambda,TROR
+CS,SUN,2,4,9,High density monoculture,TRCY
+CS,SUN,2,4,10,lambda,TRCY
+CS,SUN,2,5,1,Invasion when rare (IWR),TROR
+CS,SUN,2,5,2,IWR + Facilitator,TROR
+CS,SUN,2,5,3,Invasion when rare (IWR),TROR
+CS,SUN,2,5,4,IWR + Facilitator,TROR
+CS,SUN,2,5,5,Invasion when rare (IWR),TRCY
+CS,SUN,2,5,6,High density monoculture,TRCY
+CS,SUN,2,5,7,lambda,TROR
+CS,SUN,2,5,8,IWR + Facilitator,TRCY
+CS,SUN,2,5,9,IWR + Facilitator,TROR
+CS,SUN,2,5,10,IWR + Facilitator,TRCY
+CS,SUN,2,6,1,lambda,TROR
+CS,SUN,2,6,2,Invasion when rare (IWR),TROR
+CS,SUN,2,6,3,IWR + Facilitator,TROR
+CS,SUN,2,6,4,High density monoculture,TRCY
+CS,SUN,2,6,5,lambda,TROR
+CS,SUN,2,6,6,IWR + Facilitator,TROR
+CS,SUN,2,6,7,Invasion when rare (IWR),TROR
+CS,SUN,2,6,8,High density monoculture,TROR
+CS,SUN,2,6,9,lambda,TRCY
+CS,SUN,2,6,10,High density monoculture,TRCY
+CS,SUN,2,7,1,Invasion when rare (IWR),TRCY
+CS,SUN,2,7,2,High density monoculture,TRCY
+CS,SUN,2,7,3,High density monoculture,TRCY
+CS,SUN,2,7,4,Invasion when rare (IWR),TROR
+CS,SUN,2,7,5,High density monoculture,TROR
+CS,SUN,2,7,6,Invasion when rare (IWR),TROR
+CS,SUN,2,7,7,Invasion when rare (IWR),TRCY
+CS,SUN,2,7,8,High density monoculture,TRCY
+CS,SUN,2,7,9,Invasion when rare (IWR),TRCY
+CS,SUN,2,7,10,Invasion when rare (IWR),TRCY
+CS,SUN,2,8,1,High density monoculture,TRCY
+CS,SUN,2,8,2,lambda,TRCY
+CS,SUN,2,8,3,lambda,TRCY
+CS,SUN,2,8,4,IWR + Facilitator,TRCY
+CS,SUN,2,8,5,IWR + Facilitator,TROR
+CS,SUN,2,8,6,High density monoculture,TROR
+CS,SUN,2,8,7,High density monoculture,TRCY
+CS,SUN,2,8,8,Invasion when rare (IWR),TROR
+CS,SUN,2,8,9,High density monoculture,TROR
+CS,SUN,2,8,10,High density monoculture,TROR
+CS,SUN,3,1,1,IWR + Facilitator,TROR
+CS,SUN,3,1,2,lambda,TROR
+CS,SUN,3,1,3,lambda,TRCY
+CS,SUN,3,1,4,lambda,TROR
+CS,SUN,3,1,5,Invasion when rare (IWR),TRCY
+CS,SUN,3,1,6,lambda,TRCY
+CS,SUN,3,1,7,Invasion when rare (IWR),TRCY
+CS,SUN,3,1,8,Invasion when rare (IWR),TROR
+CS,SUN,3,1,9,lambda,TRCY
+CS,SUN,3,1,10,IWR + Facilitator,TRCY
+CS,SUN,3,2,1,lambda,TROR
+CS,SUN,3,2,2,IWR + Facilitator,TROR
+CS,SUN,3,2,3,Invasion when rare (IWR),TRCY
+CS,SUN,3,2,4,High density monoculture,TRCY
+CS,SUN,3,2,5,IWR + Facilitator,TROR
+CS,SUN,3,2,6,IWR + Facilitator,TROR
+CS,SUN,3,2,7,Invasion when rare (IWR),TROR
+CS,SUN,3,2,8,lambda,TRCY
+CS,SUN,3,2,9,Invasion when rare (IWR),TRCY
+CS,SUN,3,2,10,Invasion when rare (IWR),TRCY
+CS,SUN,3,3,1,High density monoculture,TRCY
+CS,SUN,3,3,2,lambda,TRCY
+CS,SUN,3,3,3,lambda,TROR
+CS,SUN,3,3,4,High density monoculture,TROR
+CS,SUN,3,3,5,lambda,TRCY
+CS,SUN,3,3,6,IWR + Facilitator,TRCY
+CS,SUN,3,3,7,High density monoculture,TROR
+CS,SUN,3,3,8,High density monoculture,TROR
+CS,SUN,3,3,9,High density monoculture,TRCY
+CS,SUN,3,3,10,lambda,TRCY
+CS,SUN,3,4,1,Invasion when rare (IWR),TRCY
+CS,SUN,3,4,2,Invasion when rare (IWR),TRCY
+CS,SUN,3,4,3,High density monoculture,TRCY
+CS,SUN,3,4,4,Invasion when rare (IWR),TROR
+CS,SUN,3,4,5,High density monoculture,TROR
+CS,SUN,3,4,6,High density monoculture,TRCY
+CS,SUN,3,4,7,lambda,TRCY
+CS,SUN,3,4,8,High density monoculture,TRCY
+CS,SUN,3,4,9,lambda,TROR
+CS,SUN,3,4,10,High density monoculture,TRCY
+CS,SUN,3,5,1,High density monoculture,TROR
+CS,SUN,3,5,2,High density monoculture,TRCY
+CS,SUN,3,5,3,IWR + Facilitator,TRCY
+CS,SUN,3,5,4,Invasion when rare (IWR),TRCY
+CS,SUN,3,5,5,Invasion when rare (IWR),TROR
+CS,SUN,3,5,6,High density monoculture,TROR
+CS,SUN,3,5,7,lambda,TROR
+CS,SUN,3,5,8,IWR + Facilitator,TROR
+CS,SUN,3,5,9,IWR + Facilitator,TROR
+CS,SUN,3,5,10,High density monoculture,TROR
+CS,SUN,3,6,1,Invasion when rare (IWR),TROR
+CS,SUN,3,6,2,High density monoculture,TROR
+CS,SUN,3,6,3,IWR + Facilitator,TROR
+CS,SUN,3,6,4,IWR + Facilitator,TRCY
+CS,SUN,3,6,5,IWR + Facilitator,TRCY
+CS,SUN,3,6,6,Invasion when rare (IWR),TRCY
+CS,SUN,3,6,7,High density monoculture,TRCY
+CS,SUN,3,6,8,Invasion when rare (IWR),TRCY
+CS,SUN,3,6,9,IWR + Facilitator,TRCY
+CS,SUN,3,6,10,lambda,TROR
+CS,SUN,3,7,1,IWR + Facilitator,TRCY
+CS,SUN,3,7,2,IWR + Facilitator,TRCY
+CS,SUN,3,7,3,Invasion when rare (IWR),TROR
+CS,SUN,3,7,4,IWR + Facilitator,TROR
+CS,SUN,3,7,5,High density monoculture,TRCY
+CS,SUN,3,7,6,lambda,TROR
+CS,SUN,3,7,7,IWR + Facilitator,TRCY
+CS,SUN,3,7,8,IWR + Facilitator,TRCY
+CS,SUN,3,7,9,Invasion when rare (IWR),TROR
+CS,SUN,3,7,10,IWR + Facilitator,TROR
+CS,SUN,3,8,1,lambda,TRCY
+CS,SUN,3,8,2,Invasion when rare (IWR),TROR
+CS,SUN,3,8,3,High density monoculture,TROR
+CS,SUN,3,8,4,lambda,TRCY
+CS,SUN,3,8,5,lambda,TROR
+CS,SUN,3,8,6,Invasion when rare (IWR),TROR
+CS,SUN,3,8,7,IWR + Facilitator,TROR
+CS,SUN,3,8,8,lambda,TROR
+CS,SUN,3,8,9,High density monoculture,TROR
+CS,SUN,3,8,10,Invasion when rare (IWR),TROR
+GH,SH,1,1,1,IWR + Facilitator,TROR
+GH,SH,1,1,2,IWR + Facilitator,TRCY
+GH,SH,1,1,3,Invasion when rare (IWR),TRCY
+GH,SH,1,1,4,lambda,TROR
+GH,SH,1,1,5,Invasion when rare (IWR),TROR
+GH,SH,1,1,6,Invasion when rare (IWR),TROR
+GH,SH,1,1,7,lambda,TROR
+GH,SH,1,1,8,IWR + Facilitator,TROR
+GH,SH,1,1,9,lambda,TROR
+GH,SH,1,1,10,High density monoculture,TROR
+GH,SH,1,2,1,High density monoculture,TRCY
+GH,SH,1,2,2,lambda,TRCY
+GH,SH,1,2,3,Invasion when rare (IWR),TROR
+GH,SH,1,2,4,IWR + Facilitator,TRCY
+GH,SH,1,2,5,High density monoculture,TRCY
+GH,SH,1,2,6,High density monoculture,TROR
+GH,SH,1,2,7,High density monoculture,TROR
+GH,SH,1,2,8,IWR + Facilitator,TRCY
+GH,SH,1,2,9,Invasion when rare (IWR),TRCY
+GH,SH,1,2,10,Invasion when rare (IWR),TROR
+GH,SH,1,3,1,lambda,TROR
+GH,SH,1,3,2,High density monoculture,TRCY
+GH,SH,1,3,3,IWR + Facilitator,TROR
+GH,SH,1,3,4,IWR + Facilitator,TROR
+GH,SH,1,3,5,Invasion when rare (IWR),TRCY
+GH,SH,1,3,6,IWR + Facilitator,TRCY
+GH,SH,1,3,7,Invasion when rare (IWR),TRCY
+GH,SH,1,3,8,Invasion when rare (IWR),TRCY
+GH,SH,1,3,9,lambda,TRCY
+GH,SH,1,3,10,lambda,TROR
+GH,SH,1,4,1,Invasion when rare (IWR),TRCY
+GH,SH,1,4,2,Invasion when rare (IWR),TROR
+GH,SH,1,4,3,lambda,TROR
+GH,SH,1,4,4,lambda,TRCY
+GH,SH,1,4,5,lambda,TRCY
+GH,SH,1,4,6,Invasion when rare (IWR),TRCY
+GH,SH,1,4,7,High density monoculture,TRCY
+GH,SH,1,4,8,lambda,TRCY
+GH,SH,1,4,9,IWR + Facilitator,TROR
+GH,SH,1,4,10,High density monoculture,TRCY
+GH,SH,1,5,1,Invasion when rare (IWR),TROR
+GH,SH,1,5,2,lambda,TROR
+GH,SH,1,5,3,IWR + Facilitator,TRCY
+GH,SH,1,5,4,High density monoculture,TROR
+GH,SH,1,5,5,IWR + Facilitator,TROR
+GH,SH,1,5,6,lambda,TROR
+GH,SH,1,5,7,Invasion when rare (IWR),TROR
+GH,SH,1,5,8,High density monoculture,TROR
+GH,SH,1,5,9,High density monoculture,TROR
+GH,SH,1,5,10,lambda,TRCY
+GH,SH,1,6,1,High density monoculture,TROR
+GH,SH,1,6,2,Invasion when rare (IWR),TRCY
+GH,SH,1,6,3,High density monoculture,TROR
+GH,SH,1,6,4,Invasion when rare (IWR),TROR
+GH,SH,1,6,5,IWR + Facilitator,TRCY
+GH,SH,1,6,6,lambda,TRCY
+GH,SH,1,6,7,IWR + Facilitator,TROR
+GH,SH,1,6,8,High density monoculture,TRCY
+GH,SH,1,6,9,Invasion when rare (IWR),TROR
+GH,SH,1,6,10,IWR + Facilitator,TRCY
+GH,SH,1,7,1,IWR + Facilitator,TRCY
+GH,SH,1,7,2,IWR + Facilitator,TROR
+GH,SH,1,7,3,lambda,TRCY
+GH,SH,1,7,4,High density monoculture,TRCY
+GH,SH,1,7,5,lambda,TROR
+GH,SH,1,7,6,IWR + Facilitator,TROR
+GH,SH,1,7,7,IWR + Facilitator,TRCY
+GH,SH,1,7,8,Invasion when rare (IWR),TROR
+GH,SH,1,7,9,High density monoculture,TRCY
+GH,SH,1,7,10,Invasion when rare (IWR),TRCY
+GH,SH,1,8,1,lambda,TRCY
+GH,SH,1,8,2,High density monoculture,TROR
+GH,SH,1,8,3,High density monoculture,TRCY
+GH,SH,1,8,4,Invasion when rare (IWR),TRCY
+GH,SH,1,8,5,High density monoculture,TROR
+GH,SH,1,8,6,High density monoculture,TRCY
+GH,SH,1,8,7,lambda,TRCY
+GH,SH,1,8,8,lambda,TROR
+GH,SH,1,8,9,IWR + Facilitator,TRCY
+GH,SH,1,8,10,IWR + Facilitator,TROR
+GH,SH,2,1,1,lambda,TROR
+GH,SH,2,1,2,lambda,TROR
+GH,SH,2,1,3,IWR + Facilitator,TROR
+GH,SH,2,1,4,High density monoculture,TROR
+GH,SH,2,1,5,Invasion when rare (IWR),TROR
+GH,SH,2,1,6,Invasion when rare (IWR),TRCY
+GH,SH,2,1,7,High density monoculture,TROR
+GH,SH,2,1,8,IWR + Facilitator,TROR
+GH,SH,2,1,9,IWR + Facilitator,TRCY
+GH,SH,2,1,10,High density monoculture,TRCY
+GH,SH,2,2,1,High density monoculture,TROR
+GH,SH,2,2,2,lambda,TRCY
+GH,SH,2,2,3,Invasion when rare (IWR),TRCY
+GH,SH,2,2,4,High density monoculture,TRCY
+GH,SH,2,2,5,IWR + Facilitator,TRCY
+GH,SH,2,2,6,lambda,TRCY
+GH,SH,2,2,7,Invasion when rare (IWR),TRCY
+GH,SH,2,2,8,Invasion when rare (IWR),TRCY
+GH,SH,2,2,9,Invasion when rare (IWR),TRCY
+GH,SH,2,2,10,Invasion when rare (IWR),TRCY
+GH,SH,2,3,1,Invasion when rare (IWR),TROR
+GH,SH,2,3,2,IWR + Facilitator,TROR
+GH,SH,2,3,3,lambda,TRCY
+GH,SH,2,3,4,Invasion when rare (IWR),TRCY
+GH,SH,2,3,5,lambda,TRCY
+GH,SH,2,3,6,Invasion when rare (IWR),TROR
+GH,SH,2,3,7,Invasion when rare (IWR),TROR
+GH,SH,2,3,8,High density monoculture,TROR
+GH,SH,2,3,9,lambda,TROR
+GH,SH,2,3,10,Invasion when rare (IWR),TROR
+GH,SH,2,4,1,High density monoculture,TRCY
+GH,SH,2,4,2,High density monoculture,TROR
+GH,SH,2,4,3,lambda,TROR
+GH,SH,2,4,4,lambda,TRCY
+GH,SH,2,4,5,High density monoculture,TROR
+GH,SH,2,4,6,lambda,TROR
+GH,SH,2,4,7,lambda,TRCY
+GH,SH,2,4,8,lambda,TROR
+GH,SH,2,4,9,lambda,TRCY
+GH,SH,2,4,10,lambda,TROR
+GH,SH,2,5,1,IWR + Facilitator,TROR
+GH,SH,2,5,2,Invasion when rare (IWR),TRCY
+GH,SH,2,5,3,IWR + Facilitator,TRCY
+GH,SH,2,5,4,Invasion when rare (IWR),TROR
+GH,SH,2,5,5,lambda,TROR
+GH,SH,2,5,6,IWR + Facilitator,TROR
+GH,SH,2,5,7,IWR + Facilitator,TRCY
+GH,SH,2,5,8,IWR + Facilitator,TRCY
+GH,SH,2,5,9,High density monoculture,TROR
+GH,SH,2,5,10,IWR + Facilitator,TRCY
+GH,SH,2,6,1,Invasion when rare (IWR),TRCY
+GH,SH,2,6,2,Invasion when rare (IWR),TROR
+GH,SH,2,6,3,High density monoculture,TRCY
+GH,SH,2,6,4,lambda,TROR
+GH,SH,2,6,5,High density monoculture,TRCY
+GH,SH,2,6,6,High density monoculture,TROR
+GH,SH,2,6,7,High density monoculture,TRCY
+GH,SH,2,6,8,High density monoculture,TRCY
+GH,SH,2,6,9,High density monoculture,TRCY
+GH,SH,2,6,10,IWR + Facilitator,TROR
+GH,SH,2,7,1,lambda,TRCY
+GH,SH,2,7,2,IWR + Facilitator,TRCY
+GH,SH,2,7,3,Invasion when rare (IWR),TROR
+GH,SH,2,7,4,IWR + Facilitator,TROR
+GH,SH,2,7,5,IWR + Facilitator,TROR
+GH,SH,2,7,6,IWR + Facilitator,TRCY
+GH,SH,2,7,7,lambda,TROR
+GH,SH,2,7,8,Invasion when rare (IWR),TROR
+GH,SH,2,7,9,Invasion when rare (IWR),TROR
+GH,SH,2,7,10,High density monoculture,TROR
+GH,SH,2,8,1,IWR + Facilitator,TRCY
+GH,SH,2,8,2,High density monoculture,TRCY
+GH,SH,2,8,3,High density monoculture,TROR
+GH,SH,2,8,4,IWR + Facilitator,TRCY
+GH,SH,2,8,5,Invasion when rare (IWR),TRCY
+GH,SH,2,8,6,High density monoculture,TRCY
+GH,SH,2,8,7,IWR + Facilitator,TROR
+GH,SH,2,8,8,lambda,TRCY
+GH,SH,2,8,9,IWR + Facilitator,TROR
+GH,SH,2,8,10,lambda,TRCY
+GH,SH,3,1,1,IWR + Facilitator,TRCY
+GH,SH,3,1,2,Invasion when rare (IWR),TROR
+GH,SH,3,1,3,High density monoculture,TRCY
+GH,SH,3,1,4,Invasion when rare (IWR),TRCY
+GH,SH,3,1,5,High density monoculture,TRCY
+GH,SH,3,1,6,IWR + Facilitator,TROR
+GH,SH,3,1,7,High density monoculture,TRCY
+GH,SH,3,1,8,Invasion when rare (IWR),TRCY
+GH,SH,3,1,9,High density monoculture,TRCY
+GH,SH,3,1,10,Invasion when rare (IWR),TRCY
+GH,SH,3,2,1,lambda,TRCY
+GH,SH,3,2,2,lambda,TROR
+GH,SH,3,2,3,IWR + Facilitator,TROR
+GH,SH,3,2,4,High density monoculture,TROR
+GH,SH,3,2,5,IWR + Facilitator,TROR
+GH,SH,3,2,6,Invasion when rare (IWR),TRCY
+GH,SH,3,2,7,Invasion when rare (IWR),TRCY
+GH,SH,3,2,8,lambda,TRCY
+GH,SH,3,2,9,lambda,TRCY
+GH,SH,3,2,10,Invasion when rare (IWR),TROR
+GH,SH,3,3,1,High density monoculture,TRCY
+GH,SH,3,3,2,High density monoculture,TRCY
+GH,SH,3,3,3,Invasion when rare (IWR),TROR
+GH,SH,3,3,4,High density monoculture,TRCY
+GH,SH,3,3,5,lambda,TROR
+GH,SH,3,3,6,Invasion when rare (IWR),TROR
+GH,SH,3,3,7,IWR + Facilitator,TRCY
+GH,SH,3,3,8,IWR + Facilitator,TRCY
+GH,SH,3,3,9,IWR + Facilitator,TRCY
+GH,SH,3,3,10,High density monoculture,TROR
+GH,SH,3,4,1,High density monoculture,TROR
+GH,SH,3,4,2,lambda,TRCY
+GH,SH,3,4,3,lambda,TRCY
+GH,SH,3,4,4,lambda,TRCY
+GH,SH,3,4,5,IWR + Facilitator,TRCY
+GH,SH,3,4,6,IWR + Facilitator,TRCY
+GH,SH,3,4,7,lambda,TRCY
+GH,SH,3,4,8,lambda,TROR
+GH,SH,3,4,9,Invasion when rare (IWR),TRCY
+GH,SH,3,4,10,lambda,TROR
+GH,SH,3,5,1,Invasion when rare (IWR),TROR
+GH,SH,3,5,2,Invasion when rare (IWR),TRCY
+GH,SH,3,5,3,Invasion when rare (IWR),TRCY
+GH,SH,3,5,4,Invasion when rare (IWR),TROR
+GH,SH,3,5,5,Invasion when rare (IWR),TRCY
+GH,SH,3,5,6,lambda,TRCY
+GH,SH,3,5,7,Invasion when rare (IWR),TROR
+GH,SH,3,5,8,IWR + Facilitator,TROR
+GH,SH,3,5,9,Invasion when rare (IWR),TROR
+GH,SH,3,5,10,IWR + Facilitator,TRCY
+GH,SH,3,6,1,IWR + Facilitator,TROR
+GH,SH,3,6,2,IWR + Facilitator,TROR
+GH,SH,3,6,3,High density monoculture,TROR
+GH,SH,3,6,4,IWR + Facilitator,TROR
+GH,SH,3,6,5,lambda,TRCY
+GH,SH,3,6,6,lambda,TROR
+GH,SH,3,6,7,High density monoculture,TROR
+GH,SH,3,6,8,Invasion when rare (IWR),TROR
+GH,SH,3,6,9,lambda,TROR
+GH,SH,3,6,10,High density monoculture,TRCY
+GH,SH,3,7,1,lambda,TROR
+GH,SH,3,7,2,IWR + Facilitator,TRCY
+GH,SH,3,7,3,lambda,TROR
+GH,SH,3,7,4,lambda,TROR
+GH,SH,3,7,5,High density monoculture,TROR
+GH,SH,3,7,6,High density monoculture,TROR
+GH,SH,3,7,7,IWR + Facilitator,TROR
+GH,SH,3,7,8,High density monoculture,TROR
+GH,SH,3,7,9,IWR + Facilitator,TROR
+GH,SH,3,7,10,lambda,TRCY
+GH,SH,3,8,1,Invasion when rare (IWR),TRCY
+GH,SH,3,8,2,High density monoculture,TROR
+GH,SH,3,8,3,IWR + Facilitator,TRCY
+GH,SH,3,8,4,IWR + Facilitator,TRCY
+GH,SH,3,8,5,Invasion when rare (IWR),TROR
+GH,SH,3,8,6,High density monoculture,TRCY
+GH,SH,3,8,7,lambda,TROR
+GH,SH,3,8,8,High density monoculture,TRCY
+GH,SH,3,8,9,High density monoculture,TROR
+GH,SH,3,8,10,IWR + Facilitator,TROR
+GH,SUN,2,1,1,High density monoculture,TRCY
+GH,SUN,2,1,2,High density monoculture,TROR
+GH,SUN,2,1,3,lambda,TRCY
+GH,SUN,2,1,4,High density monoculture,TROR
+GH,SUN,2,1,5,High density monoculture,TROR
+GH,SUN,2,1,6,Invasion when rare (IWR),TROR
+GH,SUN,2,1,7,High density monoculture,TRCY
+GH,SUN,2,1,8,lambda,TROR
+GH,SUN,2,1,9,lambda,TROR
+GH,SUN,2,1,10,IWR + Facilitator,TROR
+GH,SUN,2,2,1,lambda,TROR
+GH,SUN,2,2,2,IWR + Facilitator,TRCY
+GH,SUN,2,2,3,Invasion when rare (IWR),TRCY
+GH,SUN,2,2,4,Invasion when rare (IWR),TROR
+GH,SUN,2,2,5,IWR + Facilitator,TROR
+GH,SUN,2,2,6,lambda,TROR
+GH,SUN,2,2,7,IWR + Facilitator,TRCY
+GH,SUN,2,2,8,lambda,TRCY
+GH,SUN,2,2,9,Invasion when rare (IWR),TRCY
+GH,SUN,2,2,10,lambda,TRCY
+GH,SUN,2,3,1,Invasion when rare (IWR),TROR
+GH,SUN,2,3,2,Invasion when rare (IWR),TRCY
+GH,SUN,2,3,3,High density monoculture,TROR
+GH,SUN,2,3,4,lambda,TROR
+GH,SUN,2,3,5,High density monoculture,TRCY
+GH,SUN,2,3,6,lambda,TRCY
+GH,SUN,2,3,7,Invasion when rare (IWR),TRCY
+GH,SUN,2,3,8,Invasion when rare (IWR),TROR
+GH,SUN,2,3,9,High density monoculture,TROR
+GH,SUN,2,3,10,High density monoculture,TROR
+GH,SUN,2,4,1,IWR + Facilitator,TROR
+GH,SUN,2,4,2,Invasion when rare (IWR),TROR
+GH,SUN,2,4,3,High density monoculture,TRCY
+GH,SUN,2,4,4,lambda,TRCY
+GH,SUN,2,4,5,Invasion when rare (IWR),TRCY
+GH,SUN,2,4,6,IWR + Facilitator,TRCY
+GH,SUN,2,4,7,lambda,TROR
+GH,SUN,2,4,8,High density monoculture,TROR
+GH,SUN,2,4,9,High density monoculture,TRCY
+GH,SUN,2,4,10,High density monoculture,TRCY
+GH,SUN,2,5,1,IWR + Facilitator,TRCY
+GH,SUN,2,5,2,High density monoculture,TRCY
+GH,SUN,2,5,3,IWR + Facilitator,TROR
+GH,SUN,2,5,4,Invasion when rare (IWR),TRCY
+GH,SUN,2,5,5,Invasion when rare (IWR),TROR
+GH,SUN,2,5,6,Invasion when rare (IWR),TRCY
+GH,SUN,2,5,7,Invasion when rare (IWR),TROR
+GH,SUN,2,5,8,IWR + Facilitator,TRCY
+GH,SUN,2,5,9,lambda,TRCY
+GH,SUN,2,5,10,lambda,TROR
+GH,SUN,2,6,1,Invasion when rare (IWR),TRCY
+GH,SUN,2,6,2,lambda,TROR
+GH,SUN,2,6,3,IWR + Facilitator,TRCY
+GH,SUN,2,6,4,High density monoculture,TRCY
+GH,SUN,2,6,5,lambda,TRCY
+GH,SUN,2,6,6,IWR + Facilitator,TROR
+GH,SUN,2,6,7,lambda,TRCY
+GH,SUN,2,6,8,High density monoculture,TRCY
+GH,SUN,2,6,9,IWR + Facilitator,TROR
+GH,SUN,2,6,10,Invasion when rare (IWR),TROR
+GH,SUN,2,7,1,High density monoculture,TROR
+GH,SUN,2,7,2,IWR + Facilitator,TROR
+GH,SUN,2,7,3,Invasion when rare (IWR),TROR
+GH,SUN,2,7,4,IWR + Facilitator,TROR
+GH,SUN,2,7,5,IWR + Facilitator,TRCY
+GH,SUN,2,7,6,High density monoculture,TRCY
+GH,SUN,2,7,7,High density monoculture,TROR
+GH,SUN,2,7,8,Invasion when rare (IWR),TRCY
+GH,SUN,2,7,9,Invasion when rare (IWR),TROR
+GH,SUN,2,7,10,Invasion when rare (IWR),TRCY
+GH,SUN,2,8,1,lambda,TRCY
+GH,SUN,2,8,2,lambda,TRCY
+GH,SUN,2,8,3,lambda,TROR
+GH,SUN,2,8,4,IWR + Facilitator,TRCY
+GH,SUN,2,8,5,lambda,TROR
+GH,SUN,2,8,6,High density monoculture,TROR
+GH,SUN,2,8,7,IWR + Facilitator,TROR
+GH,SUN,2,8,8,IWR + Facilitator,TROR
+GH,SUN,2,8,9,IWR + Facilitator,TRCY
+GH,SUN,2,8,10,IWR + Facilitator,TRCY
+GH,SUN,3,1,1,IWR + Facilitator,TROR
+GH,SUN,3,1,2,Invasion when rare (IWR),TRCY
+GH,SUN,3,1,3,High density monoculture,TRCY
+GH,SUN,3,1,4,lambda,TROR
+GH,SUN,3,1,5,lambda,TRCY
+GH,SUN,3,1,6,lambda,TRCY
+GH,SUN,3,1,7,Invasion when rare (IWR),TROR
+GH,SUN,3,1,8,lambda,TROR
+GH,SUN,3,1,9,lambda,TROR
+GH,SUN,3,1,10,High density monoculture,TROR
+GH,SUN,3,2,1,lambda,TROR
+GH,SUN,3,2,2,High density monoculture,TRCY
+GH,SUN,3,2,3,lambda,TROR
+GH,SUN,3,2,4,Invasion when rare (IWR),TROR
+GH,SUN,3,2,5,lambda,TROR
+GH,SUN,3,2,6,Invasion when rare (IWR),TROR
+GH,SUN,3,2,7,IWR + Facilitator,TROR
+GH,SUN,3,2,8,High density monoculture,TROR
+GH,SUN,3,2,9,lambda,TRCY
+GH,SUN,3,2,10,High density monoculture,TRCY
+GH,SUN,3,3,1,IWR + Facilitator,TRCY
+GH,SUN,3,3,2,Invasion when rare (IWR),TROR
+GH,SUN,3,3,3,High density monoculture,TROR
+GH,SUN,3,3,4,Invasion when rare (IWR),TRCY
+GH,SUN,3,3,5,High density monoculture,TRCY
+GH,SUN,3,3,6,High density monoculture,TROR
+GH,SUN,3,3,7,lambda,TROR
+GH,SUN,3,3,8,lambda,TRCY
+GH,SUN,3,3,9,High density monoculture,TROR
+GH,SUN,3,3,10,lambda,TROR
+GH,SUN,3,4,1,lambda,TRCY
+GH,SUN,3,4,2,lambda,TROR
+GH,SUN,3,4,3,Invasion when rare (IWR),TROR
+GH,SUN,3,4,4,IWR + Facilitator,TROR
+GH,SUN,3,4,5,Invasion when rare (IWR),TRCY
+GH,SUN,3,4,6,lambda,TROR
+GH,SUN,3,4,7,lambda,TRCY
+GH,SUN,3,4,8,High density monoculture,TRCY
+GH,SUN,3,4,9,IWR + Facilitator,TROR
+GH,SUN,3,4,10,IWR + Facilitator,TRCY
+GH,SUN,3,5,1,Invasion when rare (IWR),TRCY
+GH,SUN,3,5,2,lambda,TRCY
+GH,SUN,3,5,3,IWR + Facilitator,TRCY
+GH,SUN,3,5,4,High density monoculture,TROR
+GH,SUN,3,5,5,IWR + Facilitator,TROR
+GH,SUN,3,5,6,IWR + Facilitator,TROR
+GH,SUN,3,5,7,Invasion when rare (IWR),TRCY
+GH,SUN,3,5,8,Invasion when rare (IWR),TRCY
+GH,SUN,3,5,9,Invasion when rare (IWR),TROR
+GH,SUN,3,5,10,Invasion when rare (IWR),TROR
+GH,SUN,3,6,1,High density monoculture,TRCY
+GH,SUN,3,6,2,IWR + Facilitator,TROR
+GH,SUN,3,6,3,lambda,TRCY
+GH,SUN,3,6,4,High density monoculture,TRCY
+GH,SUN,3,6,5,IWR + Facilitator,TRCY
+GH,SUN,3,6,6,High density monoculture,TRCY
+GH,SUN,3,6,7,High density monoculture,TROR
+GH,SUN,3,6,8,IWR + Facilitator,TRCY
+GH,SUN,3,6,9,Invasion when rare (IWR),TRCY
+GH,SUN,3,6,10,lambda,TRCY
+GH,SUN,3,7,1,Invasion when rare (IWR),TROR
+GH,SUN,3,7,2,High density monoculture,TROR
+GH,SUN,3,7,3,Invasion when rare (IWR),TRCY
+GH,SUN,3,7,4,IWR + Facilitator,TRCY
+GH,SUN,3,7,5,Invasion when rare (IWR),TROR
+GH,SUN,3,7,6,IWR + Facilitator,TRCY
+GH,SUN,3,7,7,IWR + Facilitator,TRCY
+GH,SUN,3,7,8,Invasion when rare (IWR),TROR
+GH,SUN,3,7,9,IWR + Facilitator,TRCY
+GH,SUN,3,7,10,Invasion when rare (IWR),TRCY
+GH,SUN,3,8,1,High density monoculture,TROR
+GH,SUN,3,8,2,IWR + Facilitator,TRCY
+GH,SUN,3,8,3,IWR + Facilitator,TROR
+GH,SUN,3,8,4,lambda,TRCY
+GH,SUN,3,8,5,High density monoculture,TROR
+GH,SUN,3,8,6,Invasion when rare (IWR),TRCY
+GH,SUN,3,8,7,High density monoculture,TRCY
+GH,SUN,3,8,8,IWR + Facilitator,TROR
+GH,SUN,3,8,9,High density monoculture,TRCY
+GH,SUN,3,8,10,IWR + Facilitator,TROR
+GH,SUN,1,1,1,High density monoculture,TRCY
+GH,SUN,1,1,2,lambda,TRCY
+GH,SUN,1,1,3,IWR + Facilitator,TROR
+GH,SUN,1,1,4,IWR + Facilitator,TRCY
+GH,SUN,1,1,5,IWR + Facilitator,TROR
+GH,SUN,1,1,6,High density monoculture,TROR
+GH,SUN,1,1,7,IWR + Facilitator,TROR
+GH,SUN,1,1,8,IWR + Facilitator,TRCY
+GH,SUN,1,1,9,Invasion when rare (IWR),TRCY
+GH,SUN,1,1,10,Invasion when rare (IWR),TROR
+GH,SUN,1,2,1,High density monoculture,TROR
+GH,SUN,1,2,2,Invasion when rare (IWR),TROR
+GH,SUN,1,2,3,High density monoculture,TROR
+GH,SUN,1,2,4,lambda,TROR
+GH,SUN,1,2,5,lambda,TROR
+GH,SUN,1,2,6,IWR + Facilitator,TROR
+GH,SUN,1,2,7,Invasion when rare (IWR),TROR
+GH,SUN,1,2,8,High density monoculture,TRCY
+GH,SUN,1,2,9,lambda,TROR
+GH,SUN,1,2,10,High density monoculture,TRCY
+GH,SUN,1,3,1,Invasion when rare (IWR),TROR
+GH,SUN,1,3,2,lambda,TROR
+GH,SUN,1,3,3,lambda,TROR
+GH,SUN,1,3,4,Invasion when rare (IWR),TROR
+GH,SUN,1,3,5,Invasion when rare (IWR),TRCY
+GH,SUN,1,3,6,High density monoculture,TRCY
+GH,SUN,1,3,7,Invasion when rare (IWR),TRCY
+GH,SUN,1,3,8,Invasion when rare (IWR),TRCY
+GH,SUN,1,3,9,IWR + Facilitator,TRCY
+GH,SUN,1,3,10,IWR + Facilitator,TRCY
+GH,SUN,1,4,1,Invasion when rare (IWR),TRCY
+GH,SUN,1,4,2,High density monoculture,TROR
+GH,SUN,1,4,3,High density monoculture,TRCY
+GH,SUN,1,4,4,Invasion when rare (IWR),TRCY
+GH,SUN,1,4,5,High density monoculture,TROR
+GH,SUN,1,4,6,Invasion when rare (IWR),TRCY
+GH,SUN,1,4,7,High density monoculture,TRCY
+GH,SUN,1,4,8,lambda,TRCY
+GH,SUN,1,4,9,High density monoculture,TRCY
+GH,SUN,1,4,10,IWR + Facilitator,TROR
+GH,SUN,1,5,1,lambda,TROR
+GH,SUN,1,5,2,High density monoculture,TRCY
+GH,SUN,1,5,3,IWR + Facilitator,TRCY
+GH,SUN,1,5,4,High density monoculture,TROR
+GH,SUN,1,5,5,Invasion when rare (IWR),TROR
+GH,SUN,1,5,6,lambda,TRCY
+GH,SUN,1,5,7,lambda,TROR
+GH,SUN,1,5,8,High density monoculture,TROR
+GH,SUN,1,5,9,lambda,TRCY
+GH,SUN,1,5,10,Invasion when rare (IWR),TRCY
+GH,SUN,1,6,1,lambda,TRCY
+GH,SUN,1,6,2,IWR + Facilitator,TRCY
+GH,SUN,1,6,3,lambda,TRCY
+GH,SUN,1,6,4,lambda,TRCY
+GH,SUN,1,6,5,IWR + Facilitator,TRCY
+GH,SUN,1,6,6,lambda,TROR
+GH,SUN,1,6,7,IWR + Facilitator,TRCY
+GH,SUN,1,6,8,Invasion when rare (IWR),TROR
+GH,SUN,1,6,9,Invasion when rare (IWR),TROR
+GH,SUN,1,6,10,lambda,TRCY
+GH,SUN,1,7,1,IWR + Facilitator,TROR
+GH,SUN,1,7,2,IWR + Facilitator,TROR
+GH,SUN,1,7,3,Invasion when rare (IWR),TROR
+GH,SUN,1,7,4,IWR + Facilitator,TROR
+GH,SUN,1,7,5,High density monoculture,TRCY
+GH,SUN,1,7,6,Invasion when rare (IWR),TROR
+GH,SUN,1,7,7,High density monoculture,TROR
+GH,SUN,1,7,8,IWR + Facilitator,TROR
+GH,SUN,1,7,9,High density monoculture,TROR
+GH,SUN,1,7,10,High density monoculture,TROR
+GH,SUN,1,8,1,IWR + Facilitator,TRCY
+GH,SUN,1,8,2,Invasion when rare (IWR),TRCY
+GH,SUN,1,8,3,Invasion when rare (IWR),TRCY
+GH,SUN,1,8,4,High density monoculture,TRCY
+GH,SUN,1,8,5,lambda,TRCY
+GH,SUN,1,8,6,IWR + Facilitator,TRCY
+GH,SUN,1,8,7,lambda,TRCY
+GH,SUN,1,8,8,lambda,TROR
+GH,SUN,1,8,9,IWR + Facilitator,TROR
+GH,SUN,1,8,10,lambda,TROR
+NAM,SH,1,1,1,IWR + Facilitator,TROR
+NAM,SH,1,1,2,Invasion when rare (IWR),TRCY
+NAM,SH,1,1,3,High density monoculture,TRCY
+NAM,SH,1,1,4,IWR + Facilitator,TRCY
+NAM,SH,1,1,5,IWR + Facilitator,TRCY
+NAM,SH,1,1,6,IWR + Facilitator,TROR
+NAM,SH,1,1,7,Invasion when rare (IWR),TRCY
+NAM,SH,1,1,8,IWR + Facilitator,TRCY
+NAM,SH,1,1,9,IWR + Facilitator,TRCY
+NAM,SH,1,1,10,High density monoculture,TROR
+NAM,SH,1,2,1,lambda,TROR
+NAM,SH,1,2,2,High density monoculture,TRCY
+NAM,SH,1,2,3,High density monoculture,TROR
+NAM,SH,1,2,4,lambda,TROR
+NAM,SH,1,2,5,lambda,TROR
+NAM,SH,1,2,6,IWR + Facilitator,TRCY
+NAM,SH,1,2,7,Invasion when rare (IWR),TROR
+NAM,SH,1,2,8,lambda,TROR
+NAM,SH,1,2,9,Invasion when rare (IWR),TROR
+NAM,SH,1,2,10,High density monoculture,TRCY
+NAM,SH,1,3,1,Invasion when rare (IWR),TRCY
+NAM,SH,1,3,2,IWR + Facilitator,TRCY
+NAM,SH,1,3,3,IWR + Facilitator,TRCY
+NAM,SH,1,3,4,lambda,TRCY
+NAM,SH,1,3,5,IWR + Facilitator,TROR
+NAM,SH,1,3,6,Invasion when rare (IWR),TRCY
+NAM,SH,1,3,7,lambda,TRCY
+NAM,SH,1,3,8,Invasion when rare (IWR),TROR
+NAM,SH,1,3,9,lambda,TROR
+NAM,SH,1,3,10,Invasion when rare (IWR),TRCY
+NAM,SH,1,4,1,High density monoculture,TRCY
+NAM,SH,1,4,2,IWR + Facilitator,TROR
+NAM,SH,1,4,3,lambda,TRCY
+NAM,SH,1,4,4,Invasion when rare (IWR),TRCY
+NAM,SH,1,4,5,High density monoculture,TRCY
+NAM,SH,1,4,6,lambda,TROR
+NAM,SH,1,4,7,High density monoculture,TROR
+NAM,SH,1,4,8,IWR + Facilitator,TROR
+NAM,SH,1,4,9,High density monoculture,TROR
+NAM,SH,1,4,10,Invasion when rare (IWR),TROR
+NAM,SH,1,5,1,High density monoculture,TROR
+NAM,SH,1,5,2,lambda,TRCY
+NAM,SH,1,5,3,Invasion when rare (IWR),TRCY
+NAM,SH,1,5,4,Invasion when rare (IWR),TROR
+NAM,SH,1,5,5,lambda,TRCY
+NAM,SH,1,5,6,Invasion when rare (IWR),TROR
+NAM,SH,1,5,7,lambda,TROR
+NAM,SH,1,5,8,High density monoculture,TRCY
+NAM,SH,1,5,9,High density monoculture,TRCY
+NAM,SH,1,5,10,lambda,TROR
+NAM,SH,1,6,1,Invasion when rare (IWR),TROR
+NAM,SH,1,6,2,Invasion when rare (IWR),TROR
+NAM,SH,1,6,3,Invasion when rare (IWR),TROR
+NAM,SH,1,6,4,High density monoculture,TRCY
+NAM,SH,1,6,5,Invasion when rare (IWR),TROR
+NAM,SH,1,6,6,High density monoculture,TROR
+NAM,SH,1,6,7,High density monoculture,TRCY
+NAM,SH,1,6,8,High density monoculture,TROR
+NAM,SH,1,6,9,lambda,TRCY
+NAM,SH,1,6,10,IWR + Facilitator,TRCY
+NAM,SH,1,7,1,IWR + Facilitator,TRCY
+NAM,SH,1,7,2,High density monoculture,TROR
+NAM,SH,1,7,3,lambda,TROR
+NAM,SH,1,7,4,High density monoculture,TROR
+NAM,SH,1,7,5,Invasion when rare (IWR),TRCY
+NAM,SH,1,7,6,lambda,TRCY
+NAM,SH,1,7,7,IWR + Facilitator,TRCY
+NAM,SH,1,7,8,lambda,TRCY
+NAM,SH,1,7,9,Invasion when rare (IWR),TRCY
+NAM,SH,1,7,10,IWR + Facilitator,TROR
+NAM,SH,1,8,1,lambda,TRCY
+NAM,SH,1,8,2,lambda,TROR
+NAM,SH,1,8,3,IWR + Facilitator,TROR
+NAM,SH,1,8,4,IWR + Facilitator,TROR
+NAM,SH,1,8,5,High density monoculture,TROR
+NAM,SH,1,8,6,High density monoculture,TRCY
+NAM,SH,1,8,7,IWR + Facilitator,TROR
+NAM,SH,1,8,8,Invasion when rare (IWR),TRCY
+NAM,SH,1,8,9,IWR + Facilitator,TROR
+NAM,SH,1,8,10,lambda,TRCY
+NAM,SH,2,1,1,High density monoculture,TROR
+NAM,SH,2,1,2,lambda,TROR
+NAM,SH,2,1,3,lambda,TRCY
+NAM,SH,2,1,4,IWR + Facilitator,TROR
+NAM,SH,2,1,5,IWR + Facilitator,TROR
+NAM,SH,2,1,6,Invasion when rare (IWR),TROR
+NAM,SH,2,1,7,High density monoculture,TROR
+NAM,SH,2,1,8,High density monoculture,TRCY
+NAM,SH,2,1,9,lambda,TRCY
+NAM,SH,2,1,10,lambda,TROR
+NAM,SH,2,2,1,Invasion when rare (IWR),TRCY
+NAM,SH,2,2,2,IWR + Facilitator,TROR
+NAM,SH,2,2,3,High density monoculture,TROR
+NAM,SH,2,2,4,High density monoculture,TRCY
+NAM,SH,2,2,5,Invasion when rare (IWR),TRCY
+NAM,SH,2,2,6,High density monoculture,TROR
+NAM,SH,2,2,7,Invasion when rare (IWR),TROR
+NAM,SH,2,2,8,lambda,TRCY
+NAM,SH,2,2,9,lambda,TROR
+NAM,SH,2,2,10,lambda,TRCY
+NAM,SH,2,3,1,Invasion when rare (IWR),TROR
+NAM,SH,2,3,2,Invasion when rare (IWR),TROR
+NAM,SH,2,3,3,IWR + Facilitator,TROR
+NAM,SH,2,3,4,lambda,TRCY
+NAM,SH,2,3,5,IWR + Facilitator,TRCY
+NAM,SH,2,3,6,IWR + Facilitator,TRCY
+NAM,SH,2,3,7,IWR + Facilitator,TROR
+NAM,SH,2,3,8,Invasion when rare (IWR),TROR
+NAM,SH,2,3,9,High density monoculture,TRCY
+NAM,SH,2,3,10,IWR + Facilitator,TROR
+NAM,SH,2,4,1,lambda,TROR
+NAM,SH,2,4,2,lambda,TRCY
+NAM,SH,2,4,3,High density monoculture,TRCY
+NAM,SH,2,4,4,lambda,TROR
+NAM,SH,2,4,5,lambda,TRCY
+NAM,SH,2,4,6,lambda,TROR
+NAM,SH,2,4,7,IWR + Facilitator,TRCY
+NAM,SH,2,4,8,High density monoculture,TROR
+NAM,SH,2,4,9,IWR + Facilitator,TRCY
+NAM,SH,2,4,10,Invasion when rare (IWR),TRCY
+NAM,SH,2,5,1,IWR + Facilitator,TRCY
+NAM,SH,2,5,2,IWR + Facilitator,TRCY
+NAM,SH,2,5,3,IWR + Facilitator,TRCY
+NAM,SH,2,5,4,IWR + Facilitator,TRCY
+NAM,SH,2,5,5,lambda,TROR
+NAM,SH,2,5,6,High density monoculture,TRCY
+NAM,SH,2,5,7,High density monoculture,TRCY
+NAM,SH,2,5,8,IWR + Facilitator,TROR
+NAM,SH,2,5,9,IWR + Facilitator,TROR
+NAM,SH,2,5,10,High density monoculture,TROR
+NAM,SH,2,6,1,High density monoculture,TRCY
+NAM,SH,2,6,2,High density monoculture,TRCY
+NAM,SH,2,6,3,Invasion when rare (IWR),TRCY
+NAM,SH,2,6,4,Invasion when rare (IWR),TRCY
+NAM,SH,2,6,5,Invasion when rare (IWR),TROR
+NAM,SH,2,6,6,lambda,TRCY
+NAM,SH,2,6,7,lambda,TROR
+NAM,SH,2,6,8,lambda,TROR
+NAM,SH,2,6,9,Invasion when rare (IWR),TRCY
+NAM,SH,2,6,10,High density monoculture,TRCY
+NAM,SH,2,7,1,lambda,TRCY
+NAM,SH,2,7,2,High density monoculture,TROR
+NAM,SH,2,7,3,Invasion when rare (IWR),TROR
+NAM,SH,2,7,4,High density monoculture,TROR
+NAM,SH,2,7,5,High density monoculture,TRCY
+NAM,SH,2,7,6,Invasion when rare (IWR),TRCY
+NAM,SH,2,7,7,lambda,TRCY
+NAM,SH,2,7,8,IWR + Facilitator,TRCY
+NAM,SH,2,7,9,High density monoculture,TROR
+NAM,SH,2,7,10,Invasion when rare (IWR),TROR
+NAM,SH,2,8,1,IWR + Facilitator,TROR
+NAM,SH,2,8,2,Invasion when rare (IWR),TRCY
+NAM,SH,2,8,3,lambda,TROR
+NAM,SH,2,8,4,Invasion when rare (IWR),TROR
+NAM,SH,2,8,5,High density monoculture,TROR
+NAM,SH,2,8,6,IWR + Facilitator,TROR
+NAM,SH,2,8,7,Invasion when rare (IWR),TRCY
+NAM,SH,2,8,8,Invasion when rare (IWR),TRCY
+NAM,SH,2,8,9,Invasion when rare (IWR),TROR
+NAM,SH,2,8,10,IWR + Facilitator,TRCY
+NAM,SH,3,1,1,IWR + Facilitator,TROR
+NAM,SH,3,1,2,IWR + Facilitator,TROR
+NAM,SH,3,1,3,lambda,TROR
+NAM,SH,3,1,4,lambda,TRCY
+NAM,SH,3,1,5,IWR + Facilitator,TRCY
+NAM,SH,3,1,6,IWR + Facilitator,TRCY
+NAM,SH,3,1,7,Invasion when rare (IWR),TRCY
+NAM,SH,3,1,8,Invasion when rare (IWR),TRCY
+NAM,SH,3,1,9,Invasion when rare (IWR),TROR
+NAM,SH,3,1,10,Invasion when rare (IWR),TRCY
+NAM,SH,3,2,1,High density monoculture,TRCY
+NAM,SH,3,2,2,lambda,TROR
+NAM,SH,3,2,3,Invasion when rare (IWR),TROR
+NAM,SH,3,2,4,High density monoculture,TRCY
+NAM,SH,3,2,5,High density monoculture,TROR
+NAM,SH,3,2,6,Invasion when rare (IWR),TRCY
+NAM,SH,3,2,7,IWR + Facilitator,TROR
+NAM,SH,3,2,8,lambda,TRCY
+NAM,SH,3,2,9,IWR + Facilitator,TROR
+NAM,SH,3,2,10,High density monoculture,TROR
+NAM,SH,3,3,1,Invasion when rare (IWR),TRCY
+NAM,SH,3,3,2,Invasion when rare (IWR),TRCY
+NAM,SH,3,3,3,Invasion when rare (IWR),TRCY
+NAM,SH,3,3,4,High density monoculture,TROR
+NAM,SH,3,3,5,Invasion when rare (IWR),TROR
+NAM,SH,3,3,6,lambda,TROR
+NAM,SH,3,3,7,Invasion when rare (IWR),TROR
+NAM,SH,3,3,8,Invasion when rare (IWR),TROR
+NAM,SH,3,3,9,lambda,TRCY
+NAM,SH,3,3,10,IWR + Facilitator,TRCY
+NAM,SH,3,4,1,High density monoculture,TROR
+NAM,SH,3,4,2,lambda,TRCY
+NAM,SH,3,4,3,IWR + Facilitator,TROR
+NAM,SH,3,4,4,Invasion when rare (IWR),TRCY
+NAM,SH,3,4,5,Invasion when rare (IWR),TRCY
+NAM,SH,3,4,6,IWR + Facilitator,TROR
+NAM,SH,3,4,7,High density monoculture,TROR
+NAM,SH,3,4,8,lambda,TROR
+NAM,SH,3,4,9,lambda,TROR
+NAM,SH,3,4,10,lambda,TRCY
+NAM,SH,3,5,1,IWR + Facilitator,TRCY
+NAM,SH,3,5,2,High density monoculture,TROR
+NAM,SH,3,5,3,lambda,TRCY
+NAM,SH,3,5,4,IWR + Facilitator,TROR
+NAM,SH,3,5,5,IWR + Facilitator,TROR
+NAM,SH,3,5,6,Invasion when rare (IWR),TROR
+NAM,SH,3,5,7,lambda,TROR
+NAM,SH,3,5,8,IWR + Facilitator,TRCY
+NAM,SH,3,5,9,High density monoculture,TRCY
+NAM,SH,3,5,10,High density monoculture,TRCY
+NAM,SH,3,6,1,lambda,TROR
+NAM,SH,3,6,2,Invasion when rare (IWR),TROR
+NAM,SH,3,6,3,High density monoculture,TRCY
+NAM,SH,3,6,4,IWR + Facilitator,TRCY
+NAM,SH,3,6,5,lambda,TRCY
+NAM,SH,3,6,6,High density monoculture,TROR
+NAM,SH,3,6,7,IWR + Facilitator,TRCY
+NAM,SH,3,6,8,High density monoculture,TRCY
+NAM,SH,3,6,9,IWR + Facilitator,TRCY
+NAM,SH,3,6,10,lambda,TROR
+NAM,SH,3,7,1,Invasion when rare (IWR),TROR
+NAM,SH,3,7,2,IWR + Facilitator,TRCY
+NAM,SH,3,7,3,High density monoculture,TROR
+NAM,SH,3,7,4,lambda,TROR
+NAM,SH,3,7,5,lambda,TROR
+NAM,SH,3,7,6,lambda,TRCY
+NAM,SH,3,7,7,High density monoculture,TRCY
+NAM,SH,3,7,8,High density monoculture,TROR
+NAM,SH,3,7,9,Invasion when rare (IWR),TRCY
+NAM,SH,3,7,10,IWR + Facilitator,TROR
+NAM,SH,3,8,1,lambda,TRCY
+NAM,SH,3,8,2,High density monoculture,TRCY
+NAM,SH,3,8,3,IWR + Facilitator,TRCY
+NAM,SH,3,8,4,Invasion when rare (IWR),TROR
+NAM,SH,3,8,5,High density monoculture,TRCY
+NAM,SH,3,8,6,High density monoculture,TRCY
+NAM,SH,3,8,7,lambda,TRCY
+NAM,SH,3,8,8,IWR + Facilitator,TROR
+NAM,SH,3,8,9,High density monoculture,TROR
+NAM,SH,3,8,10,Invasion when rare (IWR),TROR
+NAM,SUN,1,1,1,Invasion when rare (IWR),TROR
+NAM,SUN,1,1,2,lambda,TROR
+NAM,SUN,1,1,3,High density monoculture,TRCY
+NAM,SUN,1,1,4,Invasion when rare (IWR),TRCY
+NAM,SUN,1,1,5,Invasion when rare (IWR),TRCY
+NAM,SUN,1,1,6,Invasion when rare (IWR),TROR
+NAM,SUN,1,1,7,IWR + Facilitator,TROR
+NAM,SUN,1,1,8,Invasion when rare (IWR),TROR
+NAM,SUN,1,1,9,Invasion when rare (IWR),TRCY
+NAM,SUN,1,1,10,IWR + Facilitator,TROR
+NAM,SUN,1,2,1,lambda,TROR
+NAM,SUN,1,2,2,IWR + Facilitator,TROR
+NAM,SUN,1,2,3,lambda,TRCY
+NAM,SUN,1,2,4,lambda,TROR
+NAM,SUN,1,2,5,High density monoculture,TRCY
+NAM,SUN,1,2,6,IWR + Facilitator,TRCY
+NAM,SUN,1,2,7,lambda,TROR
+NAM,SUN,1,2,8,IWR + Facilitator,TRCY
+NAM,SUN,1,2,9,lambda,TROR
+NAM,SUN,1,2,10,Invasion when rare (IWR),TROR
+NAM,SUN,1,3,1,High density monoculture,TRCY
+NAM,SUN,1,3,2,Invasion when rare (IWR),TRCY
+NAM,SUN,1,3,3,High density monoculture,TROR
+NAM,SUN,1,3,4,Invasion when rare (IWR),TROR
+NAM,SUN,1,3,5,lambda,TROR
+NAM,SUN,1,3,6,High density monoculture,TRCY
+NAM,SUN,1,3,7,Invasion when rare (IWR),TRCY
+NAM,SUN,1,3,8,Invasion when rare (IWR),TRCY
+NAM,SUN,1,3,9,lambda,TRCY
+NAM,SUN,1,3,10,Invasion when rare (IWR),TRCY
+NAM,SUN,1,4,1,Invasion when rare (IWR),TRCY
+NAM,SUN,1,4,2,High density monoculture,TROR
+NAM,SUN,1,4,3,IWR + Facilitator,TROR
+NAM,SUN,1,4,4,lambda,TRCY
+NAM,SUN,1,4,5,IWR + Facilitator,TROR
+NAM,SUN,1,4,6,High density monoculture,TROR
+NAM,SUN,1,4,7,IWR + Facilitator,TRCY
+NAM,SUN,1,4,8,High density monoculture,TROR
+NAM,SUN,1,4,9,Invasion when rare (IWR),TROR
+NAM,SUN,1,4,10,IWR + Facilitator,TRCY
+NAM,SUN,1,5,1,lambda,TRCY
+NAM,SUN,1,5,2,High density monoculture,TRCY
+NAM,SUN,1,5,3,Invasion when rare (IWR),TROR
+NAM,SUN,1,5,4,High density monoculture,TROR
+NAM,SUN,1,5,5,High density monoculture,TROR
+NAM,SUN,1,5,6,Invasion when rare (IWR),TRCY
+NAM,SUN,1,5,7,High density monoculture,TROR
+NAM,SUN,1,5,8,IWR + Facilitator,TROR
+NAM,SUN,1,5,9,High density monoculture,TROR
+NAM,SUN,1,5,10,High density monoculture,TRCY
+NAM,SUN,1,6,1,IWR + Facilitator,TROR
+NAM,SUN,1,6,2,lambda,TRCY
+NAM,SUN,1,6,3,IWR + Facilitator,TRCY
+NAM,SUN,1,6,4,High density monoculture,TRCY
+NAM,SUN,1,6,5,Invasion when rare (IWR),TROR
+NAM,SUN,1,6,6,lambda,TRCY
+NAM,SUN,1,6,7,lambda,TRCY
+NAM,SUN,1,6,8,lambda,TRCY
+NAM,SUN,1,6,9,High density monoculture,TRCY
+NAM,SUN,1,6,10,lambda,TRCY
+NAM,SUN,1,7,1,High density monoculture,TROR
+NAM,SUN,1,7,2,IWR + Facilitator,TRCY
+NAM,SUN,1,7,3,Invasion when rare (IWR),TRCY
+NAM,SUN,1,7,4,IWR + Facilitator,TRCY
+NAM,SUN,1,7,5,lambda,TRCY
+NAM,SUN,1,7,6,lambda,TROR
+NAM,SUN,1,7,7,High density monoculture,TRCY
+NAM,SUN,1,7,8,High density monoculture,TRCY
+NAM,SUN,1,7,9,IWR + Facilitator,TROR
+NAM,SUN,1,7,10,lambda,TROR
+NAM,SUN,1,8,1,IWR + Facilitator,TRCY
+NAM,SUN,1,8,2,Invasion when rare (IWR),TROR
+NAM,SUN,1,8,3,lambda,TROR
+NAM,SUN,1,8,4,IWR + Facilitator,TROR
+NAM,SUN,1,8,5,IWR + Facilitator,TRCY
+NAM,SUN,1,8,6,IWR + Facilitator,TROR
+NAM,SUN,1,8,7,Invasion when rare (IWR),TROR
+NAM,SUN,1,8,8,lambda,TROR
+NAM,SUN,1,8,9,IWR + Facilitator,TRCY
+NAM,SUN,1,8,10,High density monoculture,TROR
+NAM,SUN,2,1,1,IWR + Facilitator,TROR
+NAM,SUN,2,1,2,lambda,TROR
+NAM,SUN,2,1,3,Invasion when rare (IWR),TRCY
+NAM,SUN,2,1,4,lambda,TROR
+NAM,SUN,2,1,5,High density monoculture,TRCY
+NAM,SUN,2,1,6,IWR + Facilitator,TRCY
+NAM,SUN,2,1,7,IWR + Facilitator,TRCY
+NAM,SUN,2,1,8,Invasion when rare (IWR),TRCY
+NAM,SUN,2,1,9,IWR + Facilitator,TROR
+NAM,SUN,2,1,10,IWR + Facilitator,TRCY
+NAM,SUN,2,2,1,lambda,TRCY
+NAM,SUN,2,2,2,High density monoculture,TRCY
+NAM,SUN,2,2,3,High density monoculture,TRCY
+NAM,SUN,2,2,4,High density monoculture,TRCY
+NAM,SUN,2,2,5,lambda,TROR
+NAM,SUN,2,2,6,Invasion when rare (IWR),TRCY
+NAM,SUN,2,2,7,lambda,TRCY
+NAM,SUN,2,2,8,lambda,TRCY
+NAM,SUN,2,2,9,Invasion when rare (IWR),TROR
+NAM,SUN,2,2,10,lambda,TROR
+NAM,SUN,2,3,1,High density monoculture,TRCY
+NAM,SUN,2,3,2,Invasion when rare (IWR),TROR
+NAM,SUN,2,3,3,IWR + Facilitator,TROR
+NAM,SUN,2,3,4,Invasion when rare (IWR),TROR
+NAM,SUN,2,3,5,Invasion when rare (IWR),TROR
+NAM,SUN,2,3,6,High density monoculture,TROR
+NAM,SUN,2,3,7,Invasion when rare (IWR),TRCY
+NAM,SUN,2,3,8,IWR + Facilitator,TRCY
+NAM,SUN,2,3,9,lambda,TRCY
+NAM,SUN,2,3,10,Invasion when rare (IWR),TRCY
+NAM,SUN,2,4,1,Invasion when rare (IWR),TRCY
+NAM,SUN,2,4,2,lambda,TRCY
+NAM,SUN,2,4,3,lambda,TROR
+NAM,SUN,2,4,4,lambda,TRCY
+NAM,SUN,2,4,5,High density monoculture,TROR
+NAM,SUN,2,4,6,lambda,TRCY
+NAM,SUN,2,4,7,High density monoculture,TROR
+NAM,SUN,2,4,8,lambda,TROR
+NAM,SUN,2,4,9,lambda,TROR
+NAM,SUN,2,4,10,IWR + Facilitator,TROR
+NAM,SUN,2,5,1,High density monoculture,TROR
+NAM,SUN,2,5,2,IWR + Facilitator,TROR
+NAM,SUN,2,5,3,lambda,TRCY
+NAM,SUN,2,5,4,Invasion when rare (IWR),TRCY
+NAM,SUN,2,5,5,lambda,TRCY
+NAM,SUN,2,5,6,Invasion when rare (IWR),TROR
+NAM,SUN,2,5,7,IWR + Facilitator,TROR
+NAM,SUN,2,5,8,High density monoculture,TRCY
+NAM,SUN,2,5,9,Invasion when rare (IWR),TRCY
+NAM,SUN,2,5,10,Invasion when rare (IWR),TROR
+NAM,SUN,2,6,1,IWR + Facilitator,TRCY
+NAM,SUN,2,6,2,IWR + Facilitator,TRCY
+NAM,SUN,2,6,3,IWR + Facilitator,TRCY
+NAM,SUN,2,6,4,IWR + Facilitator,TRCY
+NAM,SUN,2,6,5,Invasion when rare (IWR),TRCY
+NAM,SUN,2,6,6,IWR + Facilitator,TROR
+NAM,SUN,2,6,7,Invasion when rare (IWR),TROR
+NAM,SUN,2,6,8,High density monoculture,TROR
+NAM,SUN,2,6,9,IWR + Facilitator,TRCY
+NAM,SUN,2,6,10,lambda,TRCY
+NAM,SUN,2,7,1,lambda,TROR
+NAM,SUN,2,7,2,High density monoculture,TROR
+NAM,SUN,2,7,3,Invasion when rare (IWR),TROR
+NAM,SUN,2,7,4,IWR + Facilitator,TROR
+NAM,SUN,2,7,5,IWR + Facilitator,TROR
+NAM,SUN,2,7,6,High density monoculture,TRCY
+NAM,SUN,2,7,7,High density monoculture,TRCY
+NAM,SUN,2,7,8,IWR + Facilitator,TROR
+NAM,SUN,2,7,9,High density monoculture,TRCY
+NAM,SUN,2,7,10,High density monoculture,TRCY
+NAM,SUN,2,8,1,Invasion when rare (IWR),TROR
+NAM,SUN,2,8,2,Invasion when rare (IWR),TRCY
+NAM,SUN,2,8,3,High density monoculture,TROR
+NAM,SUN,2,8,4,High density monoculture,TROR
+NAM,SUN,2,8,5,IWR + Facilitator,TRCY
+NAM,SUN,2,8,6,lambda,TROR
+NAM,SUN,2,8,7,lambda,TROR
+NAM,SUN,2,8,8,Invasion when rare (IWR),TROR
+NAM,SUN,2,8,9,High density monoculture,TROR
+NAM,SUN,2,8,10,High density monoculture,TROR
+NAM,SUN,3,1,1,IWR + Facilitator,TRCY
+NAM,SUN,3,1,2,lambda,TROR
+NAM,SUN,3,1,3,lambda,TROR
+NAM,SUN,3,1,4,High density monoculture,TROR
+NAM,SUN,3,1,5,IWR + Facilitator,TRCY
+NAM,SUN,3,1,6,IWR + Facilitator,TROR
+NAM,SUN,3,1,7,IWR + Facilitator,TRCY
+NAM,SUN,3,1,8,lambda,TROR
+NAM,SUN,3,1,9,IWR + Facilitator,TRCY
+NAM,SUN,3,1,10,IWR + Facilitator,TRCY
+NAM,SUN,3,2,1,lambda,TRCY
+NAM,SUN,3,2,2,High density monoculture,TROR
+NAM,SUN,3,2,3,Invasion when rare (IWR),TRCY
+NAM,SUN,3,2,4,lambda,TRCY
+NAM,SUN,3,2,5,Invasion when rare (IWR),TRCY
+NAM,SUN,3,2,6,lambda,TRCY
+NAM,SUN,3,2,7,Invasion when rare (IWR),TROR
+NAM,SUN,3,2,8,Invasion when rare (IWR),TROR
+NAM,SUN,3,2,9,Invasion when rare (IWR),TRCY
+NAM,SUN,3,2,10,High density monoculture,TROR
+NAM,SUN,3,3,1,Invasion when rare (IWR),TROR
+NAM,SUN,3,3,2,IWR + Facilitator,TRCY
+NAM,SUN,3,3,3,IWR + Facilitator,TRCY
+NAM,SUN,3,3,4,Invasion when rare (IWR),TRCY
+NAM,SUN,3,3,5,Invasion when rare (IWR),TROR
+NAM,SUN,3,3,6,IWR + Facilitator,TRCY
+NAM,SUN,3,3,7,High density monoculture,TRCY
+NAM,SUN,3,3,8,Invasion when rare (IWR),TRCY
+NAM,SUN,3,3,9,High density monoculture,TRCY
+NAM,SUN,3,3,10,Invasion when rare (IWR),TRCY
+NAM,SUN,3,4,1,High density monoculture,TRCY
+NAM,SUN,3,4,2,lambda,TRCY
+NAM,SUN,3,4,3,High density monoculture,TRCY
+NAM,SUN,3,4,4,Invasion when rare (IWR),TROR
+NAM,SUN,3,4,5,lambda,TRCY
+NAM,SUN,3,4,6,High density monoculture,TRCY
+NAM,SUN,3,4,7,Invasion when rare (IWR),TRCY
+NAM,SUN,3,4,8,High density monoculture,TRCY
+NAM,SUN,3,4,9,Invasion when rare (IWR),TROR
+NAM,SUN,3,4,10,IWR + Facilitator,TROR
+NAM,SUN,3,5,1,Invasion when rare (IWR),TRCY
+NAM,SUN,3,5,2,Invasion when rare (IWR),TRCY
+NAM,SUN,3,5,3,High density monoculture,TROR
+NAM,SUN,3,5,4,lambda,TROR
+NAM,SUN,3,5,5,High density monoculture,TROR
+NAM,SUN,3,5,6,High density monoculture,TROR
+NAM,SUN,3,5,7,lambda,TRCY
+NAM,SUN,3,5,8,IWR + Facilitator,TRCY
+NAM,SUN,3,5,9,lambda,TRCY
+NAM,SUN,3,5,10,lambda,TROR
+NAM,SUN,3,6,1,IWR + Facilitator,TROR
+NAM,SUN,3,6,2,IWR + Facilitator,TROR
+NAM,SUN,3,6,3,IWR + Facilitator,TROR
+NAM,SUN,3,6,4,High density monoculture,TRCY
+NAM,SUN,3,6,5,lambda,TROR
+NAM,SUN,3,6,6,Invasion when rare (IWR),TROR
+NAM,SUN,3,6,7,High density monoculture,TROR
+NAM,SUN,3,6,8,lambda,TRCY
+NAM,SUN,3,6,9,High density monoculture,TROR
+NAM,SUN,3,6,10,lambda,TRCY
+NAM,SUN,3,7,1,High density monoculture,TROR
+NAM,SUN,3,7,2,High density monoculture,TRCY
+NAM,SUN,3,7,3,Invasion when rare (IWR),TROR
+NAM,SUN,3,7,4,IWR + Facilitator,TRCY
+NAM,SUN,3,7,5,High density monoculture,TRCY
+NAM,SUN,3,7,6,Invasion when rare (IWR),TRCY
+NAM,SUN,3,7,7,IWR + Facilitator,TROR
+NAM,SUN,3,7,8,IWR + Facilitator,TROR
+NAM,SUN,3,7,9,lambda,TROR
+NAM,SUN,3,7,10,Invasion when rare (IWR),TROR
+NAM,SUN,3,8,1,lambda,TROR
+NAM,SUN,3,8,2,Invasion when rare (IWR),TROR
+NAM,SUN,3,8,3,lambda,TRCY
+NAM,SUN,3,8,4,IWR + Facilitator,TROR
+NAM,SUN,3,8,5,IWR + Facilitator,TROR
+NAM,SUN,3,8,6,lambda,TROR
+NAM,SUN,3,8,7,lambda,TROR
+NAM,SUN,3,8,8,High density monoculture,TROR
+NAM,SUN,3,8,9,IWR + Facilitator,TROR
+NAM,SUN,3,8,10,High density monoculture,TRCY
+PJ,SH,1,1,1,IWR + Facilitator,TRCY
+PJ,SH,1,1,2,High density monoculture,TRCY
+PJ,SH,1,1,3,IWR + Facilitator,TRCY
+PJ,SH,1,1,4,IWR + Facilitator,TRCY
+PJ,SH,1,1,5,Invasion when rare (IWR),TRCY
+PJ,SH,1,1,6,High density monoculture,TRCY
+PJ,SH,1,1,7,High density monoculture,TRCY
+PJ,SH,1,1,8,lambda,TRCY
+PJ,SH,1,1,9,IWR + Facilitator,TRCY
+PJ,SH,1,1,10,IWR + Facilitator,TROR
+PJ,SH,1,2,1,lambda,TRCY
+PJ,SH,1,2,2,Invasion when rare (IWR),TROR
+PJ,SH,1,2,3,lambda,TROR
+PJ,SH,1,2,4,lambda,TROR
+PJ,SH,1,2,5,Invasion when rare (IWR),TROR
+PJ,SH,1,2,6,IWR + Facilitator,TROR
+PJ,SH,1,2,7,High density monoculture,TROR
+PJ,SH,1,2,8,IWR + Facilitator,TRCY
+PJ,SH,1,2,9,IWR + Facilitator,TROR
+PJ,SH,1,2,10,Invasion when rare (IWR),TRCY
+PJ,SH,1,3,1,Invasion when rare (IWR),TRCY
+PJ,SH,1,3,2,Invasion when rare (IWR),TRCY
+PJ,SH,1,3,3,Invasion when rare (IWR),TROR
+PJ,SH,1,3,4,IWR + Facilitator,TROR
+PJ,SH,1,3,5,IWR + Facilitator,TRCY
+PJ,SH,1,3,6,IWR + Facilitator,TRCY
+PJ,SH,1,3,7,IWR + Facilitator,TROR
+PJ,SH,1,3,8,High density monoculture,TROR
+PJ,SH,1,3,9,Invasion when rare (IWR),TRCY
+PJ,SH,1,3,10,Invasion when rare (IWR),TROR
+PJ,SH,1,4,1,lambda,TROR
+PJ,SH,1,4,2,lambda,TRCY
+PJ,SH,1,4,3,High density monoculture,TRCY
+PJ,SH,1,4,4,lambda,TRCY
+PJ,SH,1,4,5,lambda,TROR
+PJ,SH,1,4,6,lambda,TRCY
+PJ,SH,1,4,7,lambda,TRCY
+PJ,SH,1,4,8,Invasion when rare (IWR),TROR
+PJ,SH,1,4,9,High density monoculture,TRCY
+PJ,SH,1,4,10,lambda,TROR
+PJ,SH,1,5,1,High density monoculture,TRCY
+PJ,SH,1,5,2,lambda,TROR
+PJ,SH,1,5,3,High density monoculture,TROR
+PJ,SH,1,5,4,High density monoculture,TROR
+PJ,SH,1,5,5,IWR + Facilitator,TROR
+PJ,SH,1,5,6,Invasion when rare (IWR),TROR
+PJ,SH,1,5,7,lambda,TROR
+PJ,SH,1,5,8,IWR + Facilitator,TROR
+PJ,SH,1,5,9,Invasion when rare (IWR),TROR
+PJ,SH,1,5,10,High density monoculture,TRCY
+PJ,SH,1,6,1,High density monoculture,TROR
+PJ,SH,1,6,2,IWR + Facilitator,TROR
+PJ,SH,1,6,3,Invasion when rare (IWR),TRCY
+PJ,SH,1,6,4,High density monoculture,TRCY
+PJ,SH,1,6,5,High density monoculture,TRCY
+PJ,SH,1,6,6,lambda,TROR
+PJ,SH,1,6,7,IWR + Facilitator,TRCY
+PJ,SH,1,6,8,Invasion when rare (IWR),TRCY
+PJ,SH,1,6,9,lambda,TRCY
+PJ,SH,1,6,10,High density monoculture,TROR
+PJ,SH,1,7,1,Invasion when rare (IWR),TROR
+PJ,SH,1,7,2,IWR + Facilitator,TRCY
+PJ,SH,1,7,3,lambda,TRCY
+PJ,SH,1,7,4,Invasion when rare (IWR),TRCY
+PJ,SH,1,7,5,High density monoculture,TROR
+PJ,SH,1,7,6,Invasion when rare (IWR),TRCY
+PJ,SH,1,7,7,Invasion when rare (IWR),TROR
+PJ,SH,1,7,8,lambda,TROR
+PJ,SH,1,7,9,High density monoculture,TROR
+PJ,SH,1,7,10,lambda,TRCY
+PJ,SH,1,8,1,IWR + Facilitator,TROR
+PJ,SH,1,8,2,High density monoculture,TROR
+PJ,SH,1,8,3,IWR + Facilitator,TROR
+PJ,SH,1,8,4,Invasion when rare (IWR),TROR
+PJ,SH,1,8,5,lambda,TRCY
+PJ,SH,1,8,6,High density monoculture,TROR
+PJ,SH,1,8,7,Invasion when rare (IWR),TRCY
+PJ,SH,1,8,8,High density monoculture,TRCY
+PJ,SH,1,8,9,lambda,TROR
+PJ,SH,1,8,10,IWR + Facilitator,TRCY
+PJ,SH,2,1,1,Invasion when rare (IWR),TRCY
+PJ,SH,2,1,2,lambda,TRCY
+PJ,SH,2,1,3,Invasion when rare (IWR),TRCY
+PJ,SH,2,1,4,lambda,TROR
+PJ,SH,2,1,5,Invasion when rare (IWR),TROR
+PJ,SH,2,1,6,High density monoculture,TROR
+PJ,SH,2,1,7,IWR + Facilitator,TROR
+PJ,SH,2,1,8,lambda,TROR
+PJ,SH,2,1,9,High density monoculture,TRCY
+PJ,SH,2,1,10,lambda,TRCY
+PJ,SH,2,2,1,Invasion when rare (IWR),TROR
+PJ,SH,2,2,2,IWR + Facilitator,TRCY
+PJ,SH,2,2,3,lambda,TROR
+PJ,SH,2,2,4,lambda,TRCY
+PJ,SH,2,2,5,lambda,TRCY
+PJ,SH,2,2,6,IWR + Facilitator,TRCY
+PJ,SH,2,2,7,Invasion when rare (IWR),TRCY
+PJ,SH,2,2,8,IWR + Facilitator,TROR
+PJ,SH,2,2,9,Invasion when rare (IWR),TROR
+PJ,SH,2,2,10,High density monoculture,TROR
+PJ,SH,2,3,1,lambda,TROR
+PJ,SH,2,3,2,Invasion when rare (IWR),TROR
+PJ,SH,2,3,3,lambda,TRCY
+PJ,SH,2,3,4,High density monoculture,TROR
+PJ,SH,2,3,5,lambda,TROR
+PJ,SH,2,3,6,lambda,TRCY
+PJ,SH,2,3,7,High density monoculture,TROR
+PJ,SH,2,3,8,lambda,TRCY
+PJ,SH,2,3,9,lambda,TRCY
+PJ,SH,2,3,10,High density monoculture,TRCY
+PJ,SH,2,4,1,IWR + Facilitator,TROR
+PJ,SH,2,4,2,High density monoculture,TRCY
+PJ,SH,2,4,3,High density monoculture,TROR
+PJ,SH,2,4,4,High density monoculture,TRCY
+PJ,SH,2,4,5,High density monoculture,TRCY
+PJ,SH,2,4,6,High density monoculture,TRCY
+PJ,SH,2,4,7,High density monoculture,TRCY
+PJ,SH,2,4,8,High density monoculture,TROR
+PJ,SH,2,4,9,IWR + Facilitator,TROR
+PJ,SH,2,4,10,Invasion when rare (IWR),TROR
+PJ,SH,2,5,1,IWR + Facilitator,TRCY
+PJ,SH,2,5,2,High density monoculture,TROR
+PJ,SH,2,5,3,IWR + Facilitator,TRCY
+PJ,SH,2,5,4,Invasion when rare (IWR),TROR
+PJ,SH,2,5,5,IWR + Facilitator,TROR
+PJ,SH,2,5,6,Invasion when rare (IWR),TROR
+PJ,SH,2,5,7,IWR + Facilitator,TRCY
+PJ,SH,2,5,8,High density monoculture,TRCY
+PJ,SH,2,5,9,High density monoculture,TROR
+PJ,SH,2,5,10,Invasion when rare (IWR),TRCY
+PJ,SH,2,6,1,High density monoculture,TROR
+PJ,SH,2,6,2,Invasion when rare (IWR),TRCY
+PJ,SH,2,6,3,Invasion when rare (IWR),TROR
+PJ,SH,2,6,4,IWR + Facilitator,TRCY
+PJ,SH,2,6,5,High density monoculture,TROR
+PJ,SH,2,6,6,Invasion when rare (IWR),TRCY
+PJ,SH,2,6,7,lambda,TRCY
+PJ,SH,2,6,8,Invasion when rare (IWR),TRCY
+PJ,SH,2,6,9,IWR + Facilitator,TRCY
+PJ,SH,2,6,10,lambda,TROR
+PJ,SH,2,7,1,lambda,TRCY
+PJ,SH,2,7,2,lambda,TROR
+PJ,SH,2,7,3,IWR + Facilitator,TROR
+PJ,SH,2,7,4,IWR + Facilitator,TROR
+PJ,SH,2,7,5,IWR + Facilitator,TRCY
+PJ,SH,2,7,6,lambda,TROR
+PJ,SH,2,7,7,Invasion when rare (IWR),TROR
+PJ,SH,2,7,8,Invasion when rare (IWR),TROR
+PJ,SH,2,7,9,lambda,TROR
+PJ,SH,2,7,10,IWR + Facilitator,TRCY
+PJ,SH,2,8,1,High density monoculture,TRCY
+PJ,SH,2,8,2,IWR + Facilitator,TROR
+PJ,SH,2,8,3,High density monoculture,TRCY
+PJ,SH,2,8,4,Invasion when rare (IWR),TRCY
+PJ,SH,2,8,5,Invasion when rare (IWR),TRCY
+PJ,SH,2,8,6,IWR + Facilitator,TROR
+PJ,SH,2,8,7,lambda,TROR
+PJ,SH,2,8,8,IWR + Facilitator,TRCY
+PJ,SH,2,8,9,Invasion when rare (IWR),TRCY
+PJ,SH,2,8,10,IWR + Facilitator,TROR
+PJ,SH,3,1,1,Invasion when rare (IWR),TROR
+PJ,SH,3,1,2,lambda,TROR
+PJ,SH,3,1,3,Invasion when rare (IWR),TROR
+PJ,SH,3,1,4,lambda,TROR
+PJ,SH,3,1,5,lambda,TROR
+PJ,SH,3,1,6,High density monoculture,TROR
+PJ,SH,3,1,7,lambda,TRCY
+PJ,SH,3,1,8,lambda,TRCY
+PJ,SH,3,1,9,IWR + Facilitator,TRCY
+PJ,SH,3,1,10,IWR + Facilitator,TRCY
+PJ,SH,3,2,1,High density monoculture,TROR
+PJ,SH,3,2,2,Invasion when rare (IWR),TROR
+PJ,SH,3,2,3,lambda,TRCY
+PJ,SH,3,2,4,High density monoculture,TROR
+PJ,SH,3,2,5,Invasion when rare (IWR),TRCY
+PJ,SH,3,2,6,lambda,TROR
+PJ,SH,3,2,7,lambda,TROR
+PJ,SH,3,2,8,IWR + Facilitator,TRCY
+PJ,SH,3,2,9,lambda,TROR
+PJ,SH,3,2,10,lambda,TROR
+PJ,SH,3,3,1,lambda,TROR
+PJ,SH,3,3,2,High density monoculture,TRCY
+PJ,SH,3,3,3,lambda,TROR
+PJ,SH,3,3,4,lambda,TRCY
+PJ,SH,3,3,5,Invasion when rare (IWR),TROR
+PJ,SH,3,3,6,IWR + Facilitator,TROR
+PJ,SH,3,3,7,IWR + Facilitator,TRCY
+PJ,SH,3,3,8,IWR + Facilitator,TROR
+PJ,SH,3,3,9,High density monoculture,TRCY
+PJ,SH,3,3,10,High density monoculture,TRCY
+PJ,SH,3,4,1,lambda,TRCY
+PJ,SH,3,4,2,IWR + Facilitator,TROR
+PJ,SH,3,4,3,High density monoculture,TROR
+PJ,SH,3,4,4,Invasion when rare (IWR),TROR
+PJ,SH,3,4,5,IWR + Facilitator,TRCY
+PJ,SH,3,4,6,lambda,TRCY
+PJ,SH,3,4,7,High density monoculture,TRCY
+PJ,SH,3,4,8,Invasion when rare (IWR),TRCY
+PJ,SH,3,4,9,Invasion when rare (IWR),TRCY
+PJ,SH,3,4,10,High density monoculture,TROR
+PJ,SH,3,5,1,IWR + Facilitator,TROR
+PJ,SH,3,5,2,lambda,TRCY
+PJ,SH,3,5,3,IWR + Facilitator,TRCY
+PJ,SH,3,5,4,Invasion when rare (IWR),TRCY
+PJ,SH,3,5,5,lambda,TRCY
+PJ,SH,3,5,6,IWR + Facilitator,TRCY
+PJ,SH,3,5,7,Invasion when rare (IWR),TRCY
+PJ,SH,3,5,8,lambda,TROR
+PJ,SH,3,5,9,lambda,TRCY
+PJ,SH,3,5,10,Invasion when rare (IWR),TRCY
+PJ,SH,3,6,1,High density monoculture,TRCY
+PJ,SH,3,6,2,High density monoculture,TROR
+PJ,SH,3,6,3,High density monoculture,TRCY
+PJ,SH,3,6,4,High density monoculture,TRCY
+PJ,SH,3,6,5,High density monoculture,TROR
+PJ,SH,3,6,6,Invasion when rare (IWR),TROR
+PJ,SH,3,6,7,IWR + Facilitator,TROR
+PJ,SH,3,6,8,High density monoculture,TROR
+PJ,SH,3,6,9,IWR + Facilitator,TROR
+PJ,SH,3,6,10,lambda,TRCY
+PJ,SH,3,7,1,IWR + Facilitator,TRCY
+PJ,SH,3,7,2,Invasion when rare (IWR),TRCY
+PJ,SH,3,7,3,Invasion when rare (IWR),TRCY
+PJ,SH,3,7,4,IWR + Facilitator,TRCY
+PJ,SH,3,7,5,IWR + Facilitator,TROR
+PJ,SH,3,7,6,Invasion when rare (IWR),TRCY
+PJ,SH,3,7,7,High density monoculture,TROR
+PJ,SH,3,7,8,High density monoculture,TRCY
+PJ,SH,3,7,9,High density monoculture,TROR
+PJ,SH,3,7,10,Invasion when rare (IWR),TROR
+PJ,SH,3,8,1,Invasion when rare (IWR),TRCY
+PJ,SH,3,8,2,IWR + Facilitator,TRCY
+PJ,SH,3,8,3,IWR + Facilitator,TROR
+PJ,SH,3,8,4,IWR + Facilitator,TROR
+PJ,SH,3,8,5,High density monoculture,TRCY
+PJ,SH,3,8,6,High density monoculture,TRCY
+PJ,SH,3,8,7,Invasion when rare (IWR),TROR
+PJ,SH,3,8,8,Invasion when rare (IWR),TROR
+PJ,SH,3,8,9,Invasion when rare (IWR),TROR
+PJ,SH,3,8,10,IWR + Facilitator,TROR
+PJ,SUN,1,1,1,High density monoculture,TROR
+PJ,SUN,1,1,2,High density monoculture,TROR
+PJ,SUN,1,1,3,Invasion when rare (IWR),TRCY
+PJ,SUN,1,1,4,IWR + Facilitator,TRCY
+PJ,SUN,1,1,5,Invasion when rare (IWR),TROR
+PJ,SUN,1,1,6,High density monoculture,TRCY
+PJ,SUN,1,1,7,lambda,TROR
+PJ,SUN,1,1,8,High density monoculture,TRCY
+PJ,SUN,1,1,9,IWR + Facilitator,TROR
+PJ,SUN,1,1,10,High density monoculture,TRCY
+PJ,SUN,1,2,1,lambda,TROR
+PJ,SUN,1,2,2,Invasion when rare (IWR),TROR
+PJ,SUN,1,2,3,High density monoculture,TROR
+PJ,SUN,1,2,4,lambda,TROR
+PJ,SUN,1,2,5,IWR + Facilitator,TROR
+PJ,SUN,1,2,6,lambda,TRCY
+PJ,SUN,1,2,7,Invasion when rare (IWR),TRCY
+PJ,SUN,1,2,8,lambda,TRCY
+PJ,SUN,1,2,9,High density monoculture,TROR
+PJ,SUN,1,2,10,lambda,TROR
+PJ,SUN,1,3,1,IWR + Facilitator,TROR
+PJ,SUN,1,3,2,lambda,TROR
+PJ,SUN,1,3,3,IWR + Facilitator,TROR
+PJ,SUN,1,3,4,Invasion when rare (IWR),TRCY
+PJ,SUN,1,3,5,Invasion when rare (IWR),TRCY
+PJ,SUN,1,3,6,Invasion when rare (IWR),TRCY
+PJ,SUN,1,3,7,IWR + Facilitator,TRCY
+PJ,SUN,1,3,8,IWR + Facilitator,TRCY
+PJ,SUN,1,3,9,High density monoculture,TRCY
+PJ,SUN,1,3,10,IWR + Facilitator,TRCY
+PJ,SUN,1,4,1,Invasion when rare (IWR),TRCY
+PJ,SUN,1,4,2,IWR + Facilitator,TRCY
+PJ,SUN,1,4,3,High density monoculture,TRCY
+PJ,SUN,1,4,4,Invasion when rare (IWR),TROR
+PJ,SUN,1,4,5,lambda,TRCY
+PJ,SUN,1,4,6,High density monoculture,TROR
+PJ,SUN,1,4,7,Invasion when rare (IWR),TROR
+PJ,SUN,1,4,8,Invasion when rare (IWR),TRCY
+PJ,SUN,1,4,9,IWR + Facilitator,TRCY
+PJ,SUN,1,4,10,Invasion when rare (IWR),TROR
+PJ,SUN,1,5,1,High density monoculture,TRCY
+PJ,SUN,1,5,2,High density monoculture,TRCY
+PJ,SUN,1,5,3,lambda,TRCY
+PJ,SUN,1,5,4,High density monoculture,TROR
+PJ,SUN,1,5,5,IWR + Facilitator,TRCY
+PJ,SUN,1,5,6,Invasion when rare (IWR),TROR
+PJ,SUN,1,5,7,lambda,TRCY
+PJ,SUN,1,5,8,IWR + Facilitator,TROR
+PJ,SUN,1,5,9,lambda,TROR
+PJ,SUN,1,5,10,lambda,TRCY
+PJ,SUN,1,6,1,IWR + Facilitator,TRCY
+PJ,SUN,1,6,2,Invasion when rare (IWR),TRCY
+PJ,SUN,1,6,3,lambda,TROR
+PJ,SUN,1,6,4,IWR + Facilitator,TROR
+PJ,SUN,1,6,5,lambda,TROR
+PJ,SUN,1,6,6,IWR + Facilitator,TRCY
+PJ,SUN,1,6,7,High density monoculture,TRCY
+PJ,SUN,1,6,8,High density monoculture,TROR
+PJ,SUN,1,6,9,Invasion when rare (IWR),TRCY
+PJ,SUN,1,6,10,Invasion when rare (IWR),TRCY
+PJ,SUN,1,7,1,lambda,TRCY
+PJ,SUN,1,7,2,IWR + Facilitator,TROR
+PJ,SUN,1,7,3,IWR + Facilitator,TRCY
+PJ,SUN,1,7,4,lambda,TRCY
+PJ,SUN,1,7,5,High density monoculture,TRCY
+PJ,SUN,1,7,6,IWR + Facilitator,TROR
+PJ,SUN,1,7,7,IWR + Facilitator,TROR
+PJ,SUN,1,7,8,lambda,TROR
+PJ,SUN,1,7,9,Invasion when rare (IWR),TROR
+PJ,SUN,1,7,10,IWR + Facilitator,TROR
+PJ,SUN,1,8,1,Invasion when rare (IWR),TROR
+PJ,SUN,1,8,2,lambda,TRCY
+PJ,SUN,1,8,3,Invasion when rare (IWR),TROR
+PJ,SUN,1,8,4,High density monoculture,TRCY
+PJ,SUN,1,8,5,High density monoculture,TROR
+PJ,SUN,1,8,6,lambda,TROR
+PJ,SUN,1,8,7,High density monoculture,TROR
+PJ,SUN,1,8,8,Invasion when rare (IWR),TROR
+PJ,SUN,1,8,9,lambda,TRCY
+PJ,SUN,1,8,10,High density monoculture,TROR
+PJ,SUN,2,1,1,Invasion when rare (IWR),TRCY
+PJ,SUN,2,1,2,lambda,TROR
+PJ,SUN,2,1,3,IWR + Facilitator,TROR
+PJ,SUN,2,1,4,High density monoculture,TROR
+PJ,SUN,2,1,5,IWR + Facilitator,TRCY
+PJ,SUN,2,1,6,lambda,TRCY
+PJ,SUN,2,1,7,Invasion when rare (IWR),TROR
+PJ,SUN,2,1,8,IWR + Facilitator,TROR
+PJ,SUN,2,1,9,Invasion when rare (IWR),TROR
+PJ,SUN,2,1,10,Invasion when rare (IWR),TROR
+PJ,SUN,2,2,1,High density monoculture,TRCY
+PJ,SUN,2,2,2,Invasion when rare (IWR),TRCY
+PJ,SUN,2,2,3,Invasion when rare (IWR),TRCY
+PJ,SUN,2,2,4,IWR + Facilitator,TROR
+PJ,SUN,2,2,5,Invasion when rare (IWR),TROR
+PJ,SUN,2,2,6,Invasion when rare (IWR),TROR
+PJ,SUN,2,2,7,Invasion when rare (IWR),TRCY
+PJ,SUN,2,2,8,IWR + Facilitator,TRCY
+PJ,SUN,2,2,9,IWR + Facilitator,TROR
+PJ,SUN,2,2,10,High density monoculture,TRCY
+PJ,SUN,2,3,1,lambda,TROR
+PJ,SUN,2,3,2,IWR + Facilitator,TROR
+PJ,SUN,2,3,3,High density monoculture,TROR
+PJ,SUN,2,3,4,lambda,TRCY
+PJ,SUN,2,3,5,High density monoculture,TROR
+PJ,SUN,2,3,6,Invasion when rare (IWR),TRCY
+PJ,SUN,2,3,7,High density monoculture,TRCY
+PJ,SUN,2,3,8,High density monoculture,TROR
+PJ,SUN,2,3,9,lambda,TROR
+PJ,SUN,2,3,10,IWR + Facilitator,TROR
+PJ,SUN,2,4,1,Invasion when rare (IWR),TROR
+PJ,SUN,2,4,2,High density monoculture,TROR
+PJ,SUN,2,4,3,High density monoculture,TRCY
+PJ,SUN,2,4,4,lambda,TROR
+PJ,SUN,2,4,5,IWR + Facilitator,TROR
+PJ,SUN,2,4,6,High density monoculture,TRCY
+PJ,SUN,2,4,7,High density monoculture,TROR
+PJ,SUN,2,4,8,lambda,TRCY
+PJ,SUN,2,4,9,High density monoculture,TRCY
+PJ,SUN,2,4,10,Invasion when rare (IWR),TRCY
+PJ,SUN,2,5,1,IWR + Facilitator,TRCY
+PJ,SUN,2,5,2,Invasion when rare (IWR),TROR
+PJ,SUN,2,5,3,IWR + Facilitator,TRCY
+PJ,SUN,2,5,4,Invasion when rare (IWR),TROR
+PJ,SUN,2,5,5,High density monoculture,TRCY
+PJ,SUN,2,5,6,IWR + Facilitator,TRCY
+PJ,SUN,2,5,7,IWR + Facilitator,TROR
+PJ,SUN,2,5,8,High density monoculture,TRCY
+PJ,SUN,2,5,9,High density monoculture,TROR
+PJ,SUN,2,5,10,lambda,TROR
+PJ,SUN,2,6,1,lambda,TRCY
+PJ,SUN,2,6,2,lambda,TRCY
+PJ,SUN,2,6,3,lambda,TROR
+PJ,SUN,2,6,4,IWR + Facilitator,TRCY
+PJ,SUN,2,6,5,lambda,TROR
+PJ,SUN,2,6,6,High density monoculture,TROR
+PJ,SUN,2,6,7,lambda,TRCY
+PJ,SUN,2,6,8,Invasion when rare (IWR),TRCY
+PJ,SUN,2,6,9,Invasion when rare (IWR),TRCY
+PJ,SUN,2,6,10,High density monoculture,TROR
+PJ,SUN,2,7,1,IWR + Facilitator,TROR
+PJ,SUN,2,7,2,High density monoculture,TRCY
+PJ,SUN,2,7,3,lambda,TRCY
+PJ,SUN,2,7,4,High density monoculture,TRCY
+PJ,SUN,2,7,5,Invasion when rare (IWR),TRCY
+PJ,SUN,2,7,6,lambda,TROR
+PJ,SUN,2,7,7,lambda,TROR
+PJ,SUN,2,7,8,Invasion when rare (IWR),TROR
+PJ,SUN,2,7,9,IWR + Facilitator,TRCY
+PJ,SUN,2,7,10,IWR + Facilitator,TRCY
+PJ,SUN,2,8,1,High density monoculture,TROR
+PJ,SUN,2,8,2,IWR + Facilitator,TRCY
+PJ,SUN,2,8,3,Invasion when rare (IWR),TROR
+PJ,SUN,2,8,4,Invasion when rare (IWR),TRCY
+PJ,SUN,2,8,5,lambda,TRCY
+PJ,SUN,2,8,6,IWR + Facilitator,TROR
+PJ,SUN,2,8,7,IWR + Facilitator,TRCY
+PJ,SUN,2,8,8,lambda,TROR
+PJ,SUN,2,8,9,lambda,TRCY
+PJ,SUN,2,8,10,lambda,TRCY
+PJ,SUN,3,1,1,High density monoculture,TRCY
+PJ,SUN,3,1,2,IWR + Facilitator,TRCY
+PJ,SUN,3,1,3,Invasion when rare (IWR),TROR
+PJ,SUN,3,1,4,lambda,TROR
+PJ,SUN,3,1,5,High density monoculture,TRCY
+PJ,SUN,3,1,6,IWR + Facilitator,TROR
+PJ,SUN,3,1,7,lambda,TROR
+PJ,SUN,3,1,8,High density monoculture,TRCY
+PJ,SUN,3,1,9,IWR + Facilitator,TROR
+PJ,SUN,3,1,10,IWR + Facilitator,TRCY
+PJ,SUN,3,2,1,lambda,TROR
+PJ,SUN,3,2,2,lambda,TROR
+PJ,SUN,3,2,3,Invasion when rare (IWR),TRCY
+PJ,SUN,3,2,4,IWR + Facilitator,TRCY
+PJ,SUN,3,2,5,IWR + Facilitator,TRCY
+PJ,SUN,3,2,6,lambda,TRCY
+PJ,SUN,3,2,7,IWR + Facilitator,TROR
+PJ,SUN,3,2,8,Invasion when rare (IWR),TROR
+PJ,SUN,3,2,9,IWR + Facilitator,TRCY
+PJ,SUN,3,2,10,lambda,TRCY
+PJ,SUN,3,3,1,Invasion when rare (IWR),TRCY
+PJ,SUN,3,3,2,High density monoculture,TROR
+PJ,SUN,3,3,3,IWR + Facilitator,TRCY
+PJ,SUN,3,3,4,Invasion when rare (IWR),TROR
+PJ,SUN,3,3,5,Invasion when rare (IWR),TROR
+PJ,SUN,3,3,6,IWR + Facilitator,TRCY
+PJ,SUN,3,3,7,High density monoculture,TRCY
+PJ,SUN,3,3,8,IWR + Facilitator,TROR
+PJ,SUN,3,3,9,lambda,TRCY
+PJ,SUN,3,3,10,High density monoculture,TRCY
+PJ,SUN,3,4,1,lambda,TRCY
+PJ,SUN,3,4,2,Invasion when rare (IWR),TRCY
+PJ,SUN,3,4,3,IWR + Facilitator,TROR
+PJ,SUN,3,4,4,High density monoculture,TROR
+PJ,SUN,3,4,5,High density monoculture,TROR
+PJ,SUN,3,4,6,Invasion when rare (IWR),TROR
+PJ,SUN,3,4,7,Invasion when rare (IWR),TROR
+PJ,SUN,3,4,8,Invasion when rare (IWR),TRCY
+PJ,SUN,3,4,9,High density monoculture,TRCY
+PJ,SUN,3,4,10,Invasion when rare (IWR),TROR
+PJ,SUN,3,5,1,IWR + Facilitator,TRCY
+PJ,SUN,3,5,2,IWR + Facilitator,TROR
+PJ,SUN,3,5,3,High density monoculture,TRCY
+PJ,SUN,3,5,4,IWR + Facilitator,TROR
+PJ,SUN,3,5,5,IWR + Facilitator,TROR
+PJ,SUN,3,5,6,High density monoculture,TRCY
+PJ,SUN,3,5,7,IWR + Facilitator,TRCY
+PJ,SUN,3,5,8,lambda,TROR
+PJ,SUN,3,5,9,lambda,TROR
+PJ,SUN,3,5,10,IWR + Facilitator,TROR
+PJ,SUN,3,6,1,IWR + Facilitator,TROR
+PJ,SUN,3,6,2,High density monoculture,TRCY
+PJ,SUN,3,6,3,lambda,TRCY
+PJ,SUN,3,6,4,lambda,TRCY
+PJ,SUN,3,6,5,lambda,TROR
+PJ,SUN,3,6,6,Invasion when rare (IWR),TRCY
+PJ,SUN,3,6,7,Invasion when rare (IWR),TRCY
+PJ,SUN,3,6,8,lambda,TRCY
+PJ,SUN,3,6,9,High density monoculture,TROR
+PJ,SUN,3,6,10,Invasion when rare (IWR),TRCY
+PJ,SUN,3,7,1,High density monoculture,TROR
+PJ,SUN,3,7,2,lambda,TRCY
+PJ,SUN,3,7,3,lambda,TROR
+PJ,SUN,3,7,4,High density monoculture,TRCY
+PJ,SUN,3,7,5,Invasion when rare (IWR),TRCY
+PJ,SUN,3,7,6,High density monoculture,TROR
+PJ,SUN,3,7,7,High density monoculture,TROR
+PJ,SUN,3,7,8,High density monoculture,TROR
+PJ,SUN,3,7,9,Invasion when rare (IWR),TROR
+PJ,SUN,3,7,10,lambda,TROR
+PJ,SUN,3,8,1,Invasion when rare (IWR),TROR
+PJ,SUN,3,8,2,Invasion when rare (IWR),TROR
+PJ,SUN,3,8,3,High density monoculture,TROR
+PJ,SUN,3,8,4,Invasion when rare (IWR),TRCY
+PJ,SUN,3,8,5,lambda,TRCY
+PJ,SUN,3,8,6,lambda,TROR
+PJ,SUN,3,8,7,lambda,TRCY
+PJ,SUN,3,8,8,IWR + Facilitator,TRCY
+PJ,SUN,3,8,9,Invasion when rare (IWR),TRCY
+PJ,SUN,3,8,10,High density monoculture,TROR

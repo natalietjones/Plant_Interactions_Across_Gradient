@@ -1,0 +1,25 @@
+Unique row-level locations in Trachymene subset:
+[1] "Kings_Park" "Kunjin"     "Perenjori"  "UQ"        
+
+Unique field/chambers values:
+[1] "chambers" "field"   
+
+Counts by location, researcher, field_chambers, sp_code:
+     location                   researcher field_chambers sp_code  n
+1   Perenjori                 Isaac_Towers          field    TROR 96
+2   Perenjori                 Isaac_Towers          field    TRCY 92
+3  Kings_Park John_Dwyer_and Todd_Erickson       chambers    TROR 62
+4          UQ             Delphia_Manietta       chambers    TROR 60
+5  Kings_Park John_Dwyer_and Todd_Erickson       chambers    TRCY 56
+6  Kings_Park                 Isaac_Towers       chambers    TRCY 40
+7  Kings_Park                 Isaac_Towers       chambers    TROR 40
+8   Perenjori                Maia_Raymundo          field    TRCY 30
+9   Perenjori                Maia_Raymundo          field    TROR 30
+10  Perenjori                 Trace_Martyn          field    TRCY 19
+11  Perenjori                 Trace_Martyn          field    TROR 19
+12     Kunjin            Claire_Wainwright          field    TRCY  5
+13     Kunjin            Claire_Wainwright          field    TROR  5
+14     Kunjin                      Hao_Ran          field    TRCY  5
+15  Perenjori            Claire_Wainwright          field    TRCY  5
+16  Perenjori            Claire_Wainwright          field    TROR  5
+17     Kunjin                      Hao_Ran          field    TROR  4

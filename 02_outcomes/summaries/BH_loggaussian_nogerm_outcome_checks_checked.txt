@@ -1,0 +1,20 @@
+
+Using germination:
+[1] FALSE
+
+Outcome-90 counts:
+# A tibble: 1 × 2
+  outcome_90     n
+  <chr>      <int>
+1 ambiguous     56
+
+Most-supported-outcome counts:
+# A tibble: 2 × 2
+  most_supported_outcome     n
+  <chr>                  <int>
+1 TRCY_wins                 41
+2 TROR_wins                 15
+
+Summary of max support:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.4853  0.5546  0.6426  0.6502  0.7026  0.8938 

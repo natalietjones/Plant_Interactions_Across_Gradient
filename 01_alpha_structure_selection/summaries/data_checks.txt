@@ -1,0 +1,9 @@
+
+Summary of log(fitness + 1):
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   1.609   2.079   2.133   2.833   5.565 
+
+Levels:
+[1] "TRCY" "TROR"
+[1] "BEN" "CS"  "GH"  "NAM" "PJ" 
+[1] "SH"  "SUN"

@@ -1,0 +1,47 @@
+
+Using germination:
+[1] FALSE
+
+Selected environments (fac_sc = 0 vs mean fac_sc among values >= 50th percentile in each Site x Cov):
+   Site Cov   fac_sc           fac_label  fac_source fac_q50 n_used
+1   BEN  SH 0.000000 Without facilitator  fixed_zero      NA     NA
+2   BEN  SH 2.074074    With facilitator mean_ge_q50       0      1
+3   BEN SUN 0.000000 Without facilitator  fixed_zero      NA     NA
+4   BEN SUN 3.914286    With facilitator mean_ge_q50       2      1
+5    GH  SH 0.000000 Without facilitator  fixed_zero      NA     NA
+6    GH  SH 1.230769    With facilitator mean_ge_q50       0      1
+7    GH SUN 0.000000 Without facilitator  fixed_zero      NA     NA
+8    GH SUN 2.204082    With facilitator mean_ge_q50       0      1
+9   NAM  SH 0.000000 Without facilitator  fixed_zero      NA     NA
+10  NAM  SH 1.551724    With facilitator mean_ge_q50       0      1
+11  NAM SUN 0.000000 Without facilitator  fixed_zero      NA     NA
+12  NAM SUN 2.654545    With facilitator mean_ge_q50       0      1
+13   PJ  SH 0.000000 Without facilitator  fixed_zero      NA     NA
+14   PJ  SH 2.555556    With facilitator mean_ge_q50       0      1
+15   PJ SUN 0.000000 Without facilitator  fixed_zero      NA     NA
+16   PJ SUN 1.000000    With facilitator mean_ge_q50       0      1
+17   CS  SH 0.000000 Without facilitator  fixed_zero      NA     NA
+18   CS  SH 1.000000    With facilitator mean_ge_q50       0      1
+19   CS SUN 0.000000 Without facilitator  fixed_zero      NA     NA
+20   CS SUN 1.333333    With facilitator mean_ge_q50       0      1
+
+Site and cover levels used:
+[1] "BEN" "CS"  "GH"  "NAM" "PJ" 
+[1] "SH"  "SUN"
+
+Summary of posterior support for positive invasion growth:
+# A tibble: 40 × 9
+   Site  Cov   fac_label           species_code fac_sc igr_med igr_lwr igr_upr p_positive
+   <fct> <fct> <fct>               <fct>         <dbl>   <dbl>   <dbl>   <dbl>      <dbl>
+ 1 BEN   SH    Without facilitator TRCY           0    -0.293   -1.77    0.838      0.312
+ 2 BEN   SH    Without facilitator TROR           0     0.317   -0.888   1.22       0.715
+ 3 BEN   SH    With facilitator    TRCY           2.07 -0.103   -1.72    1.19       0.440
+ 4 BEN   SH    With facilitator    TROR           2.07  0.153   -1.23    1.28       0.597
+ 5 GH    SH    Without facilitator TRCY           0    -0.352   -1.77    0.684      0.260
+ 6 GH    SH    Without facilitator TROR           0     0.368   -0.767   1.16       0.76 
+ 7 GH    SH    With facilitator    TRCY           1.23 -0.192   -1.71    1.01       0.387
+ 8 GH    SH    With facilitator    TROR           1.23  0.230   -1.06    1.23       0.649
+ 9 NAM   SH    Without facilitator TRCY           0    -0.0812  -1.47    0.867      0.441
+10 NAM   SH    Without facilitator TROR           0     0.112   -1.05    0.930      0.590
+# ℹ 30 more rows
+# ℹ Use `print(n = ...)` to see more rows

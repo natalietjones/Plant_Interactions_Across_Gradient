@@ -1,0 +1,14 @@
+
+Summary of raw fitness:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00    4.00    7.00   15.19   16.00  260.00 
+
+Check whether fitness is integer-valued:
+[1] TRUE
+
+Summary of rounded count fitness:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00    4.00    7.00   15.19   16.00  260.00 
+
+Germination priors loaded from:
+[1] "C:\\Users\\natal\\OneDrive - Griffith University\\pairwise coex across env gradients\\2026 Analysis\\00_germination_priors\\selection\\germination_priors.rds"

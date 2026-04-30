@@ -1,0 +1,4 @@
+       elpd_diff se_diff
+quad    0.0       0.0   
+linear -2.2       2.5   
+nofac  -8.2       6.2   

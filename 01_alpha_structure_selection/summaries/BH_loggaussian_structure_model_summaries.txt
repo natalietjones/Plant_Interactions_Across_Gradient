@@ -1,0 +1,636 @@
+
+====================
+Family branch used
+====================
+[1] "BH"
+
+====================
+Model 1 summary
+====================
+ Family: gaussian 
+  Links: mu = identity 
+Formula: fitness_log ~ log(exp(etalam)/(1 + exp(etaai) * intra_sc + exp(etaaj) * inter_sc) + 1) 
+         etalam ~ 0 + focsp + focsp:Site + focsp:Cov + focsp:fac_sc + focsp:Site:fac_sc + focsp:Cov:fac_sc + (1 | BLK)
+         etaai ~ 0 + focsp
+         etaaj ~ 0 + focsp
+   Data: data (Number of observations: 1387) 
+  Draws: 4 chains, each with iter = 4000; warmup = 2000; thin = 1;
+         total post-warmup draws = 8000
+
+Multilevel Hyperparameters:
+~BLK (Number of levels: 3) 
+                     Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(etalam_Intercept)     0.45      0.41     0.11     1.61 1.00     1955     1684
+
+Regression Coefficients:
+                                Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
+etalam_focspTRCY                    1.57      0.38     0.55     2.10 1.00     1756
+etalam_focspTROR                    1.75      0.38     0.71     2.28 1.00     1867
+etalam_focspTRCY:SiteCS            -1.29      0.24    -1.79    -0.82 1.00     6265
+etalam_focspTROR:SiteCS            -1.60      0.30    -2.24    -1.04 1.00     7640
+etalam_focspTRCY:SiteGH            -0.25      0.16    -0.56     0.06 1.00     4642
+etalam_focspTROR:SiteGH            -0.18      0.16    -0.49     0.13 1.00     4789
+etalam_focspTRCY:SiteNAM           -0.15      0.16    -0.47     0.14 1.00     4892
+etalam_focspTROR:SiteNAM           -0.36      0.17    -0.68    -0.03 1.00     5031
+etalam_focspTRCY:SitePJ             0.52      0.14     0.24     0.80 1.00     4815
+etalam_focspTROR:SitePJ             0.09      0.15    -0.21     0.38 1.00     5099
+etalam_focspTRCY:CovSUN             0.76      0.10     0.56     0.96 1.00     8362
+etalam_focspTROR:CovSUN             0.48      0.11     0.27     0.69 1.00     8021
+etalam_focspTRCY:fac_sc             0.26      0.10     0.06     0.45 1.00     3450
+etalam_focspTROR:fac_sc             0.16      0.13    -0.09     0.41 1.00     4387
+etalam_focspTRCY:SiteCS:fac_sc     -1.00      0.83    -2.94     0.29 1.00     7725
+etalam_focspTROR:SiteCS:fac_sc     -0.27      0.83    -2.26     1.04 1.00     7711
+etalam_focspTRCY:SiteGH:fac_sc      0.19      0.12    -0.04     0.42 1.00     7302
+etalam_focspTROR:SiteGH:fac_sc      0.14      0.09    -0.03     0.31 1.00     7081
+etalam_focspTRCY:SiteNAM:fac_sc     0.10      0.08    -0.06     0.25 1.00     6487
+etalam_focspTROR:SiteNAM:fac_sc     0.01      0.08    -0.16     0.17 1.00     6527
+etalam_focspTRCY:SitePJ:fac_sc     -0.14      0.12    -0.38     0.11 1.00     4153
+etalam_focspTROR:SitePJ:fac_sc     -0.18      0.23    -0.68     0.24 1.00     6014
+etalam_focspTRCY:CovSUN:fac_sc     -0.19      0.10    -0.39     0.00 1.00     3842
+etalam_focspTROR:CovSUN:fac_sc     -0.16      0.13    -0.40     0.10 1.00     4482
+etaai_focspTRCY                    -4.64      0.54    -5.83    -3.75 1.00     9354
+etaai_focspTROR                    -4.41      0.60    -5.80    -3.39 1.00     8572
+etaaj_focspTRCY                    -4.26      0.52    -5.49    -3.40 1.00     8182
+etaaj_focspTROR                    -4.83      0.49    -5.93    -4.02 1.00     7592
+                                Tail_ESS
+etalam_focspTRCY                    1273
+etalam_focspTROR                    1336
+etalam_focspTRCY:SiteCS             5884
+etalam_focspTROR:SiteCS             5558
+etalam_focspTRCY:SiteGH             5403
+etalam_focspTROR:SiteGH             5704
+etalam_focspTRCY:SiteNAM            5909
+etalam_focspTROR:SiteNAM            5314
+etalam_focspTRCY:SitePJ             5922
+etalam_focspTROR:SitePJ             6050
+etalam_focspTRCY:CovSUN             6363
+etalam_focspTROR:CovSUN             6012
+etalam_focspTRCY:fac_sc             4178
+etalam_focspTROR:fac_sc             5165
+etalam_focspTRCY:SiteCS:fac_sc      4410
+etalam_focspTROR:SiteCS:fac_sc      3718
+etalam_focspTRCY:SiteGH:fac_sc      6200
+etalam_focspTROR:SiteGH:fac_sc      6054
+etalam_focspTRCY:SiteNAM:fac_sc     5394
+etalam_focspTROR:SiteNAM:fac_sc     5646
+etalam_focspTRCY:SitePJ:fac_sc      4950
+etalam_focspTROR:SitePJ:fac_sc      4619
+etalam_focspTRCY:CovSUN:fac_sc      5024
+etalam_focspTROR:CovSUN:fac_sc      5316
+etaai_focspTRCY                     5299
+etaai_focspTROR                     4536
+etaaj_focspTRCY                     4569
+etaaj_focspTROR                     4517
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     1.06      0.02     1.02     1.10 1.00     9426     5958
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+
+====================
+Model 2 summary
+====================
+ Family: gaussian 
+  Links: mu = identity 
+Formula: fitness_log ~ log(exp(etalam)/(1 + exp(etaai) * intra_sc + exp(etaaj) * inter_sc) + 1) 
+         etalam ~ 0 + focsp + focsp:Site + focsp:Cov + focsp:fac_sc + focsp:Site:fac_sc + focsp:Cov:fac_sc + (1 | BLK)
+         etaai ~ 0 + focsp + focsp:Site + focsp:Cov
+         etaaj ~ 0 + focsp + focsp:Site + focsp:Cov
+   Data: data (Number of observations: 1387) 
+  Draws: 4 chains, each with iter = 4000; warmup = 2000; thin = 1;
+         total post-warmup draws = 8000
+
+Multilevel Hyperparameters:
+~BLK (Number of levels: 3) 
+                     Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(etalam_Intercept)     0.42      0.36     0.10     1.41 1.00     2424     3046
+
+Regression Coefficients:
+                                Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
+etalam_focspTRCY                    1.56      0.34     0.65     2.07 1.00     2707
+etalam_focspTROR                    1.77      0.34     0.86     2.28 1.00     2493
+etalam_focspTRCY:SiteCS            -1.32      0.25    -1.81    -0.85 1.00     8574
+etalam_focspTROR:SiteCS            -1.66      0.30    -2.29    -1.10 1.00     8715
+etalam_focspTRCY:SiteGH            -0.33      0.16    -0.66    -0.02 1.00     5536
+etalam_focspTROR:SiteGH            -0.27      0.17    -0.60     0.05 1.00     5798
+etalam_focspTRCY:SiteNAM           -0.25      0.16    -0.57     0.06 1.00     5909
+etalam_focspTROR:SiteNAM           -0.49      0.17    -0.83    -0.15 1.00     6160
+etalam_focspTRCY:SitePJ             0.43      0.15     0.14     0.72 1.00     5507
+etalam_focspTROR:SitePJ            -0.04      0.15    -0.35     0.26 1.00     5881
+etalam_focspTRCY:CovSUN             0.78      0.10     0.58     0.99 1.00    11079
+etalam_focspTROR:CovSUN             0.48      0.11     0.27     0.70 1.00    10413
+etalam_focspTRCY:fac_sc             0.26      0.10     0.06     0.45 1.00     4903
+etalam_focspTROR:fac_sc             0.16      0.13    -0.11     0.41 1.00     4887
+etalam_focspTRCY:SiteCS:fac_sc     -1.00      0.84    -2.98     0.31 1.00     9420
+etalam_focspTROR:SiteCS:fac_sc     -0.30      0.82    -2.34     0.99 1.00    10344
+etalam_focspTRCY:SiteGH:fac_sc      0.20      0.12    -0.04     0.43 1.00     9641
+etalam_focspTROR:SiteGH:fac_sc      0.16      0.09    -0.02     0.33 1.00     9670
+etalam_focspTRCY:SiteNAM:fac_sc     0.09      0.08    -0.07     0.25 1.00     8572
+etalam_focspTROR:SiteNAM:fac_sc     0.03      0.08    -0.15     0.18 1.00     8192
+etalam_focspTRCY:SitePJ:fac_sc     -0.15      0.12    -0.39     0.09 1.00     5442
+etalam_focspTROR:SitePJ:fac_sc     -0.21      0.24    -0.72     0.22 1.00     6661
+etalam_focspTRCY:CovSUN:fac_sc     -0.21      0.10    -0.41    -0.02 1.00     5675
+etalam_focspTROR:CovSUN:fac_sc     -0.17      0.13    -0.42     0.09 1.00     5492
+etaai_focspTRCY                    -3.96      0.81    -5.67    -2.49 1.00    12894
+etaai_focspTROR                    -4.00      0.82    -5.69    -2.49 1.00    12523
+etaai_focspTRCY:SiteCS             -3.51      1.00    -5.47    -1.52 1.00    13926
+etaai_focspTROR:SiteCS             -3.51      1.01    -5.50    -1.53 1.00    13322
+etaai_focspTRCY:SiteGH             -3.51      0.99    -5.43    -1.57 1.00    13321
+etaai_focspTROR:SiteGH             -3.51      0.97    -5.42    -1.65 1.00    16257
+etaai_focspTRCY:SiteNAM            -3.52      0.98    -5.46    -1.64 1.00    13955
+etaai_focspTROR:SiteNAM            -3.49      1.01    -5.47    -1.46 1.00    13155
+etaai_focspTRCY:SitePJ             -3.51      0.97    -5.44    -1.66 1.00    12034
+etaai_focspTROR:SitePJ             -3.56      0.97    -5.46    -1.71 1.00    14128
+etaai_focspTRCY:CovSUN             -3.53      0.99    -5.48    -1.58 1.00    13943
+etaai_focspTROR:CovSUN             -3.52      1.01    -5.52    -1.53 1.00    15244
+etaaj_focspTRCY                    -4.06      0.79    -5.71    -2.61 1.00    10759
+etaaj_focspTROR                    -4.10      0.75    -5.65    -2.74 1.00    10296
+etaaj_focspTRCY:SiteCS             -3.51      1.00    -5.44    -1.55 1.00    14175
+etaaj_focspTROR:SiteCS             -3.49      1.00    -5.45    -1.53 1.00    13924
+etaaj_focspTRCY:SiteGH             -3.50      1.00    -5.43    -1.56 1.00    13529
+etaaj_focspTROR:SiteGH             -3.44      1.02    -5.44    -1.43 1.00    11905
+etaaj_focspTRCY:SiteNAM            -3.52      1.01    -5.51    -1.56 1.00    14472
+etaaj_focspTROR:SiteNAM            -3.51      1.00    -5.46    -1.55 1.00    13890
+etaaj_focspTRCY:SitePJ             -3.39      1.05    -5.44    -1.35 1.00    15550
+etaaj_focspTROR:SitePJ             -3.43      1.00    -5.43    -1.52 1.00    15303
+etaaj_focspTRCY:CovSUN             -3.44      1.03    -5.45    -1.39 1.00    12340
+etaaj_focspTROR:CovSUN             -3.40      1.03    -5.38    -1.36 1.00    13512
+                                Tail_ESS
+etalam_focspTRCY                    2095
+etalam_focspTROR                    2052
+etalam_focspTRCY:SiteCS             6623
+etalam_focspTROR:SiteCS             5459
+etalam_focspTRCY:SiteGH             6499
+etalam_focspTROR:SiteGH             6559
+etalam_focspTRCY:SiteNAM            6686
+etalam_focspTROR:SiteNAM            6553
+etalam_focspTRCY:SitePJ             6141
+etalam_focspTROR:SitePJ             6276
+etalam_focspTRCY:CovSUN             6248
+etalam_focspTROR:CovSUN             6051
+etalam_focspTRCY:fac_sc             5493
+etalam_focspTROR:fac_sc             4720
+etalam_focspTRCY:SiteCS:fac_sc      4855
+etalam_focspTROR:SiteCS:fac_sc      3719
+etalam_focspTRCY:SiteGH:fac_sc      5871
+etalam_focspTROR:SiteGH:fac_sc      5911
+etalam_focspTRCY:SiteNAM:fac_sc     6072
+etalam_focspTROR:SiteNAM:fac_sc     5298
+etalam_focspTRCY:SitePJ:fac_sc      6059
+etalam_focspTROR:SitePJ:fac_sc      4561
+etalam_focspTRCY:CovSUN:fac_sc      5595
+etalam_focspTROR:CovSUN:fac_sc      4191
+etaai_focspTRCY                     5721
+etaai_focspTROR                     5603
+etaai_focspTRCY:SiteCS              5390
+etaai_focspTROR:SiteCS              6105
+etaai_focspTRCY:SiteGH              5945
+etaai_focspTROR:SiteGH              5819
+etaai_focspTRCY:SiteNAM             5686
+etaai_focspTROR:SiteNAM             5817
+etaai_focspTRCY:SitePJ              5605
+etaai_focspTROR:SitePJ              6106
+etaai_focspTRCY:CovSUN              5496
+etaai_focspTROR:CovSUN              5647
+etaaj_focspTRCY                     5423
+etaaj_focspTROR                     5342
+etaaj_focspTRCY:SiteCS              5507
+etaaj_focspTROR:SiteCS              6199
+etaaj_focspTRCY:SiteGH              5378
+etaaj_focspTROR:SiteGH              5620
+etaaj_focspTRCY:SiteNAM             5709
+etaaj_focspTROR:SiteNAM             5768
+etaaj_focspTRCY:SitePJ              6241
+etaaj_focspTROR:SitePJ              5302
+etaaj_focspTRCY:CovSUN              5172
+etaaj_focspTROR:CovSUN              5737
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     1.06      0.02     1.02     1.10 1.00    13107     5653
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+
+====================
+Model 3 summary
+====================
+ Family: gaussian 
+  Links: mu = identity 
+Formula: fitness_log ~ log(exp(etalam)/(1 + exp(etaai) * intra_sc + exp(etaaj) * inter_sc) + 1) 
+         etalam ~ 0 + focsp + focsp:Site + focsp:Cov + focsp:fac_sc + focsp:Site:fac_sc + focsp:Cov:fac_sc + (1 | BLK)
+         etaai ~ 0 + focsp + focsp:Cov
+         etaaj ~ 0 + focsp + focsp:Cov
+   Data: data (Number of observations: 1387) 
+  Draws: 4 chains, each with iter = 4000; warmup = 2000; thin = 1;
+         total post-warmup draws = 8000
+
+Multilevel Hyperparameters:
+~BLK (Number of levels: 3) 
+                     Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(etalam_Intercept)     0.43      0.38     0.10     1.53 1.00     2031     2211
+
+Regression Coefficients:
+                                Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
+etalam_focspTRCY                    1.58      0.36     0.68     2.11 1.00     2238
+etalam_focspTROR                    1.77      0.36     0.84     2.29 1.00     2322
+etalam_focspTRCY:SiteCS            -1.26      0.25    -1.77    -0.79 1.00     5676
+etalam_focspTROR:SiteCS            -1.60      0.30    -2.20    -1.04 1.00     7454
+etalam_focspTRCY:SiteGH            -0.26      0.16    -0.58     0.06 1.00     3864
+etalam_focspTROR:SiteGH            -0.18      0.16    -0.51     0.13 1.00     4867
+etalam_focspTRCY:SiteNAM           -0.18      0.16    -0.49     0.13 1.00     3823
+etalam_focspTROR:SiteNAM           -0.38      0.17    -0.70    -0.06 1.00     5024
+etalam_focspTRCY:SitePJ             0.52      0.14     0.24     0.81 1.00     3597
+etalam_focspTROR:SitePJ             0.08      0.15    -0.21     0.38 1.00     4654
+etalam_focspTRCY:CovSUN             0.69      0.11     0.48     0.90 1.00     7894
+etalam_focspTROR:CovSUN             0.39      0.12     0.17     0.62 1.00     7532
+etalam_focspTRCY:fac_sc             0.26      0.10     0.06     0.45 1.00     3656
+etalam_focspTROR:fac_sc             0.16      0.13    -0.09     0.41 1.00     4901
+etalam_focspTRCY:SiteCS:fac_sc     -1.01      0.83    -2.93     0.28 1.00     9256
+etalam_focspTROR:SiteCS:fac_sc     -0.30      0.83    -2.34     0.99 1.00     8181
+etalam_focspTRCY:SiteGH:fac_sc      0.19      0.12    -0.05     0.43 1.00     7870
+etalam_focspTROR:SiteGH:fac_sc      0.14      0.09    -0.03     0.31 1.00     7587
+etalam_focspTRCY:SiteNAM:fac_sc     0.08      0.08    -0.07     0.24 1.00     6089
+etalam_focspTROR:SiteNAM:fac_sc     0.01      0.08    -0.16     0.17 1.00     7087
+etalam_focspTRCY:SitePJ:fac_sc     -0.14      0.12    -0.38     0.10 1.00     4568
+etalam_focspTROR:SitePJ:fac_sc     -0.17      0.23    -0.66     0.26 1.00     6076
+etalam_focspTRCY:CovSUN:fac_sc     -0.20      0.10    -0.39    -0.01 1.00     4757
+etalam_focspTROR:CovSUN:fac_sc     -0.16      0.13    -0.41     0.10 1.00     5390
+etaai_focspTRCY                    -4.69      0.59    -5.99    -3.64 1.00    10716
+etaai_focspTROR                    -4.52      0.66    -5.96    -3.37 1.00     9731
+etaai_focspTRCY:CovSUN             -3.44      1.04    -5.50    -1.40 1.00    10704
+etaai_focspTROR:CovSUN             -3.44      1.03    -5.46    -1.40 1.00    12213
+etaaj_focspTRCY                    -4.28      0.59    -5.62    -3.30 1.00     8308
+etaaj_focspTROR                    -4.67      0.55    -5.90    -3.76 1.00     8392
+etaaj_focspTRCY:CovSUN             -3.43      1.05    -5.47    -1.35 1.00    12935
+etaaj_focspTROR:CovSUN             -3.51      0.99    -5.43    -1.57 1.00    12002
+                                Tail_ESS
+etalam_focspTRCY                    1777
+etalam_focspTROR                    1581
+etalam_focspTRCY:SiteCS             5468
+etalam_focspTROR:SiteCS             5732
+etalam_focspTRCY:SiteGH             5656
+etalam_focspTROR:SiteGH             5567
+etalam_focspTRCY:SiteNAM            5448
+etalam_focspTROR:SiteNAM            6520
+etalam_focspTRCY:SitePJ             5097
+etalam_focspTROR:SitePJ             6204
+etalam_focspTRCY:CovSUN             6687
+etalam_focspTROR:CovSUN             6013
+etalam_focspTRCY:fac_sc             4699
+etalam_focspTROR:fac_sc             4834
+etalam_focspTRCY:SiteCS:fac_sc      4781
+etalam_focspTROR:SiteCS:fac_sc      4022
+etalam_focspTRCY:SiteGH:fac_sc      6237
+etalam_focspTROR:SiteGH:fac_sc      5679
+etalam_focspTRCY:SiteNAM:fac_sc     6101
+etalam_focspTROR:SiteNAM:fac_sc     4642
+etalam_focspTRCY:SitePJ:fac_sc      5236
+etalam_focspTROR:SitePJ:fac_sc      5096
+etalam_focspTRCY:CovSUN:fac_sc      4901
+etalam_focspTROR:CovSUN:fac_sc      5002
+etaai_focspTRCY                     5802
+etaai_focspTROR                     5236
+etaai_focspTRCY:CovSUN              5568
+etaai_focspTROR:CovSUN              5402
+etaaj_focspTRCY                     5649
+etaaj_focspTROR                     4734
+etaaj_focspTRCY:CovSUN              5516
+etaaj_focspTROR:CovSUN              6465
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     1.06      0.02     1.02     1.10 1.00    11840     5396
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+
+====================
+LOO summaries
+====================
+
+Computed from 8000 by 1387 log-likelihood matrix.
+
+         Estimate   SE
+elpd_loo  -2061.5 28.3
+p_loo        28.1  2.4
+looic      4123.0 56.6
+------
+MCSE of elpd_loo is 0.1.
+MCSE and ESS estimates assume MCMC draws (r_eff in [0.5, 1.7]).
+
+All Pareto k estimates are good (k < 0.7).
+See help('pareto-k-diagnostic') for details.
+
+Computed from 8000 by 1387 log-likelihood matrix.
+
+         Estimate   SE
+elpd_loo  -2063.1 28.3
+p_loo        27.1  2.4
+looic      4126.3 56.7
+------
+MCSE of elpd_loo is 0.1.
+MCSE and ESS estimates assume MCMC draws (r_eff in [0.4, 1.8]).
+
+All Pareto k estimates are good (k < 0.7).
+See help('pareto-k-diagnostic') for details.
+
+Computed from 8000 by 1387 log-likelihood matrix.
+
+         Estimate   SE
+elpd_loo  -2063.1 28.3
+p_loo        27.4  2.4
+looic      4126.2 56.7
+------
+MCSE of elpd_loo is 0.1.
+MCSE and ESS estimates assume MCMC draws (r_eff in [0.5, 1.6]).
+
+All Pareto k estimates are good (k < 0.7).
+See help('pareto-k-diagnostic') for details.
+
+====================
+LOO comparison table
+====================
+            elpd_diff se_diff
+m1_species   0.0       0.0   
+m3_cov      -1.6       2.0   
+m2_site_cov -1.6       2.8   
+
+Loaded structure-selection info:
+$selected_structure_model
+[1] "m1_species"
+
+$selected_fit_file
+[1] "01_alpha_structure_selection/fits/fit_BH_m1_loggaussian.rds"
+
+$selected_growth_family
+[1] "BH"
+
+$selected_error_model
+[1] "gaussian_logfit"
+
+$site_order
+[1] "BEN" "GH"  "NAM" "PJ"  "CS" 
+
+$source_stage0_dir
+[1] "00_family_error_selection"
+
+$source_stage0_best_model
+[1] "BH_gaussian_logfit"
+
+$source_stage0_data_rds
+[1] "00_family_error_selection/data/analysis_data_family_error_compare.rds"
+
+$stage1_data_rds
+[1] "01_alpha_structure_selection/data/analysis_data_stage1_with_germination.rds"
+
+$germination_priors_rds
+[1] "C:\\Users\\natal\\OneDrive - Griffith University\\pairwise coex across env gradients\\2026 Analysis\\00_germination_priors\\selection\\germination_priors.rds"
+
+$germination_site_priors_rds
+[1] "01_alpha_structure_selection/data/germination_site_priors_used.rds"
+
+$note
+[1] "Germination priors are loaded and validated in stage 1 but are not used in the alpha-structure likelihood. Use them downstream in coexistence calculations via lambda_eff = g * lambda."
+
+
+Using germination in outcome calculations:
+[1] FALSE
+
+Germination summary used in outcome calculations:
+# A tibble: 10 × 6
+   Site  focsp g_input_mean g_draw_med g_draw_lwr g_draw_upr
+   <fct> <chr>        <dbl>      <dbl>      <dbl>      <dbl>
+ 1 BEN   TRCY             1          1          1          1
+ 2 GH    TRCY             1          1          1          1
+ 3 NAM   TRCY             1          1          1          1
+ 4 PJ    TRCY             1          1          1          1
+ 5 CS    TRCY             1          1          1          1
+ 6 BEN   TROR             1          1          1          1
+ 7 GH    TROR             1          1          1          1
+ 8 NAM   TROR             1          1          1          1
+ 9 PJ    TROR             1          1          1          1
+10 CS    TROR             1          1          1          1
+
+Done.
+Using germination:
+ FALSE 
+Selected family:
+ BH 
+Selected structure model:
+ m1_species 
+Outputs saved in:
+ C:\Users\natal\OneDrive - Griffith University\pairwise coex across env gradients\2026 Analysis\02_outcomes 
+
+Loaded structure-selection info:
+$selected_structure_model
+[1] "m1_species"
+
+$selected_fit_file
+[1] "01_alpha_structure_selection/fits/fit_BH_m1_loggaussian.rds"
+
+$selected_growth_family
+[1] "BH"
+
+$selected_error_model
+[1] "gaussian_logfit"
+
+$site_order
+[1] "BEN" "GH"  "NAM" "PJ"  "CS" 
+
+$source_stage0_dir
+[1] "00_family_error_selection"
+
+$source_stage0_best_model
+[1] "BH_gaussian_logfit"
+
+$source_stage0_data_rds
+[1] "00_family_error_selection/data/analysis_data_family_error_compare.rds"
+
+$stage1_data_rds
+[1] "01_alpha_structure_selection/data/analysis_data_stage1_with_germination.rds"
+
+$germination_priors_rds
+[1] "C:\\Users\\natal\\OneDrive - Griffith University\\pairwise coex across env gradients\\2026 Analysis\\00_germination_priors\\selection\\germination_priors.rds"
+
+$germination_site_priors_rds
+[1] "01_alpha_structure_selection/data/germination_site_priors_used.rds"
+
+$note
+[1] "Germination priors are loaded and validated in stage 1 but are not used in the alpha-structure likelihood. Use them downstream in coexistence calculations via lambda_eff = g * lambda."
+
+
+Using germination in outcome calculations:
+[1] FALSE
+
+Germination summary used in outcome calculations:
+# A tibble: 10 × 6
+   Site  focsp g_input_mean g_draw_med g_draw_lwr g_draw_upr
+   <fct> <chr>        <dbl>      <dbl>      <dbl>      <dbl>
+ 1 BEN   TRCY             1          1          1          1
+ 2 GH    TRCY             1          1          1          1
+ 3 NAM   TRCY             1          1          1          1
+ 4 PJ    TRCY             1          1          1          1
+ 5 CS    TRCY             1          1          1          1
+ 6 BEN   TROR             1          1          1          1
+ 7 GH    TROR             1          1          1          1
+ 8 NAM   TROR             1          1          1          1
+ 9 PJ    TROR             1          1          1          1
+10 CS    TROR             1          1          1          1
+
+Done.
+Using germination:
+ FALSE 
+Selected family:
+ BH 
+Selected structure model:
+ m1_species 
+Outputs saved in:
+ C:\Users\natal\OneDrive - Griffith University\pairwise coex across env gradients\2026 Analysis\02_outcomes 
+
+Loaded structure-selection info:
+$selected_structure_model
+[1] "m1_species"
+
+$selected_fit_file
+[1] "01_alpha_structure_selection/fits/fit_BH_m1_loggaussian.rds"
+
+$selected_growth_family
+[1] "BH"
+
+$selected_error_model
+[1] "gaussian_logfit"
+
+$site_order
+[1] "BEN" "GH"  "NAM" "PJ"  "CS" 
+
+$source_stage0_dir
+[1] "00_family_error_selection"
+
+$source_stage0_best_model
+[1] "BH_gaussian_logfit"
+
+$source_stage0_data_rds
+[1] "00_family_error_selection/data/analysis_data_family_error_compare.rds"
+
+$stage1_data_rds
+[1] "01_alpha_structure_selection/data/analysis_data_stage1_with_germination.rds"
+
+$germination_priors_rds
+[1] "C:\\Users\\natal\\OneDrive - Griffith University\\pairwise coex across env gradients\\2026 Analysis\\00_germination_priors\\selection\\germination_priors.rds"
+
+$germination_site_priors_rds
+[1] "01_alpha_structure_selection/data/germination_site_priors_used.rds"
+
+$note
+[1] "Germination priors are loaded and validated in stage 1 but are not used in the alpha-structure likelihood. Use them downstream in coexistence calculations via lambda_eff = g * lambda."
+
+
+Using germination in outcome calculations:
+[1] FALSE
+
+Germination summary used in outcome calculations:
+# A tibble: 10 × 6
+   Site  focsp g_input_mean g_draw_med
+   <fct> <chr>        <dbl>      <dbl>
+ 1 BEN   TRCY             1          1
+ 2 GH    TRCY             1          1
+ 3 NAM   TRCY             1          1
+ 4 PJ    TRCY             1          1
+ 5 CS    TRCY             1          1
+ 6 BEN   TROR             1          1
+ 7 GH    TROR             1          1
+ 8 NAM   TROR             1          1
+ 9 PJ    TROR             1          1
+10 CS    TROR             1          1
+# ℹ 2 more variables: g_draw_lwr <dbl>,
+#   g_draw_upr <dbl>
+
+Done.
+Using germination:
+ FALSE 
+Selected family:
+ BH 
+Selected structure model:
+ m1_species 
+Outputs saved in:
+ C:\Users\natal\OneDrive - Griffith University\pairwise coex across env gradients\2026 Analysis\02_outcomes 
+# A tibble: 10 × 5
+   Site  focsp n_total n_germ prop_germ
+   <fct> <fct>   <int>  <int>     <dbl>
+ 1 BEN   TRCY      241    147     0.610
+ 2 BEN   TROR      240    141     0.588
+ 3 CS    TRCY      240     51     0.212
+ 4 CS    TROR      240     38     0.158
+ 5 GH    TRCY      240    155     0.646
+ 6 GH    TROR      240    151     0.629
+ 7 NAM   TRCY      240    168     0.7  
+ 8 NAM   TROR      240    144     0.6  
+ 9 PJ    TRCY      240    204     0.85 
+10 PJ    TROR      240    188     0.783
+# A tibble: 20 × 6
+   Site  Cov   focsp n_total n_germ prop_germ
+   <fct> <fct> <fct>   <int>  <int>     <dbl>
+ 1 BEN   SH    TRCY      121     78    0.645 
+ 2 BEN   SH    TROR      120     77    0.642 
+ 3 BEN   SUN   TRCY      120     69    0.575 
+ 4 BEN   SUN   TROR      120     64    0.533 
+ 5 CS    SH    TRCY      120     10    0.0833
+ 6 CS    SH    TROR      120      9    0.075 
+ 7 CS    SUN   TRCY      120     41    0.342 
+ 8 CS    SUN   TROR      120     29    0.242 
+ 9 GH    SH    TRCY      120     64    0.533 
+10 GH    SH    TROR      120     58    0.483 
+11 GH    SUN   TRCY      120     91    0.758 
+12 GH    SUN   TROR      120     93    0.775 
+13 NAM   SH    TRCY      120     71    0.592 
+14 NAM   SH    TROR      120     58    0.483 
+15 NAM   SUN   TRCY      120     97    0.808 
+16 NAM   SUN   TROR      120     86    0.717 
+17 PJ    SH    TRCY      120    102    0.85  
+18 PJ    SH    TROR      120    100    0.833 
+19 PJ    SUN   TRCY      120    102    0.85  
+20 PJ    SUN   TROR      120     88    0.733 
+# A tibble: 10 × 7
+   Site  focsp n_fec mean_fit mean_intra mean_inter mean_fac
+   <fct> <fct> <int>    <dbl>      <dbl>      <dbl>    <dbl>
+ 1 BEN   TRCY    147    16.8       1.96       2.86    1.24  
+ 2 BEN   TROR    141    16.8       1.41       5.90    1.23  
+ 3 CS    TRCY     51     4.10      2.20       0.843   0.118 
+ 4 CS    TROR     38     4.34      0.632      3.84    0.0789
+ 5 GH    TRCY    155    13.7       2.70       4.85    0.335 
+ 6 GH    TROR    151    13.5       2.60       5.87    0.477 
+ 7 NAM   TRCY    168    18.2       5.01       5.10    0.673 
+ 8 NAM   TROR    144    10.3       3.36      10.4     0.542 
+ 9 PJ    TRCY    204    22.9       6.16       4.32    0.186 
+10 PJ    TROR    188    13.1       2.62      14.1     0.0957
+# A tibble: 20 × 8
+   Site  Cov   focsp n_fec mean_fit mean_intra mean_inter mean_fac
+   <fct> <fct> <fct> <int>    <dbl>      <dbl>      <dbl>    <dbl>
+ 1 BEN   SH    TRCY     78   11.5        1.92       2.23    0.372 
+ 2 BEN   SH    TROR     77   11.5        1          5.65    0.351 
+ 3 BEN   SUN   TRCY     69   22.8        2          3.58    2.22  
+ 4 BEN   SUN   TROR     64   23.2        1.91       6.20    2.30  
+ 5 CS    SH    TRCY     10    1.9        2          0.6     0.1   
+ 6 CS    SH    TROR      9    0.556      0.556      0.889   0     
+ 7 CS    SUN   TRCY     41    4.63       2.24       0.902   0.122 
+ 8 CS    SUN   TROR     29    5.52       0.655      4.76    0.103 
+ 9 GH    SH    TRCY     64    7.83       1.80       7.16    0.109 
+10 GH    SH    TROR     58    6.78       3.45       5.76    0.155 
+11 GH    SUN   TRCY     91   17.9        3.33       3.22    0.495 
+12 GH    SUN   TROR     93   17.6        2.08       5.94    0.677 
+13 NAM   SH    TRCY     71    8.10       6.20       4.73    0.394 
+14 NAM   SH    TROR     58    8.26       3.72      12.3     0.293 
+15 NAM   SUN   TRCY     97   25.7        4.14       5.37    0.876 
+16 NAM   SUN   TROR     86   11.7        3.12       9.19    0.709 
+17 PJ    SH    TRCY    102   13.1        8.60       7.21    0.294 
+18 PJ    SH    TROR    100    9.53       3.95      18.0     0.16  
+19 PJ    SUN   TRCY    102   32.7        3.73       1.44    0.0784
+20 PJ    SUN   TROR     88   17.2        1.11       9.64    0.0227
+
+Starting fit_covfac_with_CS ...

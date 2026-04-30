@@ -1,0 +1,90 @@
+ Family: gaussian 
+  Links: mu = identity 
+Formula: fitness_log ~ log(exp(etalam)/(1 + exp(etaai) * intra_sc + exp(etaaj) * inter_sc) + 1) 
+         etalam ~ 0 + focsp + focsp:Site + focsp:Cov + focsp:fac_sc + focsp:Site:fac_sc + focsp:Cov:fac_sc + (1 | BLK)
+         etaai ~ 0 + focsp + focsp:Cov
+         etaaj ~ 0 + focsp + focsp:Cov
+   Data: data (Number of observations: 1387) 
+  Draws: 4 chains, each with iter = 4000; warmup = 2000; thin = 1;
+         total post-warmup draws = 8000
+
+Multilevel Hyperparameters:
+~BLK (Number of levels: 3) 
+                     Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sd(etalam_Intercept)     0.43      0.38     0.10     1.53 1.00     2031     2211
+
+Regression Coefficients:
+                                Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
+etalam_focspTRCY                    1.58      0.36     0.68     2.11 1.00     2238
+etalam_focspTROR                    1.77      0.36     0.84     2.29 1.00     2322
+etalam_focspTRCY:SiteCS            -1.26      0.25    -1.77    -0.79 1.00     5676
+etalam_focspTROR:SiteCS            -1.60      0.30    -2.20    -1.04 1.00     7454
+etalam_focspTRCY:SiteGH            -0.26      0.16    -0.58     0.06 1.00     3864
+etalam_focspTROR:SiteGH            -0.18      0.16    -0.51     0.13 1.00     4867
+etalam_focspTRCY:SiteNAM           -0.18      0.16    -0.49     0.13 1.00     3823
+etalam_focspTROR:SiteNAM           -0.38      0.17    -0.70    -0.06 1.00     5024
+etalam_focspTRCY:SitePJ             0.52      0.14     0.24     0.81 1.00     3597
+etalam_focspTROR:SitePJ             0.08      0.15    -0.21     0.38 1.00     4654
+etalam_focspTRCY:CovSUN             0.69      0.11     0.48     0.90 1.00     7894
+etalam_focspTROR:CovSUN             0.39      0.12     0.17     0.62 1.00     7532
+etalam_focspTRCY:fac_sc             0.26      0.10     0.06     0.45 1.00     3656
+etalam_focspTROR:fac_sc             0.16      0.13    -0.09     0.41 1.00     4901
+etalam_focspTRCY:SiteCS:fac_sc     -1.01      0.83    -2.93     0.28 1.00     9256
+etalam_focspTROR:SiteCS:fac_sc     -0.30      0.83    -2.34     0.99 1.00     8181
+etalam_focspTRCY:SiteGH:fac_sc      0.19      0.12    -0.05     0.43 1.00     7870
+etalam_focspTROR:SiteGH:fac_sc      0.14      0.09    -0.03     0.31 1.00     7587
+etalam_focspTRCY:SiteNAM:fac_sc     0.08      0.08    -0.07     0.24 1.00     6089
+etalam_focspTROR:SiteNAM:fac_sc     0.01      0.08    -0.16     0.17 1.00     7087
+etalam_focspTRCY:SitePJ:fac_sc     -0.14      0.12    -0.38     0.10 1.00     4568
+etalam_focspTROR:SitePJ:fac_sc     -0.17      0.23    -0.66     0.26 1.00     6076
+etalam_focspTRCY:CovSUN:fac_sc     -0.20      0.10    -0.39    -0.01 1.00     4757
+etalam_focspTROR:CovSUN:fac_sc     -0.16      0.13    -0.41     0.10 1.00     5390
+etaai_focspTRCY                    -4.69      0.59    -5.99    -3.64 1.00    10716
+etaai_focspTROR                    -4.52      0.66    -5.96    -3.37 1.00     9731
+etaai_focspTRCY:CovSUN             -3.44      1.04    -5.50    -1.40 1.00    10704
+etaai_focspTROR:CovSUN             -3.44      1.03    -5.46    -1.40 1.00    12213
+etaaj_focspTRCY                    -4.28      0.59    -5.62    -3.30 1.00     8308
+etaaj_focspTROR                    -4.67      0.55    -5.90    -3.76 1.00     8392
+etaaj_focspTRCY:CovSUN             -3.43      1.05    -5.47    -1.35 1.00    12935
+etaaj_focspTROR:CovSUN             -3.51      0.99    -5.43    -1.57 1.00    12002
+                                Tail_ESS
+etalam_focspTRCY                    1777
+etalam_focspTROR                    1581
+etalam_focspTRCY:SiteCS             5468
+etalam_focspTROR:SiteCS             5732
+etalam_focspTRCY:SiteGH             5656
+etalam_focspTROR:SiteGH             5567
+etalam_focspTRCY:SiteNAM            5448
+etalam_focspTROR:SiteNAM            6520
+etalam_focspTRCY:SitePJ             5097
+etalam_focspTROR:SitePJ             6204
+etalam_focspTRCY:CovSUN             6687
+etalam_focspTROR:CovSUN             6013
+etalam_focspTRCY:fac_sc             4699
+etalam_focspTROR:fac_sc             4834
+etalam_focspTRCY:SiteCS:fac_sc      4781
+etalam_focspTROR:SiteCS:fac_sc      4022
+etalam_focspTRCY:SiteGH:fac_sc      6237
+etalam_focspTROR:SiteGH:fac_sc      5679
+etalam_focspTRCY:SiteNAM:fac_sc     6101
+etalam_focspTROR:SiteNAM:fac_sc     4642
+etalam_focspTRCY:SitePJ:fac_sc      5236
+etalam_focspTROR:SitePJ:fac_sc      5096
+etalam_focspTRCY:CovSUN:fac_sc      4901
+etalam_focspTROR:CovSUN:fac_sc      5002
+etaai_focspTRCY                     5802
+etaai_focspTROR                     5236
+etaai_focspTRCY:CovSUN              5568
+etaai_focspTROR:CovSUN              5402
+etaaj_focspTRCY                     5649
+etaaj_focspTROR                     4734
+etaaj_focspTRCY:CovSUN              5516
+etaaj_focspTROR:CovSUN              6465
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     1.06      0.02     1.02     1.10 1.00    11840     5396
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
