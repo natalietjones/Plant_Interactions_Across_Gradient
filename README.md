@@ -1,141 +1,180 @@
-# WA coexistence model workflow
+**WA annual plants and positive interactions across aridity gradient**
 
-This folder contains the R scripts used to analyse the WA *Trachymene* coexistence experiment. The main analyses use `fullWAdata.csv` as the central analysis dataset. The workflow estimates fecundity responses, compares competition-model structures, calculates low-density growth rates, and summarises predicted coexistence outcomes for `TRCY` (*T. cyanopetala*) and `TROR` (*T. ornata*) across sites, cover treatments, and facilitator densities.
+**Background**
+Contains data summaries, fecundity GLMMs, and coexistence analyses for the WA annual plant coexistence project.
+The GLMMs test statistical support for fecundity responses to site, cover, density, and facilitator effects.
+The coexistence models use demographic model estimates to evaluate whether those effects translate into predicted coexistence, priority effects, or competitive exclusion.
 
-## Main data file
+The focal species are:
+•	TRCY = Trachymene cyanopetala
+•	TROR = Trachymene ornata
 
-- `fullWAdata.csv` — primary dataset for the coexistence, fecundity, GLMM, and plotting analyses.
+The main field dataset is:
+data/field/fullWAdata.csv
 
-Key variables used across scripts include:
-
-- `focsp` — focal species, `TRCY` or `TROR`
-- `Site` — site along the wet-to-dry gradient: Ben, GH, Nam, PJ, CS
-- `Cov` — cover treatment, shade or sun
-- `BLK` — block identity
-- `FOCAL_GERM` — focal germination status
-- `fitness` — post-germination fecundity/fitness response
-- `TRCY`, `TROR` — neighbour densities used to calculate intra- and interspecific competition
-- `NO_GRASS` — facilitator density, used as `fac_sc` in the coexistence models
-- `dens_trt` — density/facilitation treatment label
-
-Most model scripts filter to germinated focal individuals and analyse post-germination fecundity. Intra- and interspecific densities are assigned according to the focal species: for `TRCY`, conspecific density is `TRCY` and heterospecific density is `TROR`; for `TROR`, conspecific density is `TROR` and heterospecific density is `TRCY`.
-
-## Germination and seed bank defaults
-
-The primary coexistence analysis is a post-germination fitness analysis. By default, germination is **not** included in the outcome calculations:
-
-```r
-use_germination <- FALSE
-```
-
-With this default, germination is set to `g = 1` for both species, so the coexistence outcomes are driven by the competition experiment in `fullWAdata.csv`. Germination priors are loaded and validated in the model-selection scripts for bookkeeping, but they are not included in the Stage 0 or Stage 1 model likelihoods.
-
-A germination-weighted sensitivity analysis can be run by setting:
-
-```r
-use_germination <- TRUE
-```
-
-When germination is included, the scripts draw site- and species-specific germination values from Beta priors. Direct germination evidence is used for PJ and Ben, while weakly informed priors are used for GH, Nam, and CS. The germination-prior helper script uses `collated_data_18_02_2020.csv` only to build these optional priors; it is not the main analysis dataset.
-
-No seed bank is included in either the primary or germination-sensitivity version. Seed survival is fixed at:
-
-```r
-s = 0
-```
-
-## General approach
-
-The analysis uses a staged workflow:
-
-1. Build optional germination priors.
-2. Prepare the `fullWAdata.csv` competition dataset.
-3. Compare Beverton-Holt and Ricker growth models across alternative error structures.
-4. Select the best-supported alpha/competition structure using LOO cross-validation.
-5. Test whether facilitators modify competition coefficients as a sensitivity analysis.
-6. Use posterior draws from the selected model to calculate lambda, alpha values, niche differences, fitness differences, low-density growth rates, and coexistence outcomes.
-7. Fit complementary Bayesian GLMMs to visualise fecundity responses across site, cover, competition, and facilitator density.
-
-Fitted Bayesian models and LOO objects are saved to disk so they can be reloaded without refitting.
-
-## Script overview
-
-### `00_germination_priors_CoexModels.R`
-
-Builds optional germination priors for `TRCY` and `TROR`. Direct Beta posteriors are estimated for PJ and Ben, and weakly informed Beta priors are generated for GH, Nam, and CS. Germination is calculated as:
-
-```r
-field_number_germinants / field_number_seeds
-```
-
-Nonviable and lost seeds are retained in the denominator, zero-germination rows are dropped, and Hao Ran rows are excluded. Outputs are saved in `00_germination_priors/`.
-
-### `00_model_selection_error_selection_CoexModels.R`
-
-Prepares the main competition dataset from `fullWAdata.csv`, filters to germinated focal individuals, creates intra- and interspecific density variables, and compares Beverton-Holt versus Ricker models under four observation/error models: Gaussian raw fitness, Poisson count fitness, negative binomial count fitness, and Gaussian log-transformed fitness. LOO comparison outputs and the selected family/error combination are saved in `00_family_error_selection/`.
-
-### `01_alpha_structure_selection_CoexModels.R`
-
-Uses the selected family/error structure from Stage 0 and compares alternative alpha structures. The main comparison asks whether competition coefficients are species-only, site- and cover-varying, or cover-varying. Germination priors are loaded and carried forward, but they are not inserted into the model likelihood. Outputs are saved in `01_alpha_structure_selection/`.
-
-### `01_alpha_facilitation_sensitivity_CoexModels.R`
-
-Runs a targeted sensitivity analysis asking whether facilitator density modifies competition coefficients. It compares the selected baseline model, where facilitators affect lambda only, against models where facilitators also modify interspecific competition or both intra- and interspecific competition. Outputs are saved in `01b_alpha_facilitation_sensitivity/`.
-
-### `02_plot_outcomes__CoexModels.R`
-
-Calculates and plots coexistence outcomes from the selected Beverton-Holt model. It extracts posterior draws for lambda and alpha, optionally applies germination draws, calculates niche and fitness differences, classifies coexistence outcomes, and produces posterior support and coexistence-plane figures. By default, `use_germination <- FALSE` and `s = 0`. Outputs are saved in `02_outcomes/`.
-
-### `02_BH_Bayesian_LDGR_Plot.R`
-
-Generates additional Beverton-Holt posterior summaries and low-density growth rate plots. It uses the selected model to calculate lambda, alpha values, niche and fitness differences, and invasion growth rates under none versus high facilitator conditions. By default, germination is excluded and there is no seed bank.
-
-### `03_invasion_growth_by_site_cover_fac_CoexModels.R`
-
-Calculates invasion growth rates by site, cover, and facilitator condition. The “without facilitator” condition is evaluated at `fac_sc = 0`; the “with facilitator” condition is evaluated using the mean positive facilitator density at or above the 50th percentile within each site-by-cover combination. Outputs are saved in `03_invasion_growth/`.
-
-### `04_GLMM_Analysis_Bayesian.R`
-
-Fits complementary Bayesian GLMMs for fecundity using `fullWAdata.csv`. The script checks germination adequacy, builds the fecundity dataset, compares site and cover effects, tests linear and quadratic facilitator effects, runs CS inclusion/exclusion sensitivity analyses, computes moment-matched LOO comparisons, and saves predicted GLMM summaries. Outputs are saved in `env_fac_model_comparison_v1/`.
-
-### `04_GLMM_Plots_Bayesian.R`
-
-Creates figures from the selected GLMM, including predicted fecundity under lambda and high-competition conditions, coefficient plots, and response-surface figures showing effects of facilitator density and competitor density across sites and cover treatments.
-
-## Recommended run order
-
-For the full workflow, run:
-
-```r
-source("00_germination_priors_CoexModels.R")
-source("00_model_selection_error_selection_CoexModels.R")
-source("01_alpha_structure_selection_CoexModels.R")
-source("01_alpha_facilitation_sensitivity_CoexModels.R")
-source("02_plot_outcomes__CoexModels.R")
-source("02_BH_Bayesian_LDGR_Plot.R")
-source("03_invasion_growth_by_site_cover_fac_CoexModels.R")
-source("04_GLMM_Analysis_Bayesian.R")
-source("04_GLMM_Plots_Bayesian.R")
-```
-
-The GLMM scripts are complementary to the Beverton-Holt coexistence workflow and can be run separately after `fullWAdata.csv` is available.
-
-## Main output folders
-
-- `00_germination_priors/` — optional germination priors and summaries
-- `00_family_error_selection/` — Stage 0 model fits, LOO objects, and family/error selection outputs
-- `01_alpha_structure_selection/` — Stage 1 alpha-structure fits and selected model information
-- `01b_alpha_facilitation_sensitivity/` — sensitivity models where facilitators modify alpha values
-- `02_outcomes/` — niche/fitness summaries, posterior outcome classifications, and figures
-- `03_invasion_growth/` — site-by-cover invasion growth summaries and figures
-- `env_fac_model_comparison_v1/` — Bayesian GLMM fits, summaries, model comparisons, and figures
-
-## Notes
-
-Site order follows the wet-to-dry gradient:
-
-```r
+Sites are usually ordered from wetter to drier:
 Ben, GH, Nam, PJ, CS
-```
 
-The core interpretation is based on posterior uncertainty rather than point estimates alone. Coexistence outcomes, niche differences, fitness differences, and invasion growth rates are all calculated from posterior draws of the selected model.
+The workflow has three main parts:
+
+1.	Background figures and raw-data summaries
+2.	Frequentist GLMM analysis using glmmTMB
+3.	Bayesian coexistence analysis
+________________________________________
+Folder structure
+project/
+├── data/
+│   └── field/
+├── raw_data_summaries_map/
+│   └── scripts/
+├── glmmTMB/
+│   ├── scripts/
+│   ├── glmm_outputs/
+│   └── figures_final_glmm/
+├── coexistence_models/
+│   ├── scripts/
+│   ├── 00_germination_priors/
+│   ├── 00_family_error_selection/
+│   ├── 01_alpha_structure_selection/
+│   ├── 01b_alpha_facilitation_sensitivity/
+│   └── 02_outcomes/
+├── figures/
+└── README.md
+________________________________________
+**1. Background figures and raw-data summaries**
+Scripts in raw_data_summaries_map/scripts/ generate maps, environmental summaries, germination plots, raw fecundity plots, and facilitator-density summaries.
+
+SM_SiteMap.R
+
+Creates the WA site map using 30-year April–November rainfall.
+Main input:
+
+data/field/plot_location_data.csv
+
+Main output:
+figures/map_wa_30yr_mean_apr_nov_rainfall_mm.png
+SM_Ordination_SiteEnvironments.R
+Runs a PCA of site environmental variables, including soil, canopy, rainfall, PET, and water-
+
+SM_Plotting_Raw_Germ_Fecundity.R
+Creates raw-data plots for germination, seed production, and facilitator abundance.
+Main input:
+data/field/fullWAdata.csv
+
+Main outputs:
+figures/Mean_Germination_Cover_TRT.png
+figures/MeanSeedProduction_TRT.png
+figures/NO_GRASS_frequency_by_site_cover.png
+Seed production is calculated for germinated individuals only.
+________________________________________
+**2. Frequentist GLMM analysis**
+Scripts in glmmTMB/scripts/ fit and plot frequentist GLMMs for fecundity.
+Models are run separately for TRCY and TROR. Fecundity is treated as a count response. Predictor variables include site, cover, conspecific density, heterospecific density, and facilitator density.
+Facilitator density is represented by NO_GRASS.
+
+glmmTMB_analysis.R
+Fits the frequentist GLMMs and performs model selection.
+
+The script:
+•	reads data/field/fullWAdata.csv
+•	filters to germinated focal individuals
+•	defines fecundity from fitness
+•	calculates conspecific, heterospecific, and facilitator densities
+•	compares raw and log1p density transformations
+•	compares Poisson, negative binomial, zero-inflated Poisson, and zero-inflated negative binomial models
+•	compares fixed-effect structures using AIC
+•	tests targeted facilitation interactions
+•	runs DHARMa diagnostics
+•	saves final model objects for plotting
+
+The random-effect structure uses site × cover × block:
+(1 | SiteCovBlock)
+This keeps block numbers separate across sites and cover treatments.
+
+Main outputs:
+glmmTMB/glmm_outputs/
+glmmTMB/glmm_outputs/model_objects/
+frequentist_glmm_figure_script.R
+Generates final GLMM prediction figures from the saved selected models.
+The main facilitator contrast is:
+No facilitator = NO_GRASS = 0
+
+High facilitator = species-specific 90th percentile of NO_GRASS
+
+Run order:
+source("glmmTMB/scripts/glmmTMB_analysis.R")
+source("glmmTMB/scripts/frequentist_glmm_figure_script.R")
+________________________________________
+**3. Bayesian coexistence analysis**
+Scripts in coexistence_models/scripts/ estimate competition, facilitation, invasion growth, and coexistence outcomes for TRCY and TROR.
+
+00_germination_priors_CoexModels.R
+
+Creates site- and species-specific germination priors.
+Main input:
+data/field/collated_data_18_02_2020.csv
+
+Germination fraction is calculated as:
+field_number_germinants / field_number_seeds
+Direct germination evidence is used for PJ and BEN. Weak priors are created for GH, NAM, and CS.
+Main output:
+coexistence_models/00_germination_priors/selection/germination_priors.rds
+The main coexistence workflow can be run with or without these germination priors.
+
+02_model_selection_error_selection_CoexModels.R
+
+Runs the main model-selection step for the coexistence analysis.
+The script compares Beverton-Holt and Ricker population-growth models crossed with four error models:
+•	gaussian_raw
+•	poisson_count
+•	negbin_count
+•	gaussian_logfit
+Conspecific and heterospecific densities are kept as raw counts so that competition coefficients are interpretable per competitor individual.
+Facilitator density is also kept raw, so:
+NO_GRASS = 0
+means no facilitator.
+Main outputs:
+coexistence_models/00_family_error_selection/
+
+01b_alpha_facilitation_sensitivity.R
+
+Tests whether facilitator density affects competition coefficients, rather than only low-density growth.
+The script compares:
+•	m1 = facilitator affects lambda only
+•	m4 = facilitator affects lambda + interspecific competition
+•	m5 = facilitator affects lambda + intra- and interspecific competition
+Main outputs:
+coexistence_models/01b_alpha_facilitation_sensitivity/
+Key files include:
+•	selection/BH_facilitation_alpha_sensitivity_LOO.csv
+•	selection/facilitation_alpha_sensitivity_selection_BH.rds
+Equivalent Ricker files are produced if the Ricker model is selected.
+
+03_plot_outcomes_BH_Ricker.R
+
+Calculates coexistence outcomes and generates final coexistence figures for Beverton-Holt and Ricker model families.
+The script:
+•	loads selected Bayesian model fits
+•	calculates lambda and alpha posterior summaries
+•	calculates invasion growth
+•	estimates niche and fitness differences
+•	classifies coexistence outcomes
+•	compares BH and Ricker outcome probabilities
+•	saves final tables and figures
+
+Default setting:
+use_germination <- FALSE
+This means the main outcomes do not apply germination correction unless this option is changed.
+
+Main outputs:
+•	coexistence_models/02_outcomes/tables/
+•	coexistence_models/02_outcomes/draws/
+•	coexistence_models/02_outcomes/figures/
+•	coexistence_models/02_outcomes/summaries/
+________________________________________
+Recommended run order
+# Bayesian coexistence analysis
+source("coexistence_models/scripts/00_germination_priors_CoexModels.R")
+source("coexistence_models/scripts/02_model_selection_error_selection_CoexModels.R")
+source("coexistence_models/scripts/01b_alpha_facilitation_sensitivity.R")
+source("coexistence_models/scripts/03_plot_outcomes_BH_Ricker.R")
