@@ -44,29 +44,15 @@ project/
 Scripts in `raw_data_summaries_map/scripts/` generate maps, environmental summaries, germination plots, raw fecundity plots, and facilitator-density summaries.
 `SM_SiteMap.R`
 Creates the WA site map using 30-year April-November rainfall.
-Main input:
-```text
-data/field/plot_location_data.csv
-```
-Main output:
-```text
-figures/map_wa_30yr_mean_apr_nov_rainfall_mm.png
-```
-`SM_Ordination_SiteEnvironments.R`
-Runs a PCA of site environmental variables, including soil, canopy, rainfall, PET, and water-balance variables.
-`SM_Plotting_Raw_Germ_Fecundity.R`
-Creates raw-data plots for germination, seed production, and facilitator abundance.
-Main input:
-```text
-data/field/fullWAdata.csv
-```
+
 Main outputs:
+
 ```text
 figures/Mean_Germination_Cover_TRT.png
 figures/MeanSeedProduction_TRT.png
 figures/NO_GRASS_frequency_by_site_cover.png
 ```
-Seed production is calculated for germinated individuals only.
+
 ---
 2. Frequentist GLMM analysis
 Scripts in `glmmTMB/scripts/` fit and plot frequentist GLMMs for fecundity.
@@ -95,19 +81,7 @@ Main outputs:
 glmmTMB/glmm_outputs/
 glmmTMB/glmm_outputs/model_objects/
 ```
-`frequentist_glmm_figure_script.R`
-Generates final GLMM prediction figures from the saved selected models.
-The main facilitator contrast is:
-```text
-No facilitator = NO_GRASS = 0
-High facilitator = species-specific 90th percentile of NO_GRASS
-```
-Run order:
-```r
-source("glmmTMB/scripts/glmmTMB_analysis.R")
-source("glmmTMB/scripts/frequentist_glmm_figure_script.R")
 
-```
 3. Bayesian coexistence analysis
 ---
    Scripts in `coexistence_models/scripts/` estimate competition, facilitation, invasion growth, and coexistence outcomes for `TRCY` and `TROR`.
@@ -154,36 +128,39 @@ Main outputs:
 ```text
 coexistence_models/01b_alpha_facilitation_sensitivity/
 ```
-Key files include:
-```text
-selection/BH_facilitation_alpha_sensitivity_LOO.csv
-selection/facilitation_alpha_sensitivity_selection_BH.rds
-```
 Equivalent Ricker files are produced if the Ricker model is selected.
-`03_plot_outcomes_BH_Ricker.R`
+
+### `03_plot_outcomes_BH_Ricker.R`
+
 Calculates coexistence outcomes and generates final coexistence figures for Beverton-Holt and Ricker model families.
+
 The script:
-loads selected Bayesian model fits
-calculates lambda and alpha posterior summaries
-calculates invasion growth
-estimates niche and fitness differences
-classifies coexistence outcomes
-compares BH and Ricker outcome probabilities
-saves final tables and figures
+
+- loads selected Bayesian model fits
+- calculates lambda and alpha posterior summaries
+- calculates invasion growth
+- estimates niche and fitness differences
+- classifies coexistence outcomes
+- compares BH and Ricker outcome probabilities
+- saves final tables and figures
+
 Default setting:
+
 ```r
 use_germination <- FALSE
 ```
 This means the main outcomes do not apply germination correction unless this option is changed.
+
 Main outputs:
+
 ```text
 coexistence_models/02_outcomes/tables/
 coexistence_models/02_outcomes/draws/
 coexistence_models/02_outcomes/figures/
 coexistence_models/02_outcomes/summaries/
 ```
----
-Recommended run order
+## Recommended run order
+
 ```r
 # Bayesian coexistence analysis
 source("coexistence_models/scripts/00_germination_priors_CoexModels.R")
