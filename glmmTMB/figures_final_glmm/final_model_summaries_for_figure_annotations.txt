@@ -1,0 +1,87 @@
+Final model summaries used for figures
+Contrast: no facilitator = NO_GRASS 0; high facilitator = species-specific 90th percentile of positive NO_GRASS values
+
+
+============================================================
+TRCY  final model
+============================================================
+
+ Family: nbinom2  ( log )
+Formula:          fecundity ~ Site + Cov + cons_x + hetero_x + fac_x + (1 | SiteCovBlock)
+Zero inflation:             ~1
+Data: data
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   5238.2    5293.2   -2607.1    5214.2       713 
+
+Random effects:
+
+Conditional model:
+ Groups       Name        Variance Std.Dev.
+ SiteCovBlock (Intercept) 0.2763   0.5256  
+Number of obs: 725, groups:  SiteCovBlock, 30
+
+Dispersion parameter for nbinom2 family (): 1.51 
+
+Conditional model:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  2.23418    0.10923  20.454  < 2e-16 ***
+Site1        0.18533    0.21209   0.874 0.382213    
+Site2        0.07931    0.20940   0.379 0.704860    
+Site3        0.12277    0.20899   0.587 0.556897    
+Site4        0.74727    0.20478   3.649 0.000263 ***
+Cov1         0.41345    0.10801   3.828 0.000129 ***
+cons_x      -0.20442    0.03960  -5.162 2.44e-07 ***
+hetero_x    -0.24340    0.04041  -6.023 1.71e-09 ***
+fac_x        0.16398    0.03940   4.162 3.16e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Zero-inflation model:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -2.6981     0.2102  -12.83   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+============================================================
+TROR  final model
+============================================================
+
+ Family: nbinom2  ( log )
+Formula:          fecundity ~ Site + Cov + cons_x + hetero_x + fac_x + fac_x:cons_x +      fac_x:hetero_x + (1 | SiteCovBlock)
+Zero inflation:             ~1
+Data: data
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   4563.8    4626.7   -2267.9    4535.8       648 
+
+Random effects:
+
+Conditional model:
+ Groups       Name        Variance Std.Dev.
+ SiteCovBlock (Intercept) 0.1714   0.414   
+Number of obs: 662, groups:  SiteCovBlock, 30
+
+Dispersion parameter for nbinom2 family (): 1.44 
+
+Conditional model:
+               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     2.14089    0.09791  21.866  < 2e-16 ***
+Site1           0.38441    0.18039   2.131 0.033091 *  
+Site2           0.19893    0.17528   1.135 0.256398    
+Site3          -0.03708    0.17812  -0.208 0.835076    
+Site4           0.48790    0.17217   2.834 0.004599 ** 
+Cov1            0.40956    0.09374   4.369 1.25e-05 ***
+cons_x         -0.20726    0.04481  -4.625 3.75e-06 ***
+hetero_x       -0.27661    0.04559  -6.067 1.30e-09 ***
+fac_x           0.07003    0.04671   1.499 0.133787    
+cons_x:fac_x   -0.17280    0.04795  -3.604 0.000314 ***
+hetero_x:fac_x -0.13491    0.05503  -2.451 0.014231 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Zero-inflation model:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -2.6740     0.2293  -11.66   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

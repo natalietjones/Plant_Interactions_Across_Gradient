@@ -1,0 +1,43 @@
+
+Prior scale information:
+$baseline_log_lambda_prior
+[1] "normal(3, 2)"
+
+$site_cover_deviation_prior
+[1] "normal(0, 1)"
+
+$raw_facilitator_slope_prior
+[1] "normal(0, 0.05000000)"
+
+$raw_facilitator_q90
+[1] 2
+
+$raw_facilitator_q90_for_prior
+[1] 2
+
+$raw_facilitator_slope_prior_sd
+[1] 0.05
+
+$alpha_log_prior
+[1] "normal(-3, 1)"
+
+$note
+[1] "fac_raw is raw NO_GRASS. It is not centred and not z-scaled. The facilitator prior is on the effect per one grass individual on log(lambda)."
+
+
+Etalam prior coefficient groups:
+# A tibble: 24 × 3
+   coef                      prior_group           prior                
+   <chr>                     <chr>                 <chr>                
+ 1 focspTRCY                 baseline_log_lambda   normal(3, 2)         
+ 2 focspTRCY:CovSun          site_cover_deviation  normal(0, 1)         
+ 3 focspTRCY:CovSun:fac_raw  raw_facilitator_slope normal(0, 0.05000000)
+ 4 focspTRCY:fac_raw         raw_facilitator_slope normal(0, 0.05000000)
+ 5 focspTRCY:SiteCS          site_cover_deviation  normal(0, 1)         
+ 6 focspTRCY:SiteCS:fac_raw  raw_facilitator_slope normal(0, 0.05000000)
+ 7 focspTRCY:SiteGH          site_cover_deviation  normal(0, 1)         
+ 8 focspTRCY:SiteGH:fac_raw  raw_facilitator_slope normal(0, 0.05000000)
+ 9 focspTRCY:SiteNAM         site_cover_deviation  normal(0, 1)         
+10 focspTRCY:SiteNAM:fac_raw raw_facilitator_slope normal(0, 0.05000000)
+# ℹ 14 more rows
+# ℹ Use `print(n = ...)` to see more rows

@@ -1,0 +1,121 @@
+DECISION: Fecundity is analysed as a raw count response in count GLMMs with a log link.
+DECISION: Density predictors are compared as raw z-scores versus log1p-transformed z-scores.
+DECISION: z-scaling is recalculated within each species-specific analysis dataset, including outlier sensitivity datasets.
+DECISION: Outlier removal is treated as sensitivity analysis, not the primary analysis.
+DECISION: Targeted a priori facilitation interactions are part of model selection and are retained only if estimable and supported.
+DECISION: Random intercepts use Site x Cover x Block, so Sun block 1 and Shade block 1 are not treated as the same random-effect level.
+
+===== RESPONSE SUMMARY =====
+
+===== DENSITY TRANSFORMATION SUMMARY =====
+
+===== Z-SCORE CHECK: values should have mean ~0 and SD ~1 within species =====
+
+===== SITE x COVER DATA SUPPORT CHECK =====
+
+===== HIGH-FECUNDITY OBSERVATIONS FLAGGED FOR SENSITIVITY ONLY =====
+
+===== DATA SUPPORT FOR INTERACTION TERMS =====
+
+
+============================================================
+SPECIES: TRCY | ANALYSIS: primary_full_data_auto_density
+============================================================
+
+--- AIC SCREEN: density transformation and count family ---
+SELECTED DENSITY FORM: log1p | SELECTED FAMILY: zinb2_count
+
+--- AIC SCREEN: fixed-effect and a priori interaction structure ---
+
+--- DATA-DEFICIENT / DROPPED MODELS ---
+FINAL SELECTED MODEL: additive | density_form = log1p | family = zinb2_count
+
+--- TARGETED A PRIORI FACILITATION MODELS: AIC/logLik ---
+
+--- MANUAL LRTs FOR TARGETED A PRIORI FACILITATION MODELS ---
+
+--- TYPE III TESTS FOR BROAD TARGETED FACILITATION MODEL ---
+
+--- TYPE III WALD TESTS FOR FINAL MODEL ---
+
+--- DHARMa TESTS FOR FINAL MODEL ---
+
+--- DHARMa-FLAGGED OBSERVATIONS FOR SENSITIVITY ONLY ---
+
+
+============================================================
+SPECIES: TROR | ANALYSIS: primary_full_data_auto_density
+============================================================
+
+--- AIC SCREEN: density transformation and count family ---
+SELECTED DENSITY FORM: log1p | SELECTED FAMILY: zinb2_count
+
+--- AIC SCREEN: fixed-effect and a priori interaction structure ---
+
+--- DATA-DEFICIENT / DROPPED MODELS ---
+FINAL SELECTED MODEL: fac_by_density | density_form = log1p | family = zinb2_count
+
+--- TARGETED A PRIORI FACILITATION MODELS: AIC/logLik ---
+
+--- MANUAL LRTs FOR TARGETED A PRIORI FACILITATION MODELS ---
+
+--- TYPE III TESTS FOR BROAD TARGETED FACILITATION MODEL ---
+
+--- TYPE III WALD TESTS FOR FINAL MODEL ---
+
+--- DHARMa TESTS FOR FINAL MODEL ---
+
+--- DHARMa-FLAGGED OBSERVATIONS FOR SENSITIVITY ONLY ---
+OUTLIER SENSITIVITY: using DHARMa-flagged TROR obs_id values.
+
+===== TROR OBSERVATIONS REMOVED IN OUTLIER SENSITIVITY ANALYSES =====
+
+
+============================================================
+SPECIES: TROR | ANALYSIS: TROR_no_outliers_auto_density
+============================================================
+
+--- AIC SCREEN: density transformation and count family ---
+SELECTED DENSITY FORM: log1p | SELECTED FAMILY: zinb2_count
+
+--- AIC SCREEN: fixed-effect and a priori interaction structure ---
+
+--- DATA-DEFICIENT / DROPPED MODELS ---
+FINAL SELECTED MODEL: fac_by_density | density_form = log1p | family = zinb2_count
+
+--- TARGETED A PRIORI FACILITATION MODELS: AIC/logLik ---
+
+--- MANUAL LRTs FOR TARGETED A PRIORI FACILITATION MODELS ---
+
+--- TYPE III TESTS FOR BROAD TARGETED FACILITATION MODEL ---
+
+--- TYPE III WALD TESTS FOR FINAL MODEL ---
+
+--- DHARMa TESTS FOR FINAL MODEL ---
+
+--- DHARMa-FLAGGED OBSERVATIONS FOR SENSITIVITY ONLY ---
+
+
+============================================================
+SPECIES: TROR | ANALYSIS: TROR_no_outliers_raw_density_forced
+============================================================
+
+--- AIC SCREEN: density transformation and count family ---
+SELECTED DENSITY FORM: raw | SELECTED FAMILY: zinb2_count
+
+--- AIC SCREEN: fixed-effect and a priori interaction structure ---
+
+--- DATA-DEFICIENT / DROPPED MODELS ---
+FINAL SELECTED MODEL: fac_by_density | density_form = raw | family = zinb2_count
+
+--- TARGETED A PRIORI FACILITATION MODELS: AIC/logLik ---
+
+--- MANUAL LRTs FOR TARGETED A PRIORI FACILITATION MODELS ---
+
+--- TYPE III TESTS FOR BROAD TARGETED FACILITATION MODEL ---
+
+--- TYPE III WALD TESTS FOR FINAL MODEL ---
+
+--- DHARMa TESTS FOR FINAL MODEL ---
+
+--- DHARMa-FLAGGED OBSERVATIONS FOR SENSITIVITY ONLY ---

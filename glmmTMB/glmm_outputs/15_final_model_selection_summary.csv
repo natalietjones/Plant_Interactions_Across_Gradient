@@ -1,0 +1,5 @@
+species,analysis_label,n,density_form,family,final_model,AIC
+TRCY,primary_full_data_auto_density,725,log1p,zinb2_count,additive,5238.192696574664
+TROR,primary_full_data_auto_density,662,log1p,zinb2_count,fac_by_density,4563.7982768255415
+TROR,TROR_no_outliers_auto_density,621,log1p,zinb2_count,fac_by_density,4083.2009319872755
+TROR,TROR_no_outliers_raw_density_forced,621,raw,zinb2_count,fac_by_density,4115.917266258004

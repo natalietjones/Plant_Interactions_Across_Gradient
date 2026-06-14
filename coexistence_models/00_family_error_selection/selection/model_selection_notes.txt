@@ -1,0 +1,15 @@
+Selected model: Ricker_gaussian_logfit
+Selected competition family: Ricker
+Selected error model: gaussian_logfit
+
+Interpretation notes:
+1. Use the LOO comparison table as a guide to predictive performance, recognising that raw/count/log-transformed response models are not perfectly comparable on a common likelihood scale.
+2. Use pp_check plots, Pareto-k diagnostics, and summaries as complementary diagnostics.
+3. If models are very close, prefer the biologically appropriate and stable model rather than relying mechanically on the top-ranked row.
+4. Count-based models here are fit to fitness_count, which is only valid because fitness was checked as integer-valued.
+5. Germination priors were loaded and validated here, but not used in the stage-0 likelihood.
+6. Use germination downstream in coexistence calculations via lambda_eff = g * lambda.
+7. Competitor densities are raw counts, so alpha is interpretable as competition strength per competitor individual.
+8. Facilitator density is raw NO_GRASS, not centred and not z-scaled, so NO_GRASS = 0 means no facilitator.
+9. Facilitator effects enter etalam = log(lambda), so the facilitator slope is the effect of one additional grass individual on log(lambda).
+10. Downstream prediction scripts must use raw NO_GRASS values for no-facilitator and high-facilitator contrasts.

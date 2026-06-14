@@ -1,0 +1,29 @@
+species,analysis_label,base_model,test_model,base_usable,test_usable,base_AIC,test_AIC,delta_AIC_test_minus_base,LRT,df_diff,p_value,note
+TRCY,primary_full_data_auto_density,site_cover,site_cover_fac_by_density,TRUE,TRUE,5244.236405672884,5245.4705721155115,1.234166442627611,2.765833557372389,2,0.2508458232231541,NA
+TRCY,primary_full_data_auto_density,additive,fac_by_density,TRUE,TRUE,5238.192696574664,5239.652680856437,1.4599842817724493,2.5400157182275507,2,0.2808294146993853,NA
+TRCY,primary_full_data_auto_density,additive,fac_by_cover,TRUE,TRUE,5238.192696574664,5239.696303243084,1.5036066684197067,0.4963933315802933,1,0.4810891622600849,NA
+TRCY,primary_full_data_auto_density,additive,fac_by_site,TRUE,TRUE,5238.192696574664,5245.168074688098,6.97537811343409,1.0246218865659102,4,0.9060398074248811,NA
+TRCY,primary_full_data_auto_density,additive,fac_by_site_cover,TRUE,TRUE,5238.192696574664,5246.664146758263,8.47145018359879,1.5285498164012097,5,0.9097518441795456,NA
+TRCY,primary_full_data_auto_density,site_cover,site_cover_fac_context,TRUE,TRUE,5244.236405672884,5252.844609540208,8.608203867323937,1.3917961326760633,5,0.9252085799428076,NA
+TRCY,primary_full_data_auto_density,site_cover,broad_facilitation_context,TRUE,TRUE,5244.236405672884,5253.7476426054845,9.511236932600696,4.488763067399304,7,0.7220699647926254,NA
+TROR,primary_full_data_auto_density,additive,fac_by_density,TRUE,TRUE,4572.13740478395,4563.7982768255415,-8.339127958408426,12.339127958408426,2,0.002092148021715889,NA
+TROR,primary_full_data_auto_density,site_cover,site_cover_fac_by_density,TRUE,TRUE,4570.76287868554,4562.478455984479,-8.284422701060976,12.284422701060976,2,0.0021501635917944364,NA
+TROR,primary_full_data_auto_density,site_cover,broad_facilitation_context,TRUE,TRUE,4570.76287868554,4566.551652362182,-4.21122632335846,18.21122632335846,7,0.011052482257215463,NA
+TROR,primary_full_data_auto_density,additive,fac_by_cover,TRUE,TRUE,4572.13740478395,4572.639467279966,0.5020624960161513,1.4979375039838487,1,0.2209889835250571,NA
+TROR,primary_full_data_auto_density,additive,fac_by_site,TRUE,TRUE,4572.13740478395,4575.6078564886975,3.4704517047475747,4.529548295252425,4,0.33905818096404494,NA
+TROR,primary_full_data_auto_density,additive,fac_by_site_cover,TRUE,TRUE,4572.13740478395,4576.283041971012,4.145637187061766,5.854362812938234,5,0.32064901856295647,NA
+TROR,primary_full_data_auto_density,site_cover,site_cover_fac_context,TRUE,TRUE,4570.76287868554,4575.0401471237665,4.277268438226201,5.722731561773799,5,0.3341398678043618,NA
+TROR,TROR_no_outliers_auto_density,site_cover,site_cover_fac_by_density,TRUE,TRUE,4102.17625836142,4084.517959905205,-17.658298456215107,21.658298456214652,2,1.9813456535312553e-5,NA
+TROR,TROR_no_outliers_auto_density,additive,fac_by_density,TRUE,TRUE,4100.823026243057,4083.2009319872755,-17.622094255781576,21.62209425578203,2,2.017538768485529e-5,NA
+TROR,TROR_no_outliers_auto_density,additive,fac_by_cover,TRUE,TRUE,4100.823026243057,4102.564712983551,1.7416867404936056,0.2583132595063944,1,0.6112813432685729,NA
+TROR,TROR_no_outliers_auto_density,site_cover,site_cover_fac_context,TRUE,TRUE,4102.17625836142,4107.500815458496,5.32455709707574,4.67544290292426,5,0.45675820625313585,NA
+TROR,TROR_no_outliers_auto_density,additive,fac_by_site_cover,TRUE,TRUE,4100.823026243057,4106.237277088545,5.4142508454879135,4.5857491545120865,5,0.4684931092627907,NA
+TROR,TROR_no_outliers_auto_density,additive,fac_by_site,TRUE,FALSE,4100.823026243057,NA,NA,NA,NA,NA,LRT not run: non-positive-definite Hessian; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC
+TROR,TROR_no_outliers_auto_density,site_cover,broad_facilitation_context,TRUE,FALSE,4102.17625836142,NA,NA,NA,NA,NA,LRT not run: non-positive-definite Hessian; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC
+TROR,TROR_no_outliers_raw_density_forced,site_cover,site_cover_fac_by_density,TRUE,TRUE,4120.516043941048,4117.69978773094,-2.8162562101078947,6.816256210107895,2,0.033103107956048324,NA
+TROR,TROR_no_outliers_raw_density_forced,additive,fac_by_density,TRUE,TRUE,4118.675795484605,4115.917266258004,-2.7585292266012402,6.758529226600331,2,0.03407250198855432,NA
+TROR,TROR_no_outliers_raw_density_forced,site_cover,broad_facilitation_context,TRUE,TRUE,4120.516043941048,4119.662308576495,-0.8537353645533585,14.853735364553359,7,0.03792068259907312,NA
+TROR,TROR_no_outliers_raw_density_forced,additive,fac_by_cover,TRUE,TRUE,4118.675795484605,4118.8497770788235,0.17398159421827586,1.8260184057808146,1,0.17659855635825392,NA
+TROR,TROR_no_outliers_raw_density_forced,additive,fac_by_site,TRUE,TRUE,4118.675795484605,4123.453748335063,4.77795285045795,3.2220471495411402,4,0.5213773307550249,NA
+TROR,TROR_no_outliers_raw_density_forced,additive,fac_by_site_cover,TRUE,FALSE,4118.675795484605,NA,NA,NA,NA,NA,LRT not run: non-positive-definite Hessian; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC
+TROR,TROR_no_outliers_raw_density_forced,site_cover,site_cover_fac_context,TRUE,FALSE,4120.516043941048,NA,NA,NA,NA,NA,LRT not run: non-positive-definite Hessian; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC

@@ -1,0 +1,77 @@
+
+Using germination:
+[1] FALSE
+
+Growth family:
+[1] "Ricker"
+
+Selected family from alpha_info:
+[1] "Ricker"
+
+Growth-family override:
+NULL
+
+Selected error model:
+[1] "gaussian_logfit"
+
+Stage-1 data file:
+[1] "C:/Users/natal/OneDrive - Griffith University/pairwise coex across env gradients/Pairwise coexistence and faciltation across env gradient/coexistence_models/01_alpha_structure_selection/data/analysis_data_stage1_with_germination.rds"
+
+Fit file:
+[1] "C:/Users/natal/OneDrive - Griffith University/pairwise coex across env gradients/Pairwise coexistence and faciltation across env gradient/coexistence_models/01_alpha_structure_selection/fits/fit_Ricker_m1_loggaussian.rds"
+
+Project dir:
+[1] "C:/Users/natal/OneDrive - Griffith University/pairwise coex across env gradients/Pairwise coexistence and faciltation across env gradient/coexistence_models"
+
+Figures dir:
+[1] "C:/Users/natal/OneDrive - Griffith University/pairwise coex across env gradients/Pairwise coexistence and faciltation across env gradient/coexistence_models/02_outcomes/figures"
+
+Site order used:
+[1] "BEN" "GH"  "NAM" "PJ"  "CS" 
+
+Cov order used:
+[1] "Shade" "Sun"  
+
+Selected facilitator levels:
+# A tibble: 10 × 6
+   Site  Cov    None  High n_positive delta
+   <fct> <fct> <dbl> <dbl>      <int> <dbl>
+ 1 BEN   Shade     0  4.5          27  4.5 
+ 2 BEN   Sun       0  7.12         96  7.12
+ 3 GH    Shade     0  2.5          13  2.5 
+ 4 GH    Sun       0  6            49  6   
+ 5 NAM   Shade     0  3            29  3   
+ 6 NAM   Sun       0  7            55  7   
+ 7 PJ    Shade     0  9            18  9   
+ 8 PJ    Sun       0  1            10  1   
+ 9 CS    Shade     0  1             1  1   
+10 CS    Sun       0  2             6  2   
+
+Eta validity summary:
+# A tibble: 1 × 4
+  p_eta_TRCY_gt1 p_eta_TROR_gt1 p_both_eta_gt1 p_valid_kappa
+           <dbl>          <dbl>          <dbl>         <dbl>
+1          0.945          0.959          0.912             1
+
+Outcome-sum check:
+# A tibble: 1 × 2
+  outcome_sum       n
+        <dbl>   <int>
+1           1 1200000
+
+Outcome-90 counts:
+# A tibble: 1 × 2
+  outcome_90     n
+  <chr>      <int>
+1 ambiguous     56
+
+Most-supported-outcome counts:
+# A tibble: 2 × 2
+  most_supported_outcome     n
+  <chr>                  <int>
+1 TRCY_wins                 26
+2 TROR_wins                 30
+
+Summary of max support:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.2747  0.3251  0.3781  0.3950  0.4271  0.6985 

@@ -1,0 +1,21 @@
+
+LOO summary for: loo_BH_negbin_count 
+
+Computed from 8000 by 1387 log-likelihood matrix.
+
+         Estimate   SE
+elpd_loo  -4959.9 49.1
+p_loo        36.4  4.0
+looic      9919.7 98.3
+------
+MCSE of elpd_loo is 0.1.
+MCSE and ESS estimates assume MCMC draws (r_eff in [0.6, 1.7]).
+
+All Pareto k estimates are good (k < 0.7).
+See help('pareto-k-diagnostic') for details.
+
+Pareto-k summary:
+# A tibble: 1 × 4
+  loo_name            max_pareto_k n_pareto_k_gt_0.7 n_pareto_k_gt_1.0
+  <chr>                      <dbl>             <int>             <int>
+1 loo_BH_negbin_count        0.648                 0                 0

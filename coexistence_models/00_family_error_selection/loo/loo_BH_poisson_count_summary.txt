@@ -1,0 +1,25 @@
+
+LOO summary for: loo_BH_poisson_count 
+
+Computed from 8000 by 1387 log-likelihood matrix.
+
+         Estimate     SE
+elpd_loo -13518.4  733.6
+p_loo       748.1   87.8
+looic     27036.9 1467.3
+------
+MCSE of elpd_loo is NA.
+MCSE and ESS estimates assume independent draws (r_eff=1).
+
+Pareto k diagnostic values:
+                         Count Pct.    Min. ESS
+(-Inf, 0.7]   (good)     1371  98.8%   <NA>    
+   (0.7, 1]   (bad)        10   0.7%   <NA>    
+   (1, Inf)   (very bad)    6   0.4%   <NA>    
+See help('pareto-k-diagnostic') for details.
+
+Pareto-k summary:
+# A tibble: 1 × 4
+  loo_name             max_pareto_k n_pareto_k_gt_0.7 n_pareto_k_gt_1.0
+  <chr>                       <dbl>             <int>             <int>
+1 loo_BH_poisson_count         3.17                16                 6

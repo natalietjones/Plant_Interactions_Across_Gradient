@@ -1,0 +1,14 @@
+model,dropped_reason,nonestimable_terms,n_NA_fixed,n_NA_vcov,species,analysis_label
+density_pairwise_diagnostic,NA/non-estimable fixed effects; NA fixed-effect covariance entries,cons_x:hetero_x,1,31,TRCY,primary_full_data_auto_density
+saturated_diagnostic,non-positive-definite Hessian; NA/non-estimable fixed effects; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC,cons_x:hetero_x,1,1849,TRCY,primary_full_data_auto_density
+density_pairwise_diagnostic,NA/non-estimable fixed effects; NA fixed-effect covariance entries,cons_x:hetero_x,1,31,TROR,primary_full_data_auto_density
+saturated_diagnostic,non-positive-definite Hessian; NA/non-estimable fixed effects; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC,cons_x:hetero_x; Site4:Cov1:fac_x,2,1849,TROR,primary_full_data_auto_density
+density_pairwise_diagnostic,NA/non-estimable fixed effects; NA fixed-effect covariance entries,cons_x:hetero_x,1,31,TROR,TROR_no_outliers_auto_density
+fac_by_site,non-positive-definite Hessian; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC,NA,0,169,TROR,TROR_no_outliers_auto_density
+broad_facilitation_context,non-positive-definite Hessian; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC,NA,0,400,TROR,TROR_no_outliers_auto_density
+saturated_diagnostic,non-positive-definite Hessian; NA/non-estimable fixed effects; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC,cons_x:hetero_x; Site4:Cov1:fac_x,2,1849,TROR,TROR_no_outliers_auto_density
+density_pairwise_diagnostic,NA/non-estimable fixed effects; NA fixed-effect covariance entries,cons_x:hetero_x,1,31,TROR,TROR_no_outliers_raw_density_forced
+fac_by_site_cover,non-positive-definite Hessian; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC,NA,0,196,TROR,TROR_no_outliers_raw_density_forced
+site_cover_fac_context,non-positive-definite Hessian; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC,NA,0,324,TROR,TROR_no_outliers_raw_density_forced
+saturated_diagnostic,non-positive-definite Hessian; NA/non-estimable fixed effects; NA fixed-effect covariance entries; non-finite logLik; non-finite AIC,cons_x:hetero_x; Site4:Cov1:fac_x,2,1849,TROR,TROR_no_outliers_raw_density_forced
+site_density,FIT_ERROR: system is computationally singular: reciprocal condition number = 7.14104e-18,NA,NA,NA,TROR,TROR_no_outliers_raw_density_forced

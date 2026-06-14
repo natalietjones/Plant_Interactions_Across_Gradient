@@ -1,0 +1,51 @@
+
+Using germination:
+[1] FALSE
+
+Selected environments (fac_sc = 0 vs mean of top 25% facilitator density per Site x Cov):
+   Site Cov     fac_sc           fac_label fac_q75 n_top25
+1   BEN  SH 0.00000000 Without facilitator      NA      NA
+2   BEN  SH 0.36129032    With facilitator       0       1
+3   BEN SUN 0.00000000 Without facilitator      NA      NA
+4   BEN SUN 5.19047619    With facilitator       3       1
+5    CS  SH 0.00000000 Without facilitator      NA      NA
+6    CS  SH 0.05263158    With facilitator       0       1
+7    CS SUN 0.00000000 Without facilitator      NA      NA
+8    CS SUN 0.11428571    With facilitator       0       1
+9    GH  SH 0.00000000 Without facilitator      NA      NA
+10   GH  SH 0.13114754    With facilitator       0       1
+11   GH SUN 0.00000000 Without facilitator      NA      NA
+12   GH SUN 2.20408163    With facilitator       1       1
+13  NAM  SH 0.00000000 Without facilitator      NA      NA
+14  NAM  SH 0.34883721    With facilitator       0       1
+15  NAM SUN 0.00000000 Without facilitator      NA      NA
+16  NAM SUN 2.65454545    With facilitator       1       1
+17   PJ  SH 0.00000000 Without facilitator      NA      NA
+18   PJ  SH 0.22772277    With facilitator       0       1
+19   PJ SUN 0.00000000 Without facilitator      NA      NA
+20   PJ SUN 0.05263158    With facilitator       0       1
+
+Summary of posterior support for positive invasion growth:
+# A tibble: 20 × 6
+   Site  Cov   species        fac_label           fac_sc p_positive
+   <fct> <fct> <fct>          <fct>                <dbl>      <dbl>
+ 1 BEN   SH    T. cyanopetala Without facilitator      0      0.312
+ 2 BEN   SH    T. ornata      Without facilitator      0      0.715
+ 3 GH    SH    T. cyanopetala Without facilitator      0      0.260
+ 4 GH    SH    T. ornata      Without facilitator      0      0.76 
+ 5 NAM   SH    T. cyanopetala Without facilitator      0      0.441
+ 6 NAM   SH    T. ornata      Without facilitator      0      0.590
+ 7 PJ    SH    T. cyanopetala Without facilitator      0      0.592
+ 8 PJ    SH    T. ornata      Without facilitator      0      0.442
+ 9 CS    SH    T. cyanopetala Without facilitator      0      0.521
+10 CS    SH    T. ornata      Without facilitator      0      0.363
+11 BEN   SUN   T. cyanopetala Without facilitator      0      0.484
+12 BEN   SUN   T. ornata      Without facilitator      0      0.543
+13 GH    SUN   T. cyanopetala Without facilitator      0      0.449
+14 GH    SUN   T. ornata      Without facilitator      0      0.588
+15 NAM   SUN   T. cyanopetala Without facilitator      0      0.611
+16 NAM   SUN   T. ornata      Without facilitator      0      0.408
+17 PJ    SUN   T. cyanopetala Without facilitator      0      0.721
+18 PJ    SUN   T. ornata      Without facilitator      0      0.286
+19 CS    SUN   T. cyanopetala Without facilitator      0      0.712
+20 CS    SUN   T. ornata      Without facilitator      0      0.265

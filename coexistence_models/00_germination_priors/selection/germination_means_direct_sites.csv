@@ -1,0 +1,5 @@
+"evidence_site","sp_code","n_rows","mean_row_germination","pooled_germination","total_germ_success","total_germ_trials"
+"BEN","TRCY",5,0.02,0.02,3,150
+"BEN","TROR",5,0.0933333333333333,0.0933333333333333,14,150
+"PJ","TRCY",146,0.165900195694716,0.142399430402278,400,2809
+"PJ","TROR",150,0.193777777777778,0.163649025069638,470,2872

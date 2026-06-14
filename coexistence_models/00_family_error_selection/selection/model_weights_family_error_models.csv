@@ -1,0 +1,9 @@
+"model","stacking_weight","growth_family","error_model","fit_name","loo_name","seed"
+"Ricker_gaussian_logfit",0.894565405860156,"Ricker","gaussian_logfit","fit_Ricker_gaussian_logfit","loo_Ricker_gaussian_logfit",808
+"BH_gaussian_logfit",0.0777544282559761,"BH","gaussian_logfit","fit_BH_gaussian_logfit","loo_BH_gaussian_logfit",404
+"Ricker_negbin_count",0.0219585579681517,"Ricker","negbin_count","fit_Ricker_negbin_count","loo_Ricker_negbin_count",707
+"BH_negbin_count",0.00572138435747133,"BH","negbin_count","fit_BH_negbin_count","loo_BH_negbin_count",303
+"BH_poisson_count",1.43551074619649e-07,"BH","poisson_count","fit_BH_poisson_count","loo_BH_poisson_count",202
+"Ricker_gaussian_raw",5.00041299454565e-08,"Ricker","gaussian_raw","fit_Ricker_gaussian_raw","loo_Ricker_gaussian_raw",505
+"Ricker_poisson_count",2.35421661918536e-08,"Ricker","poisson_count","fit_Ricker_poisson_count","loo_Ricker_poisson_count",606
+"BH_gaussian_raw",6.46087439309144e-09,"BH","gaussian_raw","fit_BH_gaussian_raw","loo_BH_gaussian_raw",101

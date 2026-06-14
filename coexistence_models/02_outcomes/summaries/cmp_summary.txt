@@ -1,0 +1,107 @@
+BH versus Ricker coexistence-outcome comparison
+================================================
+
+Overall posterior outcome probability differences, Ricker - BH:
+# A tibble: 1 × 6
+  n_probabilities_compared mean_abs_delta median_abs_delta max_abs_delta n_ge_5pct n_ge_10pct
+                     <int>          <dbl>            <dbl>         <dbl>     <int>      <int>
+1                       80         0.0807           0.0672         0.300        48         21
+
+Dominant outcome agreement:
+# A tibble: 1 × 4
+  n_site_cover_fac_cases n_same_dominant n_different_dominant prop_same_dominant
+                   <int>           <int>                <int>              <dbl>
+1                     20              15                    5               0.75
+
+Outcome-specific differences:
+# A tibble: 4 × 7
+  outcome         mean_delta_Ricker_minu…¹ mean_abs_delta median_abs_delta max_abs_delta n_cells_ge_5pct n_cells_ge_10pct
+  <fct>                              <dbl>          <dbl>            <dbl>         <dbl>           <int>            <int>
+1 TRCY wins                       -0.115           0.128            0.109         0.300               16               12
+2 TROR wins                        0.0452          0.0939           0.0839        0.235               16                7
+3 Priority effect                  0.0674          0.0674           0.0612        0.132               13                2
+4 Coexistence                      0.00234         0.0339           0.0336        0.0799               3                0
+# ℹ abbreviated name: ¹​mean_delta_Ricker_minus_BH
+
+LDGR coexistence probability differences:
+# A tibble: 1 × 4
+  n_ldgr_cases mean_abs_delta median_abs_delta max_abs_delta
+         <int>          <dbl>            <dbl>         <dbl>
+1           20         0.0392           0.0349        0.0841
+
+Dominant outcome comparison by Site x Cover x Facilitator:
+# A tibble: 20 × 9
+   Site  Cov   fac_present dominant_Ricker dominant_p_Ricker dominant_BH dominant_p_BH same_dominant_outcome
+   <fct> <fct> <fct>       <chr>                       <dbl> <chr>               <dbl> <lgl>                
+ 1 BEN   Shade No          TROR wins                   0.589 TROR wins           0.513 TRUE                 
+ 2 BEN   Shade Yes         TRCY wins                   0.327 TRCY wins           0.386 TRUE                 
+ 3 BEN   Sun   No          TROR wins                   0.402 TROR wins           0.322 TRUE                 
+ 4 BEN   Sun   Yes         TRCY wins                   0.378 TRCY wins           0.508 TRUE                 
+ 5 GH    Shade No          TROR wins                   0.571 TROR wins           0.574 TRUE                 
+ 6 GH    Shade Yes         TROR wins                   0.399 TROR wins           0.329 TRUE                 
+ 7 GH    Sun   No          TROR wins                   0.448 TROR wins           0.355 TRUE                 
+ 8 GH    Sun   Yes         TROR wins                   0.318 TRCY wins           0.563 FALSE                
+ 9 NAM   Shade No          TROR wins                   0.432 TROR wins           0.357 TRUE                 
+10 NAM   Shade Yes         TRCY wins                   0.343 TRCY wins           0.553 TRUE                 
+11 NAM   Sun   No          TROR wins                   0.345 TRCY wins           0.38  FALSE                
+12 NAM   Sun   Yes         TRCY wins                   0.534 TRCY wins           0.829 TRUE                 
+13 PJ    Shade No          TROR wins                   0.320 TRCY wins           0.348 FALSE                
+14 PJ    Shade Yes         TRCY wins                   0.406 TRCY wins           0.509 TRUE                 
+15 PJ    Sun   No          TROR wins                   0.283 TRCY wins           0.526 FALSE                
+16 PJ    Sun   Yes         TRCY wins                   0.293 TRCY wins           0.577 TRUE                 
+17 CS    Shade No          TRCY wins                   0.379 TROR wins           0.539 FALSE                
+18 CS    Shade Yes         TROR wins                   0.590 TROR wins           0.724 TRUE                 
+19 CS    Sun   No          TRCY wins                   0.416 TRCY wins           0.530 TRUE                 
+20 CS    Sun   Yes         TROR wins                   0.642 TROR wins           0.736 TRUE                 
+# ℹ 1 more variable: delta_dominant_probability <dbl>
+
+Rows with posterior outcome probability difference >= 10 percentage points:
+# A tibble: 21 × 10
+   Site  Cov   fac_present outcome         Ricker     BH delta_Ricker_minus_BH abs_delta change_gt_5pct change_gt_10pct
+   <fct> <fct> <fct>       <fct>            <dbl>  <dbl>                 <dbl>     <dbl> <lgl>          <lgl>          
+ 1 GH    Sun   Yes         TRCY wins        0.263 0.563                 -0.300     0.300 TRUE           TRUE           
+ 2 NAM   Sun   Yes         TRCY wins        0.534 0.829                 -0.295     0.295 TRUE           TRUE           
+ 3 PJ    Sun   Yes         TRCY wins        0.293 0.577                 -0.285     0.285 TRUE           TRUE           
+ 4 PJ    Sun   No          TRCY wins        0.263 0.526                 -0.263     0.263 TRUE           TRUE           
+ 5 CS    Shade No          TROR wins        0.305 0.539                 -0.235     0.235 TRUE           TRUE           
+ 6 NAM   Shade Yes         TRCY wins        0.343 0.553                 -0.210     0.210 TRUE           TRUE           
+ 7 PJ    Sun   No          TROR wins        0.283 0.105                  0.178     0.178 TRUE           TRUE           
+ 8 NAM   Sun   No          TRCY wins        0.204 0.38                  -0.176     0.176 TRUE           TRUE           
+ 9 PJ    Sun   Yes         TROR wins        0.256 0.0952                 0.161     0.161 TRUE           TRUE           
+10 NAM   Sun   No          TROR wins        0.345 0.190                  0.155     0.155 TRUE           TRUE           
+11 GH    Sun   Yes         TROR wins        0.318 0.177                  0.140     0.140 TRUE           TRUE           
+12 CS    Shade Yes         TROR wins        0.590 0.724                 -0.135     0.135 TRUE           TRUE           
+13 NAM   Sun   Yes         Priority effect  0.204 0.0716                 0.132     0.132 TRUE           TRUE           
+14 BEN   Sun   Yes         TRCY wins        0.378 0.508                 -0.130     0.130 TRUE           TRUE           
+15 PJ    Shade No          TRCY wins        0.218 0.348                 -0.129     0.129 TRUE           TRUE           
+16 GH    Shade Yes         TRCY wins        0.183 0.300                 -0.117     0.117 TRUE           TRUE           
+17 CS    Sun   No          TRCY wins        0.416 0.530                 -0.114     0.114 TRUE           TRUE           
+18 GH    Sun   Yes         Priority effect  0.237 0.124                  0.113     0.113 TRUE           TRUE           
+19 PJ    Shade No          TROR wins        0.320 0.208                  0.112     0.112 TRUE           TRUE           
+20 PJ    Shade Yes         TRCY wins        0.406 0.509                 -0.103     0.103 TRUE           TRUE           
+21 CS    Shade No          TRCY wins        0.379 0.277                  0.102     0.102 TRUE           TRUE           
+
+Largest LDGR coexistence probability differences:
+# A tibble: 20 × 6
+   Site  panel_row  p_coexist_Ricker p_coexist_BH delta_Ricker_minus_BH abs_delta
+   <fct> <fct>                 <dbl>        <dbl>                 <dbl>     <dbl>
+ 1 CS    Shade-High           0.102        0.0184               0.0841    0.0841 
+ 2 NAM   Sun-High             0.145        0.0649               0.08      0.08   
+ 3 CS    Sun-High             0.0853       0.0164               0.0689    0.0689 
+ 4 BEN   Shade-None           0.147        0.204               -0.0574    0.0574 
+ 5 CS    Shade-None           0.138        0.082                0.0555    0.0555 
+ 6 GH    Sun-None             0.185        0.237               -0.0525    0.0525 
+ 7 GH    Sun-High             0.182        0.135                0.0471    0.0471 
+ 8 NAM   Shade-None           0.192        0.239               -0.0468    0.0468 
+ 9 BEN   Sun-None             0.190        0.231               -0.041     0.041  
+10 PJ    Shade-High           0.106        0.0698               0.0364    0.0364 
+11 GH    Shade-None           0.157        0.190               -0.0334    0.0334 
+12 PJ    Sun-High             0.199        0.167                0.0324    0.0324 
+13 CS    Sun-None             0.161        0.129                0.0316    0.0316 
+14 PJ    Shade-None           0.208        0.235               -0.0275    0.0275 
+15 NAM   Shade-High           0.185        0.158                0.0269    0.0269 
+16 NAM   Sun-None             0.205        0.23                -0.0253    0.0253 
+17 PJ    Sun-None             0.200        0.186                0.0137    0.0137 
+18 GH    Shade-High           0.189        0.200               -0.0104    0.0104 
+19 BEN   Shade-High           0.160        0.168               -0.00713   0.00713
+20 BEN   Sun-High             0.168        0.173               -0.00525   0.00525

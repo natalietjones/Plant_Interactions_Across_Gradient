@@ -1,0 +1,21 @@
+
+LOO summary for: loo_BH_gaussian_raw 
+
+Computed from 8000 by 1387 log-likelihood matrix.
+
+         Estimate    SE
+elpd_loo  -6233.8  99.1
+p_loo        71.9  16.8
+looic     12467.6 198.1
+------
+MCSE of elpd_loo is NA.
+MCSE and ESS estimates assume independent draws (r_eff=1).
+
+All Pareto k estimates are good (k < 0.7).
+See help('pareto-k-diagnostic') for details.
+
+Pareto-k summary:
+# A tibble: 1 × 4
+  loo_name            max_pareto_k n_pareto_k_gt_0.7 n_pareto_k_gt_1.0
+  <chr>                      <dbl>             <int>             <int>
+1 loo_BH_gaussian_raw        0.644                 0                 0

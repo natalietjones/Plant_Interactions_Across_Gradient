@@ -1,0 +1,51 @@
+
+Using germination:
+[1] FALSE
+
+Site order used:
+[1] "BEN" "GH"  "NAM" "PJ"  "CS" 
+
+Cov order used:
+[1] "SH"  "SUN"
+
+Selected facilitator levels:
+# A tibble: 20 × 6
+   Site  Cov   n_positive  None  High delta
+   <fct> <fct>      <int> <dbl> <dbl> <dbl>
+ 1 BEN   SH            NA     0 NA       NA
+ 2 BEN   SH             1    NA  4.5     NA
+ 3 BEN   SUN           NA     0 NA       NA
+ 4 BEN   SUN            1    NA  7.12    NA
+ 5 GH    SH            NA     0 NA       NA
+ 6 GH    SH             1    NA  2.5     NA
+ 7 GH    SUN           NA     0 NA       NA
+ 8 GH    SUN            1    NA  6       NA
+ 9 NAM   SH            NA     0 NA       NA
+10 NAM   SH             1    NA  3       NA
+11 NAM   SUN           NA     0 NA       NA
+12 NAM   SUN            1    NA  7       NA
+13 PJ    SH            NA     0 NA       NA
+14 PJ    SH             1    NA  9       NA
+15 PJ    SUN           NA     0 NA       NA
+16 PJ    SUN            1    NA  1       NA
+17 CS    SH            NA     0 NA       NA
+18 CS    SH             1    NA  1       NA
+19 CS    SUN           NA     0 NA       NA
+20 CS    SUN            1    NA  2       NA
+
+Outcome-90 counts:
+# A tibble: 1 × 2
+  outcome_90     n
+  <chr>      <int>
+1 ambiguous     56
+
+Most-supported-outcome counts:
+# A tibble: 2 × 2
+  most_supported_outcome     n
+  <chr>                  <int>
+1 TRCY_wins                 41
+2 TROR_wins                 15
+
+Summary of max support:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.2823  0.3779  0.4994  0.5028  0.5731  0.8684 

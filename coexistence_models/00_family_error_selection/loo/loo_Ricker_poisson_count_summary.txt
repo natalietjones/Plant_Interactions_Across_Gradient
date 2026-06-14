@@ -1,0 +1,25 @@
+
+LOO summary for: loo_Ricker_poisson_count 
+
+Computed from 8000 by 1387 log-likelihood matrix.
+
+         Estimate     SE
+elpd_loo -13523.6  728.0
+p_loo       715.4   81.2
+looic     27047.1 1456.1
+------
+MCSE of elpd_loo is NA.
+MCSE and ESS estimates assume independent draws (r_eff=1).
+
+Pareto k diagnostic values:
+                         Count Pct.    Min. ESS
+(-Inf, 0.7]   (good)     1372  98.9%   <NA>    
+   (0.7, 1]   (bad)         4   0.3%   <NA>    
+   (1, Inf)   (very bad)   11   0.8%   <NA>    
+See help('pareto-k-diagnostic') for details.
+
+Pareto-k summary:
+# A tibble: 1 × 4
+  loo_name                 max_pareto_k n_pareto_k_gt_0.7 n_pareto_k_gt_1.0
+  <chr>                           <dbl>             <int>             <int>
+1 loo_Ricker_poisson_count         1.89                15                11

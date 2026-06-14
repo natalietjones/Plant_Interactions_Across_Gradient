@@ -1,0 +1,38 @@
+
+Using germination:
+[1] FALSE
+
+Outcome-90 counts:
+# A tibble: 2 × 2
+  outcome_90     n
+  <chr>      <int>
+1 TRCY_wins      3
+2 ambiguous     53
+
+Most-supported-outcome counts:
+# A tibble: 2 × 2
+  most_supported_outcome     n
+  <chr>                  <int>
+1 TRCY_wins                 50
+2 TROR_wins                  6
+
+Summary of max support:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.5090  0.6375  0.7267  0.7122  0.7752  0.9153 
+
+Top environments by max support:
+# A tibble: 56 × 12
+   Site  Cov   fac_sc most_supported_outcome max_support p_coexist p_TRCY_wins p_TROR_wins p_priority mean_g_TROR mean_g_TRCY n_obs
+   <fct> <fct>  <int> <chr>                        <dbl>     <dbl>       <dbl>       <dbl>      <dbl>       <dbl>       <dbl> <int>
+ 1 NAM   SUN        7 TRCY_wins                    0.915    0.0569       0.915      0.0628          0           1           1     1
+ 2 NAM   SUN        6 TRCY_wins                    0.908    0.0645       0.908      0.0691          0           1           1     2
+ 3 NAM   SUN       17 TRCY_wins                    0.906    0.0244       0.906      0.0864          0           1           1     1
+ 4 NAM   SUN        5 TRCY_wins                    0.897    0.0742       0.897      0.0772          0           1           1     4
+ 5 NAM   SUN        4 TRCY_wins                    0.882    0.0836       0.882      0.0896          0           1           1     8
+ 6 NAM   SUN        3 TRCY_wins                    0.857    0.105        0.857      0.109           0           1           1     4
+ 7 PJ    SUN        1 TRCY_wins                    0.832    0.118        0.832      0.144           0           1           1    10
+ 8 NAM   SUN        2 TRCY_wins                    0.824    0.126        0.824      0.139           0           1           1    11
+ 9 PJ    SUN        0 TRCY_wins                    0.813    0.136        0.813      0.159           0           1           1   180
+10 BEN   SUN       10 TRCY_wins                    0.787    0.111        0.787      0.194           0           1           1     1
+# ℹ 46 more rows
+# ℹ Use `print(n = ...)` to see more rows

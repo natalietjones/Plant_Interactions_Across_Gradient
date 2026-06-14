@@ -1,0 +1,65 @@
+
+Summary of raw fitness:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00    4.00    7.00   15.19   16.00  260.00 
+
+Check whether fitness is integer-valued:
+[1] TRUE
+
+Summary of rounded count fitness:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00    4.00    7.00   15.19   16.00  260.00 
+
+Summary of raw facilitator density:
+# A tibble: 1 × 6
+  min_fac q25_fac median_fac q75_fac q90_fac max_fac
+    <dbl>   <dbl>      <dbl>   <dbl>   <dbl>   <dbl>
+1       0       0          0       0       2      17
+
+Counts by Site, Cov, focsp:
+# A tibble: 20 × 4
+   Site  Cov   focsp     n
+   <fct> <fct> <fct> <int>
+ 1 BEN   Shade TRCY     78
+ 2 BEN   Shade TROR     77
+ 3 BEN   Sun   TRCY     69
+ 4 BEN   Sun   TROR     64
+ 5 GH    Shade TRCY     64
+ 6 GH    Shade TROR     58
+ 7 GH    Sun   TRCY     91
+ 8 GH    Sun   TROR     93
+ 9 NAM   Shade TRCY     71
+10 NAM   Shade TROR     58
+11 NAM   Sun   TRCY     97
+12 NAM   Sun   TROR     86
+13 PJ    Shade TRCY    102
+14 PJ    Shade TROR    100
+15 PJ    Sun   TRCY    102
+16 PJ    Sun   TROR     88
+17 CS    Shade TRCY     10
+18 CS    Shade TROR      9
+19 CS    Sun   TRCY     41
+20 CS    Sun   TROR     29
+
+Counts by SiteBlock:
+# A tibble: 15 × 2
+   SiteBlock     n
+   <fct>     <int>
+ 1 PJ.2        145
+ 2 NAM.3       139
+ 3 GH.2        133
+ 4 PJ.1        128
+ 5 BEN.3       120
+ 6 PJ.3        119
+ 7 NAM.2        97
+ 8 GH.3         97
+ 9 BEN.1        96
+10 GH.1         76
+11 NAM.1        76
+12 BEN.2        72
+13 CS.1         31
+14 CS.2         31
+15 CS.3         27
+
+Germination priors loaded from:
+[1] "C:\\Users\\natal\\OneDrive - Griffith University\\pairwise coex across env gradients\\Pairwise coexistence and faciltation across env gradient\\coexistence_models\\00_germination_priors\\selection\\germination_priors.rds"

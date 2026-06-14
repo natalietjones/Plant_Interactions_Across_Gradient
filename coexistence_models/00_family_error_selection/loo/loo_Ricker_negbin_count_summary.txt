@@ -1,0 +1,21 @@
+
+LOO summary for: loo_Ricker_negbin_count 
+
+Computed from 8000 by 1387 log-likelihood matrix.
+
+         Estimate   SE
+elpd_loo  -4961.2 49.3
+p_loo        36.2  3.9
+looic      9922.3 98.6
+------
+MCSE of elpd_loo is 0.1.
+MCSE and ESS estimates assume MCMC draws (r_eff in [0.5, 1.7]).
+
+All Pareto k estimates are good (k < 0.7).
+See help('pareto-k-diagnostic') for details.
+
+Pareto-k summary:
+# A tibble: 1 × 4
+  loo_name                max_pareto_k n_pareto_k_gt_0.7 n_pareto_k_gt_1.0
+  <chr>                          <dbl>             <int>             <int>
+1 loo_Ricker_negbin_count        0.624                 0                 0

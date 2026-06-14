@@ -1,0 +1,41 @@
+"species","Site","Cov","fac_label","fac_sc","condition","igr_med","igr_lwr","igr_upr","p_positive"
+"T. cyanopetala","BEN","SH","With facilitator",5,"Shade, fac",-0.85219369590775,-3.15088434385828,0.882412577617687,0.185
+"T. cyanopetala","BEN","SH","Without facilitator",0,"Shade, no fac",-1.36950441778593,-2.88088072922213,-0.347061899131733,0.003
+"T. cyanopetala","BEN","SUN","With facilitator",10,"Sun, fac",-0.479305886476712,-2.51102928292958,1.11568553728994,0.296875
+"T. cyanopetala","BEN","SUN","Without facilitator",0,"Sun, no fac",-1.02196431057931,-2.68927126607292,0.165860127804205,0.048625
+"T. cyanopetala","GH","SH","With facilitator",3,"Shade, fac",-0.11177578689165,-3.78287205230259,2.24782073050538,0.472125
+"T. cyanopetala","GH","SH","Without facilitator",0,"Shade, no fac",-0.699833243517119,-4.07558276202314,0.97651472484327,0.259375
+"T. cyanopetala","GH","SUN","With facilitator",9,"Sun, fac",0.740285532987739,-3.42993748675249,4.15630832102883,0.6455
+"T. cyanopetala","GH","SUN","Without facilitator",0,"Sun, no fac",-0.293179362774643,-3.7914377551765,1.60034199415028,0.409625
+"T. cyanopetala","NAM","SH","With facilitator",3,"Shade, fac",0.16833890566071,-3.36379061943842,2.14171948083305,0.54825
+"T. cyanopetala","NAM","SH","Without facilitator",0,"Shade, no fac",-0.514317760412418,-3.85897934737271,1.11645650828672,0.32225
+"T. cyanopetala","NAM","SUN","With facilitator",17,"Sun, fac",2.19306762890319,-2.18424411051833,5.38172490753598,0.860375
+"T. cyanopetala","NAM","SUN","Without facilitator",0,"Sun, no fac",-0.0858243310030288,-3.54855391515033,1.75558252926185,0.476625
+"T. cyanopetala","PJ","SH","With facilitator",10,"Shade, fac",1.02726994048058,-2.6391961378492,3.1909721986677,0.72775
+"T. cyanopetala","PJ","SH","Without facilitator",0,"Shade, no fac",0.119570607906983,-1.04024291857884,0.663520993480606,0.6215
+"T. cyanopetala","PJ","SUN","With facilitator",1,"Sun, fac",0.486157659536085,-0.8747137290158,1.2890997128793,0.793
+"T. cyanopetala","PJ","SUN","Without facilitator",0,"Sun, no fac",0.378075314684935,-0.939937809920992,1.18315162153686,0.746875
+"T. cyanopetala","CS","SH","With facilitator",1,"Shade, fac",-2.12999771008926,-5.79732420844502,-0.0243801537933442,0.023125
+"T. cyanopetala","CS","SH","Without facilitator",0,"Shade, no fac",-1.31607525092697,-4.60732920316418,0.182100317440465,0.055625
+"T. cyanopetala","CS","SUN","With facilitator",2,"Sun, fac",-2.5806796670946,-7.64346151243399,0.499347093800301,0.06075
+"T. cyanopetala","CS","SUN","Without facilitator",0,"Sun, no fac",-0.612677701021559,-3.91026455314084,0.907130826302395,0.2785
+"T. ornata","BEN","SH","With facilitator",5,"Shade, fac",0.472373193875559,-1.31192100077551,1.88700809024599,0.7285
+"T. ornata","BEN","SH","Without facilitator",0,"Shade, no fac",-0.0394338595009702,-1.15606239759254,0.588644204142179,0.4575
+"T. ornata","BEN","SUN","With facilitator",10,"Sun, fac",0.141225859917283,-1.4918414656588,1.40706342762295,0.5775
+"T. ornata","BEN","SUN","Without facilitator",0,"Sun, no fac",0.388037534421714,-0.76301176780464,1.03862728697006,0.819625
+"T. ornata","GH","SH","With facilitator",3,"Shade, fac",-0.0692047852560694,-3.59743268794089,2.12216515576015,0.479375
+"T. ornata","GH","SH","Without facilitator",0,"Shade, no fac",-0.125312541086019,-3.27462806339734,1.30025866216463,0.452875
+"T. ornata","GH","SUN","With facilitator",9,"Sun, fac",-0.734896837994031,-4.7636711356735,2.61160502669612,0.34675
+"T. ornata","GH","SUN","Without facilitator",0,"Sun, no fac",-0.0505834931590191,-3.28904562297926,1.63887582344141,0.482125
+"T. ornata","NAM","SH","With facilitator",3,"Shade, fac",-0.505977001085307,-3.79821848041342,1.58567014917584,0.348
+"T. ornata","NAM","SH","Without facilitator",0,"Shade, no fac",-0.346189658220656,-3.41148633192809,1.10875049846379,0.36775
+"T. ornata","NAM","SUN","With facilitator",17,"Sun, fac",-2.42214745076351,-7.02169423840056,1.60302177909871,0.126
+"T. ornata","NAM","SUN","Without facilitator",0,"Sun, no fac",-0.314979642764498,-3.49706781400023,1.48384181690079,0.397875
+"T. ornata","PJ","SH","With facilitator",10,"Shade, fac",-1.22762080602352,-6.17595070650966,2.40254971525046,0.26575
+"T. ornata","PJ","SH","Without facilitator",0,"Shade, no fac",-0.113998038154494,-1.10166947379763,0.425070827802079,0.35575
+"T. ornata","PJ","SUN","With facilitator",1,"Sun, fac",-0.43176042871598,-1.66135898993448,0.468479552362855,0.18525
+"T. ornata","PJ","SUN","Without facilitator",0,"Sun, no fac",-0.332619524842157,-1.49627737615969,0.489342666743029,0.238125
+"T. ornata","CS","SH","With facilitator",1,"Shade, fac",-1.46435656923254,-5.06161292057895,0.542987951904838,0.09325
+"T. ornata","CS","SH","Without facilitator",0,"Shade, no fac",-1.34422192371702,-4.54275122851401,0.114143928299607,0.039125
+"T. ornata","CS","SUN","With facilitator",2,"Sun, fac",-1.335072898887,-6.43524716125757,1.53507267830714,0.20975
+"T. ornata","CS","SUN","Without facilitator",0,"Sun, no fac",-0.997999745958452,-4.18527474155668,0.506329863597325,0.127375

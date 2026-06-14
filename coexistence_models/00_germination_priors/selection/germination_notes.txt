@@ -1,0 +1,11 @@
+Germination priors created for TRCY and TROR.
+
+Interpretation:
+- PJ uses direct row-level Perenjori field evidence.
+- BEN uses direct row-level Kunjin field evidence as the Bendering analogue.
+- Hao Ran rows are excluded.
+- Zero-germination rows are retained because they are valid binomial observations unless known to be failed trials.
+- Main germination fraction is field_number_germinants / field_number_seeds.
+- Nonviable seeds are retained in the denominator, so this estimates realised germination from total field seeds, not germination conditional on viability.
+- Lost seeds are retained in the denominator in the main analysis; this is conservative and should ideally be checked with a sensitivity analysis.
+- GH, NAM, and CS use weakly informed priors centered on pooled PJ+BEN evidence.

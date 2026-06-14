@@ -1,3 +1,0 @@
-                   elpd_diff se_diff
-fit_loglin_covfac   0.0       0.0   
-fit_loglin_sitefac -3.0       2.1   
