@@ -1,0 +1,9 @@
+model_family,outcome_draw,n_draws,prop_draws
+BH,TRCY wins,36277,0.4534625
+BH,TROR wins,24564,0.30705
+BH,Coexistence,10110,0.126375
+BH,Priority effect,9049,0.1131125
+Ricker,TRCY wins,24496,0.30620000000000003
+Ricker,TROR wins,27641,0.3455125
+Ricker,Coexistence,12187,0.1523375
+Ricker,Priority effect,15676,0.19595

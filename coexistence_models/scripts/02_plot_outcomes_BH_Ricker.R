@@ -1408,7 +1408,7 @@ safe_write_csv(coex_summary, table_path(file_prefix, "coex_obs"))
 safe_save_rds(lambda_draws,   draw_path(file_prefix, "lambda"))
 safe_save_rds(alpha_draws,    draw_path(file_prefix, "alpha"))
 safe_save_rds(coex_draws_obs, draw_path(file_prefix, "coex_obs"))
-
+safe_save_rds(coex_draws, draw_path(file_prefix, "coex_all"))
 
 ############################
 ## 15. Quick checks
@@ -2592,4 +2592,1221 @@ cat("Figures written to:   ", safe_path_report(figures_dir), "\n", sep = "")
 cat("Tables written to:    ", safe_path_report(tables_dir), "\n", sep = "")
 cat("Summaries written to: ", safe_path_report(summaries_dir), "\n", sep = "")
 cat("Draws written to:     ", safe_path_report(draws_dir), "\n", sep = "")
+
+
+############################
+## 9. New figure that links the increase in mean seed production with the coexistence outcome
+## The goal is to visually link the interpretation/main results that faciltators do increase fecundity
+## BUT that does not translate into increased coexistence
+############################
+############################
+
+## Uses Bayesian coexistence-model outputs only.
+##
+## x-axis:
+##   facilitation asymmetry =
+##   [log(lambda_TRCY_high) - log(lambda_TRCY_none)] -
+##   [log(lambda_TROR_high) - log(lambda_TROR_none)]
+##
+## y-axis:
+##   posterior probability of coexistence under high facilitator
+##
+## Interpretation:
+##   x > 0 means facilitators increase TRCY lambda more than TROR lambda.
+##   x < 0 means facilitators increase TROR lambda more than TRCY lambda.
+##   x = 0 means symmetric facilitation effects.
+############################
+
+
+## Section 9 needs these objects in the global environment.
+## In the main script they were created inside run_one_family(), so they disappear
+## after each model finishes.
+
+infer_factor_levels <- function(x, preferred = NULL) {
+  vals <- unique(as.character(x))
+  lv <- levels(x)
+  
+  out <- if (!is.null(lv) && length(lv) > 0) {
+    lv[lv %in% vals]
+  } else {
+    vals
+  }
+  
+  if (!is.null(preferred)) {
+    out <- c(preferred[preferred %in% out], setdiff(out, preferred))
+  }
+  
+  out
+}
+
+site_order <- infer_factor_levels(
+  results[[1]]$selected_fac_levels$Site,
+  preferred = c("BEN", "GH", "NAM", "PJ", "CS")
+)
+
+cov_order <- infer_factor_levels(
+  results[[1]]$selected_fac_levels$Cov,
+  preferred = c("Shade", "Sun")
+)
+
+cover_plot_levels <- c("Sun", "Shade")
+cover_plot_levels <- cover_plot_levels[cover_plot_levels %in% cov_order]
+
+if (length(cover_plot_levels) == 0) {
+  cover_plot_levels <- cov_order
+}
+
+fac_join_digits <- 10
+
+outcome_cols <- c(
+  "TRCY wins" = "#83E8BA",
+  "TROR wins" = "grey",
+  "Coexistence" = "#72A1E5",
+  "Priority effect" = "#9883E5"
+)
+
+
+make_fecundity_asymmetry_plot_data <- function(one_result) {
+  
+  model_name <- one_result$family_tag
+  file_prefix_i <- one_result$file_prefix
+  
+  lambda_file <- draw_path(file_prefix_i, "lambda")
+  
+  if (!file.exists(lambda_file)) {
+    stop("Cannot find lambda draw file for ", model_name, ": ", lambda_file)
+  }
+  
+  lambda_i <- readRDS(lambda_file) %>%
+    dplyr::mutate(
+      Site = factor(as.character(Site), levels = site_order),
+      Cov  = factor(as.character(Cov), levels = cov_order),
+      focsp = as.character(focsp),
+      fac_sc_join = round(as.numeric(fac_sc), fac_join_digits)
+    )
+  
+  selected_fac_i <- one_result$selected_fac_levels %>%
+    dplyr::mutate(
+      Site = factor(as.character(Site), levels = site_order),
+      Cov  = factor(as.character(Cov), levels = cov_order),
+      fac_level = as.character(fac_level),
+      fac_sc_join = round(as.numeric(fac_sc), fac_join_digits)
+    ) %>%
+    dplyr::filter(fac_level %in% c("None", "High")) %>%
+    dplyr::select(Site, Cov, fac_level, fac_sc_join) %>%
+    dplyr::distinct()
+  
+  lambda_selected <- lambda_i %>%
+    dplyr::inner_join(
+      selected_fac_i,
+      by = c("Site", "Cov", "fac_sc_join")
+    ) %>%
+    dplyr::select(draw, Site, Cov, focsp, fac_level, lambda)
+  
+  if (nrow(lambda_selected) == 0) {
+    stop(
+      "No lambda draws matched selected facilitator levels for ", model_name,
+      ". Check fac_sc rounding/joining."
+    )
+  }
+  
+  asym_draws <- lambda_selected %>%
+    dplyr::mutate(
+      focsp = as.character(focsp),
+      fac_level = as.character(fac_level),
+      log_lambda = log(lambda)
+    ) %>%
+    dplyr::select(draw, Site, Cov, focsp, fac_level, log_lambda) %>%
+    tidyr::pivot_wider(
+      names_from = c(focsp, fac_level),
+      values_from = log_lambda,
+      names_glue = "loglam_{focsp}_{fac_level}"
+    )
+  
+  required_asym_cols <- c(
+    "loglam_TRCY_None", "loglam_TRCY_High",
+    "loglam_TROR_None", "loglam_TROR_High"
+  )
+  
+  missing_asym_cols <- setdiff(required_asym_cols, names(asym_draws))
+  
+  if (length(missing_asym_cols) > 0) {
+    stop(
+      "Missing columns needed for fecundity asymmetry in ", model_name, ": ",
+      paste(missing_asym_cols, collapse = ", ")
+    )
+  }
+  
+  asym_summary <- asym_draws %>%
+    dplyr::mutate(
+      dlog_lambda_TRCY = loglam_TRCY_High - loglam_TRCY_None,
+      dlog_lambda_TROR = loglam_TROR_High - loglam_TROR_None,
+      fac_asym_TRCY_minus_TROR = dlog_lambda_TRCY - dlog_lambda_TROR
+    ) %>%
+    dplyr::group_by(Site, Cov) %>%
+    dplyr::summarise(
+      fac_asym_med = stats::median(fac_asym_TRCY_minus_TROR, na.rm = TRUE),
+      fac_asym_lwr = stats::quantile(fac_asym_TRCY_minus_TROR, 0.025, na.rm = TRUE),
+      fac_asym_upr = stats::quantile(fac_asym_TRCY_minus_TROR, 0.975, na.rm = TRUE),
+      p_asym_gt0 = mean(fac_asym_TRCY_minus_TROR > 0, na.rm = TRUE),
+      dlog_TRCY_med = stats::median(dlog_lambda_TRCY, na.rm = TRUE),
+      dlog_TROR_med = stats::median(dlog_lambda_TROR, na.rm = TRUE),
+      .groups = "drop"
+    )
+  
+  outcome_high <- one_result$outcome_bar_summary_cover %>%
+    dplyr::mutate(
+      Site = factor(as.character(Site), levels = site_order),
+      Cov  = factor(as.character(Cov), levels = cov_order),
+      fac_present = as.character(fac_present)
+    ) %>%
+    dplyr::filter(fac_present == "Yes") %>%
+    dplyr::rowwise() %>%
+    dplyr::mutate(
+      dominant_outcome = c(
+        "TRCY wins",
+        "TROR wins",
+        "Coexistence",
+        "Priority effect"
+      )[
+        which.max(c(
+          p_TRCY_wins,
+          p_TROR_wins,
+          p_coexist,
+          p_priority
+        ))
+      ],
+      dominant_probability = max(
+        c(p_TRCY_wins, p_TROR_wins, p_coexist, p_priority),
+        na.rm = TRUE
+      )
+    ) %>%
+    dplyr::ungroup() %>%
+    dplyr::select(
+      Site, Cov,
+      p_coexist,
+      p_TRCY_wins,
+      p_TROR_wins,
+      p_priority,
+      dominant_outcome,
+      dominant_probability,
+      p_valid_kappa
+    )
+  
+  asym_summary %>%
+    dplyr::left_join(outcome_high, by = c("Site", "Cov")) %>%
+    dplyr::mutate(
+      model_family = model_name,
+      model_family = factor(model_family, levels = c("BH", "Ricker")),
+      Cov = factor(as.character(Cov), levels = cover_plot_levels),
+      dominant_outcome = factor(
+        dominant_outcome,
+        levels = c("TRCY wins", "TROR wins", "Coexistence", "Priority effect")
+      ),
+      point_label = paste(Site, Cov, sep = "-")
+    )
+}
+
+fec_asym_plot_dat <- purrr::map_dfr(
+  results,
+  make_fecundity_asymmetry_plot_data
+)
+
+safe_write_csv(fec_asym_plot_dat, table_path("link", "fec_asym_pcoex"))
+
+fec_asym_plot_dat <- fec_asym_plot_dat %>%
+  dplyr::mutate(
+    dominant_outcome = forcats::fct_drop(dominant_outcome)
+  )
+
+p_fec_asym_pcoex <- ggplot(
+  fec_asym_plot_dat,
+  aes(
+    x = fac_asym_med,
+    y = p_coexist,
+    colour = dominant_outcome,
+    shape = Cov
+  )
+) +
+  geom_vline(
+    xintercept = 0,
+    linetype = "dashed",
+    linewidth = 0.45,
+    colour = "grey35"
+  ) +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dotted",
+    linewidth = 0.35,
+    colour = "grey55"
+  ) +
+  geom_errorbar(
+    aes(xmin = fac_asym_lwr, xmax = fac_asym_upr),
+    orientation = "y",
+    width = 0,
+    linewidth = 0.45,
+    alpha = 0.75
+  ) +
+  geom_point(
+    size = 3.0,
+    alpha = 0.95
+  ) +
+  ggrepel::geom_text_repel(
+    aes(label = Site),
+    size = 3.1,
+    colour = "black",
+    max.overlaps = Inf,
+    box.padding = 0.25,
+    point.padding = 0.15,
+    show.legend = FALSE
+  ) +
+  facet_wrap(~ model_family, nrow = 1) +
+  scale_colour_manual(
+    values = outcome_cols,
+    drop = TRUE,
+    name = "Most-supported\noutcome"
+  ) +
+  scale_shape_manual(
+    values = c("Sun" = 16, "Shade" = 17),
+    drop = FALSE,
+    name = "Cover"
+  ) +
+  scale_y_continuous(
+    limits = c(0, 0.25),
+    breaks = seq(0, 0.25, by = 0.05),
+    labels = function(x) paste0(round(100 * x), "%"),
+    expand = expansion(mult = c(0.02, 0.04))
+  ) +
+  labs(
+    x = expression(
+      "Facilitation effect asymmetry: " *
+        Delta * " log(lambda)[" * TRCY * "] - " *
+        Delta * " log(lambda)[" * TROR * "]"
+    ),
+    y = "Posterior probability of coexistence",
+    caption = "Positive x-values indicate stronger facilitator effects on TRCY; negative values indicate stronger effects on TROR. Error bars show 95% posterior credible intervals for facilitation asymmetry."
+  ) +
+  theme_bw(base_size = 11) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(linewidth = 0.2, colour = "grey90"),
+    strip.background = element_rect(fill = "grey95", colour = "black", linewidth = 0.3),
+    strip.text = element_text(size = 11, colour = "black"),
+    axis.title = element_text(size = 11, colour = "black"),
+    axis.text = element_text(size = 10, colour = "black"),
+    legend.position = "right",
+    legend.title = element_text(size = 10, colour = "black"),
+    legend.text = element_text(size = 9, colour = "black"),
+    plot.caption = element_text(size = 8.5, colour = "grey25", hjust = 0),
+    plot.margin = margin(5, 5, 5, 5)
+  )
+
+print(p_fec_asym_pcoex)
+
+safe_save_plot(
+  p_fec_asym_pcoex,
+  fig_path("link", "fec_asym_pcoex"),
+  width = 8.5,
+  height = 4.8,
+  dpi = save_png_dpi_main
+)
+
+
+###############################
+## 10. try new version
+##############################
+infer_factor_levels <- function(x, preferred = NULL) {
+  vals <- unique(as.character(x))
+  lv <- levels(x)
+  
+  out <- if (!is.null(lv) && length(lv) > 0) {
+    lv[lv %in% vals]
+  } else {
+    vals
+  }
+  
+  if (!is.null(preferred)) {
+    out <- c(preferred[preferred %in% out], setdiff(out, preferred))
+  }
+  
+  out
+}
+
+site_order <- infer_factor_levels(
+  results[[1]]$selected_fac_levels$Site,
+  preferred = c("BEN", "GH", "NAM", "PJ", "CS")
+)
+
+cov_order <- infer_factor_levels(
+  results[[1]]$selected_fac_levels$Cov,
+  preferred = c("Shade", "Sun")
+)
+
+cover_plot_levels <- c("Sun", "Shade")
+cover_plot_levels <- cover_plot_levels[cover_plot_levels %in% cov_order]
+
+if (length(cover_plot_levels) == 0) {
+  cover_plot_levels <- cov_order
+}
+
+fac_join_digits <- 10
+
+outcome_cols <- c(
+  "TRCY wins" = "#83E8BA",
+  "TROR wins" = "grey",
+  "Coexistence" = "#72A1E5",
+  "Priority effect" = "#9883E5"
+)
+
+
+fec_asym_plot_dat <- fec_asym_plot_dat %>%
+  dplyr::mutate(
+    win_balance_TRCY_minus_TROR = p_TRCY_wins - p_TROR_wins,
+    dominant_outcome = forcats::fct_drop(dominant_outcome)
+  )
+
+
+make_fecundity_asymmetry_plot_data <- function(one_result) {
+  
+  model_name <- one_result$family_tag
+  file_prefix_i <- one_result$file_prefix
+  
+  lambda_file <- draw_path(file_prefix_i, "lambda")
+  
+  if (!file.exists(lambda_file)) {
+    stop("Cannot find lambda draw file for ", model_name, ": ", lambda_file)
+  }
+  
+  lambda_i <- readRDS(lambda_file) %>%
+    dplyr::mutate(
+      Site = factor(as.character(Site), levels = site_order),
+      Cov  = factor(as.character(Cov), levels = cov_order),
+      focsp = as.character(focsp),
+      fac_sc_join = round(as.numeric(fac_sc), fac_join_digits)
+    )
+  
+  selected_fac_i <- one_result$selected_fac_levels %>%
+    dplyr::mutate(
+      Site = factor(as.character(Site), levels = site_order),
+      Cov  = factor(as.character(Cov), levels = cov_order),
+      fac_level = as.character(fac_level),
+      fac_sc_join = round(as.numeric(fac_sc), fac_join_digits)
+    ) %>%
+    dplyr::filter(fac_level %in% c("None", "High")) %>%
+    dplyr::select(Site, Cov, fac_level, fac_sc_join) %>%
+    dplyr::distinct()
+  
+  lambda_selected <- lambda_i %>%
+    dplyr::inner_join(
+      selected_fac_i,
+      by = c("Site", "Cov", "fac_sc_join")
+    ) %>%
+    dplyr::select(draw, Site, Cov, focsp, fac_level, lambda)
+  
+  if (nrow(lambda_selected) == 0) {
+    stop(
+      "No lambda draws matched selected facilitator levels for ", model_name,
+      ". Check fac_sc rounding/joining."
+    )
+  }
+  
+  asym_draws <- lambda_selected %>%
+    dplyr::mutate(
+      focsp = as.character(focsp),
+      fac_level = as.character(fac_level),
+      log_lambda = log(lambda)
+    ) %>%
+    dplyr::select(draw, Site, Cov, focsp, fac_level, log_lambda) %>%
+    tidyr::pivot_wider(
+      names_from = c(focsp, fac_level),
+      values_from = log_lambda,
+      names_glue = "loglam_{focsp}_{fac_level}"
+    )
+  
+  required_asym_cols <- c(
+    "loglam_TRCY_None", "loglam_TRCY_High",
+    "loglam_TROR_None", "loglam_TROR_High"
+  )
+  
+  missing_asym_cols <- setdiff(required_asym_cols, names(asym_draws))
+  
+  if (length(missing_asym_cols) > 0) {
+    stop(
+      "Missing columns needed for fecundity asymmetry in ", model_name, ": ",
+      paste(missing_asym_cols, collapse = ", ")
+    )
+  }
+  
+  asym_summary <- asym_draws %>%
+    dplyr::mutate(
+      dlog_lambda_TRCY = loglam_TRCY_High - loglam_TRCY_None,
+      dlog_lambda_TROR = loglam_TROR_High - loglam_TROR_None,
+      fac_asym_TRCY_minus_TROR = dlog_lambda_TRCY - dlog_lambda_TROR
+    ) %>%
+    dplyr::group_by(Site, Cov) %>%
+    dplyr::summarise(
+      fac_asym_med = stats::median(fac_asym_TRCY_minus_TROR, na.rm = TRUE),
+      fac_asym_lwr = stats::quantile(fac_asym_TRCY_minus_TROR, 0.025, na.rm = TRUE),
+      fac_asym_upr = stats::quantile(fac_asym_TRCY_minus_TROR, 0.975, na.rm = TRUE),
+      p_asym_gt0 = mean(fac_asym_TRCY_minus_TROR > 0, na.rm = TRUE),
+      dlog_TRCY_med = stats::median(dlog_lambda_TRCY, na.rm = TRUE),
+      dlog_TROR_med = stats::median(dlog_lambda_TROR, na.rm = TRUE),
+      .groups = "drop"
+    )
+  
+  outcome_high <- one_result$outcome_bar_summary_cover %>%
+    dplyr::mutate(
+      Site = factor(as.character(Site), levels = site_order),
+      Cov  = factor(as.character(Cov), levels = cov_order),
+      fac_present = as.character(fac_present)
+    ) %>%
+    dplyr::filter(fac_present == "Yes") %>%
+    dplyr::rowwise() %>%
+    dplyr::mutate(
+      dominant_outcome = c(
+        "TRCY wins",
+        "TROR wins",
+        "Coexistence",
+        "Priority effect"
+      )[
+        which.max(c(
+          p_TRCY_wins,
+          p_TROR_wins,
+          p_coexist,
+          p_priority
+        ))
+      ],
+      dominant_probability = max(
+        c(p_TRCY_wins, p_TROR_wins, p_coexist, p_priority),
+        na.rm = TRUE
+      )
+    ) %>%
+    dplyr::ungroup() %>%
+    dplyr::select(
+      Site, Cov,
+      p_coexist,
+      p_TRCY_wins,
+      p_TROR_wins,
+      p_priority,
+      dominant_outcome,
+      dominant_probability,
+      p_valid_kappa
+    )
+  
+  asym_summary %>%
+    dplyr::left_join(outcome_high, by = c("Site", "Cov")) %>%
+    dplyr::mutate(
+      model_family = model_name,
+      model_family = factor(model_family, levels = c("BH", "Ricker")),
+      Cov = factor(as.character(Cov), levels = cover_plot_levels),
+      dominant_outcome = factor(
+        dominant_outcome,
+        levels = c("TRCY wins", "TROR wins", "Coexistence", "Priority effect")
+      ),
+      point_label = paste(Site, Cov, sep = "-")
+    )
+}
+
+
+
+
+fec_asym_plot_dat <- purrr::map_dfr(
+  results,
+  make_fecundity_asymmetry_plot_data
+) %>%
+  dplyr::mutate(
+    win_balance_TRCY_minus_TROR = p_TRCY_wins - p_TROR_wins,
+    dominant_outcome = forcats::fct_drop(dominant_outcome)
+  )
+
+
+fec_asym_plot_dat <- fec_asym_plot_dat %>%
+  dplyr::mutate(
+    dominant_outcome = forcats::fct_drop(dominant_outcome)
+  )
+
+
+safe_write_csv(fec_asym_plot_dat, table_path("link", "fec_asym_winbalance"))
+
+
+p_fec_asym_winbalance <- ggplot(
+  fec_asym_plot_dat,
+  aes(
+    x = fac_asym_med,
+    y = win_balance_TRCY_minus_TROR,
+    colour = dominant_outcome,
+    shape = Cov
+  )
+) +
+  geom_vline(
+    xintercept = 0,
+    linetype = "dashed",
+    linewidth = 0.45,
+    colour = "grey35"
+  ) +
+  geom_hline(
+    yintercept = 0,
+    linetype = "dashed",
+    linewidth = 0.45,
+    colour = "grey35"
+  ) +
+  geom_errorbar(
+    aes(xmin = fac_asym_lwr, xmax = fac_asym_upr),
+    orientation = "y",
+    width = 0,
+    linewidth = 0.45,
+    alpha = 0.75
+  ) +
+  geom_point(
+    size = 3.0,
+    alpha = 0.95
+  ) +
+  ggrepel::geom_text_repel(
+    aes(label = Site),
+    size = 3.1,
+    colour = "black",
+    max.overlaps = Inf,
+    box.padding = 0.25,
+    point.padding = 0.15,
+    show.legend = FALSE
+  ) +
+  facet_wrap(~ model_family, nrow = 1) +
+  scale_colour_manual(
+    values = outcome_cols,
+    drop = TRUE,
+    name = "Most-supported\noutcome"
+  ) +
+  scale_shape_manual(
+    values = c("Sun" = 16, "Shade" = 17),
+    drop = FALSE,
+    name = "Cover"
+  ) +
+  scale_y_continuous(
+    limits = c(-1, 1),
+    breaks = seq(-1, 1, by = 0.5),
+    labels = function(x) paste0(round(100 * x), "%")
+  ) +
+  labs(
+    x = expression(
+      "Facilitation effect asymmetry: " *
+        Delta * " log(lambda)[" * TRCY * "] - " *
+        Delta * " log(lambda)[" * TROR * "]"
+    ),
+    y = "Posterior winner balance: P(TRCY wins) - P(TROR wins)",
+    caption = "Positive x-values indicate stronger facilitator effects on TRCY; negative values indicate stronger effects on TROR.
+    Positive y-values indicate stronger posterior support for TRCY winning; negative values indicate stronger support for TROR winning."
+  ) +
+  theme_bw(base_size = 11) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(linewidth = 0.2, colour = "grey90"),
+    strip.background = element_rect(fill = "grey95", colour = "black", linewidth = 0.3),
+    strip.text = element_text(size = 11, colour = "black"),
+    axis.title = element_text(size = 11, colour = "black"),
+    axis.text = element_text(size = 10, colour = "black"),
+    legend.position = "right",
+    legend.title = element_text(size = 10, colour = "black"),
+    legend.text = element_text(size = 9, colour = "black"),
+    plot.caption = element_text(size = 8.5, colour = "grey25", hjust = 0),
+    plot.margin = margin(6, 5, 5, 5)
+  )
+
+print(p_fec_asym_winbalance)
+
+safe_save_plot(
+  p_fec_asym_winbalance,
+  fig_path("link", "fec_asym_winbalance"),
+  width = 8.5,
+  height = 4.8,
+  dpi = save_png_dpi_main
+)
+
+############################
+## 11. Draw-level link between facilitation asymmetry and coexistence outcome
+##
+## This section links each posterior draw to the coexistence outcome calculated
+## from that same posterior draw.
+##
+## x-axis:
+##   [log(lambda_TRCY_high) - log(lambda_TRCY_none)] -
+##   [log(lambda_TROR_high) - log(lambda_TROR_none)]
+##
+## Two figures are saved:
+##
+## 1. draw_fec_asym_outcome
+##    x-axis = facilitation-effect asymmetry
+##    y-axis = draw-level outcome category
+##
+## 2. draw_fec_asym_logfit
+##    x-axis = facilitation-effect asymmetry
+##    y-axis = log(fitness ratio TRCY/TROR)
+##    This second figure only includes draws with positive fitness ratios,
+##    because log(fitness ratio) is undefined for zero or negative values.
+############################
+
+## Recreate global plotting/order objects. These were created inside
+## run_one_family(), so they are not available after the function finishes.
+infer_factor_levels <- function(x, preferred = NULL) {
+  vals <- unique(as.character(x))
+  lv <- levels(x)
+  
+  out <- if (!is.null(lv) && length(lv) > 0) {
+    lv[lv %in% vals]
+  } else {
+    vals
+  }
+  
+  if (!is.null(preferred)) {
+    out <- c(preferred[preferred %in% out], setdiff(out, preferred))
+  }
+  
+  out
+}
+
+site_order <- infer_factor_levels(
+  results[[1]]$selected_fac_levels$Site,
+  preferred = c("BEN", "GH", "NAM", "PJ", "CS")
+)
+
+cov_order <- infer_factor_levels(
+  results[[1]]$selected_fac_levels$Cov,
+  preferred = c("Shade", "Sun")
+)
+
+cover_plot_levels <- c("Sun", "Shade")
+cover_plot_levels <- cover_plot_levels[cover_plot_levels %in% cov_order]
+
+if (length(cover_plot_levels) == 0) {
+  cover_plot_levels <- cov_order
+}
+
+fac_join_digits <- 10
+
+outcome_cols_draw <- c(
+  "TRCY wins" = "#0d7d87",
+  "TROR wins" = "#4a2377",
+  "Coexistence" = "#f55f74",
+  "Priority effect" = "#8cc5e3",
+  "Unclassified" = "black"
+)
+
+make_draw_level_link_data <- function(one_result) {
+  
+  model_name <- one_result$family_tag
+  file_prefix_i <- one_result$file_prefix
+  
+  coex_all_file <- draw_path(file_prefix_i, "coex_all")
+  
+  if (!file.exists(coex_all_file)) {
+    stop(
+      "Cannot find coex_all draw file for ", model_name, ":\n",
+      coex_all_file, "\n\n",
+      "Add this inside run_one_family(), after coex_draws has outcome columns:\n",
+      "safe_save_rds(coex_draws, draw_path(file_prefix, 'coex_all'))\n\n",
+      "Then rerun the full outcome script before running Section 11."
+    )
+  }
+  
+  coex_all_i <- readRDS(coex_all_file) %>%
+    dplyr::mutate(
+      Site = factor(as.character(Site), levels = site_order),
+      Cov  = factor(as.character(Cov), levels = cov_order),
+      fac_sc_join = round(as.numeric(fac_sc), fac_join_digits)
+    )
+  
+  selected_fac_i <- one_result$selected_fac_levels %>%
+    dplyr::mutate(
+      Site = factor(as.character(Site), levels = site_order),
+      Cov  = factor(as.character(Cov), levels = cov_order),
+      fac_level = as.character(fac_level),
+      fac_sc_join = round(as.numeric(fac_sc), fac_join_digits)
+    ) %>%
+    dplyr::filter(fac_level %in% c("None", "High")) %>%
+    dplyr::select(Site, Cov, fac_level, fac_sc_join) %>%
+    dplyr::distinct()
+  
+  coex_selected <- coex_all_i %>%
+    dplyr::inner_join(
+      selected_fac_i,
+      by = c("Site", "Cov", "fac_sc_join")
+    )
+  
+  if (nrow(coex_selected) == 0) {
+    stop(
+      "No coex_all draws matched selected facilitator levels for ", model_name,
+      ". Check fac_sc rounding and whether selected_fac_levels$fac_sc values ",
+      "were included in fac_values_all before lambda_grid was built."
+    )
+  }
+  
+  asym_draws <- coex_selected %>%
+    dplyr::select(
+      draw, Site, Cov, fac_level,
+      lambda_TRCY, lambda_TROR
+    ) %>%
+    dplyr::mutate(
+      log_lambda_TRCY = log(lambda_TRCY),
+      log_lambda_TROR = log(lambda_TROR)
+    ) %>%
+    dplyr::select(
+      draw, Site, Cov, fac_level,
+      log_lambda_TRCY, log_lambda_TROR
+    ) %>%
+    tidyr::pivot_wider(
+      names_from = fac_level,
+      values_from = c(log_lambda_TRCY, log_lambda_TROR),
+      names_glue = "{.value}_{fac_level}"
+    )
+  
+  required_asym_cols <- c(
+    "log_lambda_TRCY_None",
+    "log_lambda_TRCY_High",
+    "log_lambda_TROR_None",
+    "log_lambda_TROR_High"
+  )
+  
+  missing_asym_cols <- setdiff(required_asym_cols, names(asym_draws))
+  
+  if (length(missing_asym_cols) > 0) {
+    stop(
+      "Missing columns needed for draw-level facilitation asymmetry in ",
+      model_name, ": ",
+      paste(missing_asym_cols, collapse = ", ")
+    )
+  }
+  
+  asym_draws <- asym_draws %>%
+    dplyr::mutate(
+      dlog_lambda_TRCY = log_lambda_TRCY_High - log_lambda_TRCY_None,
+      dlog_lambda_TROR = log_lambda_TROR_High - log_lambda_TROR_None,
+      fac_asym_TRCY_minus_TROR = dlog_lambda_TRCY - dlog_lambda_TROR
+    ) %>%
+    dplyr::select(
+      draw, Site, Cov,
+      dlog_lambda_TRCY,
+      dlog_lambda_TROR,
+      fac_asym_TRCY_minus_TROR
+    )
+  
+  outcome_high_draws <- coex_selected %>%
+    dplyr::filter(fac_level == "High") %>%
+    dplyr::mutate(
+      fitness_ratio = fitness_ratio_TRCY_over_TROR,
+      
+      valid_draw =
+        is.finite(rho) &
+        rho > 0 &
+        is.finite(fitness_ratio),
+      
+      inv_rho_draw = 1 / rho,
+      lower_bound_draw = pmin(rho, inv_rho_draw),
+      upper_bound_draw = pmax(rho, inv_rho_draw),
+      
+      outcome_draw = dplyr::case_when(
+        valid_draw &
+          rho < 1 &
+          fitness_ratio > lower_bound_draw &
+          fitness_ratio < upper_bound_draw ~ "Coexistence",
+        
+        valid_draw &
+          rho > 1 &
+          fitness_ratio > lower_bound_draw &
+          fitness_ratio < upper_bound_draw ~ "Priority effect",
+        
+        valid_draw &
+          fitness_ratio > upper_bound_draw ~ "TRCY wins",
+        
+        valid_draw &
+          fitness_ratio < lower_bound_draw ~ "TROR wins",
+        
+        TRUE ~ "Unclassified"
+      ),
+      
+      log_fitness_ratio_TRCY_over_TROR = {
+        out <- rep(NA_real_, dplyr::n())
+        ok <- valid_draw & fitness_ratio > 0
+        out[ok] <- log(fitness_ratio[ok])
+        out
+      },
+      
+      fitness_ratio_positive = valid_draw & fitness_ratio > 0,
+      fitness_ratio_zero_or_negative = valid_draw & fitness_ratio <= 0
+    ) %>%
+    dplyr::select(
+      draw, Site, Cov,
+      fitness_ratio_TRCY_over_TROR,
+      log_fitness_ratio_TRCY_over_TROR,
+      fitness_ratio_positive,
+      fitness_ratio_zero_or_negative,
+      niche_diff,
+      rho,
+      valid_draw,
+      lower_bound_draw,
+      upper_bound_draw,
+      outcome_draw
+    )
+  
+  asym_draws %>%
+    dplyr::inner_join(
+      outcome_high_draws,
+      by = c("draw", "Site", "Cov")
+    ) %>%
+    dplyr::mutate(
+      model_family = model_name,
+      model_family = factor(model_family, levels = c("BH", "Ricker")),
+      Site = factor(as.character(Site), levels = site_order),
+      Cov = factor(as.character(Cov), levels = cover_plot_levels),
+      outcome_draw = factor(
+        outcome_draw,
+        levels = c(
+          "TRCY wins",
+          "TROR wins",
+          "Coexistence",
+          "Priority effect",
+          "Unclassified"
+        )
+      ),
+      
+      asym_direction = dplyr::case_when(
+        fac_asym_TRCY_minus_TROR > 0 ~ "TRCY",
+        fac_asym_TRCY_minus_TROR < 0 ~ "TROR",
+        TRUE ~ NA_character_
+      ),
+      
+      winner_direction = dplyr::case_when(
+        outcome_draw == "TRCY wins" ~ "TRCY",
+        outcome_draw == "TROR wins" ~ "TROR",
+        TRUE ~ NA_character_
+      ),
+      
+      asym_matches_winner = dplyr::case_when(
+        !is.na(asym_direction) &
+          !is.na(winner_direction) &
+          asym_direction == winner_direction ~ TRUE,
+        
+        !is.na(asym_direction) &
+          !is.na(winner_direction) &
+          asym_direction != winner_direction ~ FALSE,
+        
+        TRUE ~ NA
+      ),
+      
+      logfit_same_direction = dplyr::case_when(
+        fac_asym_TRCY_minus_TROR > 0 &
+          log_fitness_ratio_TRCY_over_TROR > 0 ~ TRUE,
+        
+        fac_asym_TRCY_minus_TROR < 0 &
+          log_fitness_ratio_TRCY_over_TROR < 0 ~ TRUE,
+        
+        fac_asym_TRCY_minus_TROR == 0 |
+          log_fitness_ratio_TRCY_over_TROR == 0 ~ NA,
+        
+        is.na(log_fitness_ratio_TRCY_over_TROR) ~ NA,
+        
+        TRUE ~ FALSE
+      )
+    )
+}
+
+draw_link_dat_all <- purrr::map_dfr(
+  results,
+  make_draw_level_link_data
+) %>%
+  dplyr::filter(
+    is.finite(fac_asym_TRCY_minus_TROR),
+    !is.na(Cov)
+  )
+
+if (nrow(draw_link_dat_all) == 0) {
+  stop("draw_link_dat_all has zero finite rows. Check coex_all and lambda values.")
+}
+
+draw_link_outcome_check <- draw_link_dat_all %>%
+  dplyr::count(model_family, outcome_draw, name = "n_draws") %>%
+  dplyr::group_by(model_family) %>%
+  dplyr::mutate(prop_draws = n_draws / sum(n_draws)) %>%
+  dplyr::ungroup()
+
+print(draw_link_outcome_check, n = Inf)
+
+safe_write_csv(
+  draw_link_outcome_check,
+  table_path("link", "draw_fec_asym_outcome_check")
+)
+
+safe_save_rds(
+  draw_link_dat_all,
+  draw_path("link", "draw_fec_asym_all")
+)
+
+draw_link_summary <- draw_link_dat_all %>%
+  dplyr::group_by(model_family, Site, Cov) %>%
+  dplyr::summarise(
+    n_draws = dplyr::n(),
+    
+    fac_asym_med = stats::median(fac_asym_TRCY_minus_TROR, na.rm = TRUE),
+    fac_asym_lwr = stats::quantile(fac_asym_TRCY_minus_TROR, 0.025, na.rm = TRUE),
+    fac_asym_upr = stats::quantile(fac_asym_TRCY_minus_TROR, 0.975, na.rm = TRUE),
+    
+    dlog_TRCY_med = stats::median(dlog_lambda_TRCY, na.rm = TRUE),
+    dlog_TROR_med = stats::median(dlog_lambda_TROR, na.rm = TRUE),
+    
+    p_asym_TRCY_gt_TROR = mean(fac_asym_TRCY_minus_TROR > 0, na.rm = TRUE),
+    p_asym_TROR_gt_TRCY = mean(fac_asym_TRCY_minus_TROR < 0, na.rm = TRUE),
+    
+    p_valid_draw = mean(valid_draw, na.rm = TRUE),
+    p_fitness_ratio_positive = mean(fitness_ratio_positive, na.rm = TRUE),
+    p_fitness_ratio_zero_or_negative = mean(fitness_ratio_zero_or_negative, na.rm = TRUE),
+    
+    p_TRCY_wins = mean(outcome_draw == "TRCY wins", na.rm = TRUE),
+    p_TROR_wins = mean(outcome_draw == "TROR wins", na.rm = TRUE),
+    p_coexist = mean(outcome_draw == "Coexistence", na.rm = TRUE),
+    p_priority = mean(outcome_draw == "Priority effect", na.rm = TRUE),
+    p_unclassified = mean(outcome_draw == "Unclassified", na.rm = TRUE),
+    
+    p_asym_matches_winner = mean(asym_matches_winner, na.rm = TRUE),
+    
+    logfit_med = stats::median(log_fitness_ratio_TRCY_over_TROR, na.rm = TRUE),
+    logfit_lwr = stats::quantile(log_fitness_ratio_TRCY_over_TROR, 0.025, na.rm = TRUE),
+    logfit_upr = stats::quantile(log_fitness_ratio_TRCY_over_TROR, 0.975, na.rm = TRUE),
+    p_logfit_TRCY_gt_TROR = mean(log_fitness_ratio_TRCY_over_TROR > 0, na.rm = TRUE),
+    p_logfit_same_direction = mean(logfit_same_direction, na.rm = TRUE),
+    
+    .groups = "drop"
+  ) %>%
+  dplyr::arrange(model_family, Cov, Site)
+
+safe_write_csv(
+  draw_link_summary,
+  table_path("link", "draw_fec_asym_sum")
+)
+
+print(draw_link_summary, n = Inf)
+
+set.seed(123)
+
+max_draws_per_panel_link <- 1000
+
+sample_draws_by_panel <- function(dat, max_n = 1000) {
+  dat %>%
+    dplyr::group_by(model_family, Site, Cov) %>%
+    dplyr::group_modify(~ {
+      n_sample <- min(nrow(.x), max_n)
+      dplyr::slice_sample(.x, n = n_sample)
+    }) %>%
+    dplyr::ungroup()
+}
+
+make_robust_limits <- function(x, probs = c(0.005, 0.995), pad_prop = 0.08) {
+  lim <- stats::quantile(x, probs = probs, na.rm = TRUE)
+  lim <- as.numeric(lim)
+  
+  lim <- c(
+    min(lim[1], 0, na.rm = TRUE),
+    max(lim[2], 0, na.rm = TRUE)
+  )
+  
+  span <- diff(lim)
+  
+  if (!is.finite(span) || span == 0) {
+    span <- 1
+  }
+  
+  lim + c(-1, 1) * span * pad_prop
+}
+
+############################
+## 11. Plotting: log-fitness-ratio only
+############################
+
+draw_link_logfit_dat <- draw_link_dat_all %>%
+  dplyr::filter(
+    is.finite(log_fitness_ratio_TRCY_over_TROR)
+  )
+
+if (nrow(draw_link_logfit_dat) == 0) {
+  
+  warning(
+    "No draws have positive finite fitness ratios, so the log-fitness-ratio ",
+    "plots were skipped."
+  )
+  
+} else {
+  
+  draw_link_logfit_plot_dat <- draw_link_logfit_dat %>%
+    sample_draws_by_panel(max_n = max_draws_per_panel_link) %>%
+    dplyr::mutate(
+      outcome_draw = forcats::fct_drop(outcome_draw)
+    )
+  
+  x_lims_logfit <- make_robust_limits(
+    draw_link_logfit_plot_dat$fac_asym_TRCY_minus_TROR
+  )
+  
+  y_lims_logfit <- make_robust_limits(
+    draw_link_logfit_plot_dat$log_fitness_ratio_TRCY_over_TROR
+  )
+  
+ 
+  ############################
+  ## 11b. Combined log-fitness-ratio plots
+  ## Separate plot for each model family
+  ##
+  ## Sites = symbols
+  ## Sun = open symbols
+  ## Shade = closed symbols
+  ############################
+  
+  site_shape_vals <- c(
+    "BEN" = 21,
+    "GH"  = 22,
+    "NAM" = 23,
+    "PJ"  = 24,
+    "CS"  = 25
+  )
+  
+  site_shape_vals <- site_shape_vals[
+    names(site_shape_vals) %in% levels(draw_link_logfit_plot_dat$Site)
+  ]
+  
+  ## Fallback in case site labels differ from BEN/GH/NAM/PJ/CS
+  if (length(site_shape_vals) == 0) {
+    site_shape_vals <- stats::setNames(
+      c(21, 22, 23, 24, 25)[seq_along(levels(draw_link_logfit_plot_dat$Site))],
+      levels(draw_link_logfit_plot_dat$Site)
+    )
+  }
+  
+  draw_link_logfit_plot_dat_combined <- draw_link_logfit_plot_dat %>%
+    dplyr::mutate(
+      cover_fill = dplyr::case_when(
+        Cov == "Sun" ~ "white",
+        Cov == "Shade" ~ as.character(outcome_cols_draw[as.character(outcome_draw)]),
+        TRUE ~ "white"
+      ),
+      model_family_label = dplyr::case_when(
+        model_family == "BH" ~ "Beverton-Holt",
+        model_family == "Ricker" ~ "Ricker",
+        TRUE ~ as.character(model_family)
+      )
+    )
+  
+  model_families_to_plot <- levels(draw_link_logfit_plot_dat_combined$model_family)
+  model_families_to_plot <- model_families_to_plot[
+    model_families_to_plot %in% unique(draw_link_logfit_plot_dat_combined$model_family)
+  ]
+  
+  for (family_i in model_families_to_plot) {
+    
+    dat_i <- draw_link_logfit_plot_dat_combined %>%
+      dplyr::filter(model_family == family_i)
+    
+    family_label_i <- unique(dat_i$model_family_label)[1]
+    
+    file_family_i <- dplyr::case_when(
+      family_i == "BH" ~ "BH",
+      family_i == "Ricker" ~ "Ricker",
+      TRUE ~ gsub("[^A-Za-z0-9]+", "_", as.character(family_i))
+    )
+    
+    p_draw_fec_asym_logfit_combined_i <- ggplot(
+      dat_i,
+      aes(
+        x = fac_asym_TRCY_minus_TROR,
+        y = log_fitness_ratio_TRCY_over_TROR,
+        colour = outcome_draw,
+        shape = Site
+      )
+    ) +
+      geom_vline(
+        xintercept = 0,
+        linetype = "dashed",
+        linewidth = 0.35,
+        colour = "grey35"
+      ) +
+      geom_hline(
+        yintercept = 0,
+        linetype = "dashed",
+        linewidth = 0.35,
+        colour = "grey35"
+      ) +
+      geom_point(
+        aes(fill = cover_fill),
+        size = 0.5,
+        alpha = 0.2,
+        stroke = 0.5
+      ) +
+      scale_colour_manual(
+        values = outcome_cols_draw,
+        drop = TRUE,
+        name = "Draw-level\noutcome"
+      ) +
+      scale_shape_manual(
+        values = site_shape_vals,
+        drop = TRUE,
+        name = "Site"
+      ) +
+      scale_fill_identity() +
+      guides(
+        colour = guide_legend(
+          override.aes = list(
+            size = 2,
+            alpha = 1,
+            shape = 16,
+            stroke = 0
+          )
+        ),
+        shape = guide_legend(
+          override.aes = list(
+            size = 2,
+            alpha = 1,
+            colour = "black",
+            fill = "black",
+            stroke = 0.5
+          )
+        )
+      ) +
+      coord_cartesian(
+        #xlim = x_lims_logfit,
+        xlim = c(-4,4),
+        ylim = y_lims_logfit
+      ) +
+      labs(
+        title = paste0(family_label_i, " model"),
+        x = expression(
+          "Facilitation effect asymmetry: " *
+            Delta * " log(lambda)[" * TRCY * "] - " *
+            Delta * " log(lambda)[" * TROR * "]"
+        ),
+        y = "Log fitness ratio: log(TRCY / TROR)",
+        caption = "link fecundity with coexistence outcome posterior draws"
+      ) +
+      theme_bw(base_size = 11) +
+      theme(
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(linewidth = 0.18, colour = "grey92"),
+        axis.title = element_text(size = 10.5, colour = "black"),
+        axis.text = element_text(size = 10, colour = "black"),
+        legend.position = "right",
+        legend.title = element_text(size = 10, colour = "black"),
+        legend.text = element_text(size = 10, colour = "black"),
+        plot.title = element_text(size = 12, colour = "black", face = "bold"),
+        plot.caption = element_text(size = 8.3, colour = "grey25", hjust = 0),
+        plot.margin = margin(5, 5, 5, 5)
+      )
+    
+    print(p_draw_fec_asym_logfit_combined_i)
+    
+    safe_save_plot(
+      p_draw_fec_asym_logfit_combined_i,
+      fig_path(
+        "link",
+        paste0("draw_fec_asym_logfit_combined_sites_cover_", file_family_i)
+      ),
+      width = 6,
+      height = 4,
+      dpi = 600
+    )
+  }
+}
 
